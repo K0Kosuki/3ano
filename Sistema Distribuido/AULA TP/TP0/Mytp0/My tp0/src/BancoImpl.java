@@ -84,7 +84,10 @@ public Client(String name, String cc)
 
     @Override
     public boolean withdraw(int id, int value) {
-        return false;
+        Client aux =  this.account.get(id);
+        int auxvalue=aux.getValue()-value;
+        aux.setValue(auxvalue);
+        return true;
     }
 
     @Override
