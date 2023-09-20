@@ -14,5 +14,6 @@ public class BancoTest {
         System.out.println("Conta0 name: "+b.name(0));
 
         System.out.println("Total: "+b.totalBalance());
+        System.out.println("Total: "+b.totalBalanceI());
         }
     }

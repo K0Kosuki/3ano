@@ -128,5 +128,19 @@ public Client(String name, String cc)
 
     return total;}
 
+    @Override
+    public int totalBalanceI() {
+    int total=0;
+        Iterator<Integer> it =account.keySet().iterator();
+        while (it.hasNext())
+        {
+            Integer id = it.next();
+            Client client = account.get(id);
+            int value = client.getValue();
+            total += value;
+        }
+        return total;
+    }
+
 
 }

@@ -7,5 +7,6 @@ public interface Banco {
     String cc(int id);
 
     int totalBalance();
+    int totalBalanceI();
 
 }
