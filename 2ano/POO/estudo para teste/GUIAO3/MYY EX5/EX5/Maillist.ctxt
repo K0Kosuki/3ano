@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Maillist
+comment1.params=e\ a\ m\ d
+comment1.target=Maillist(java.lang.String,\ int,\ int,\ int)
+comment10.params=a\ m\ d
+comment10.target=void\ elim_data_i(int,\ int,\ int)
+comment11.params=
+comment11.target=java.util.ArrayList\ mailsDia()
+comment2.params=
+comment2.target=java.lang.String\ getEnd()
+comment3.params=
+comment3.target=java.util.GregorianCalendar\ getDatae()
+comment4.params=
+comment4.target=java.util.GregorianCalendar\ getDatar()
+comment5.params=e\ a\ m\ d\ as\ t
+comment5.target=void\ add(java.lang.String,\ int,\ int,\ int,\ java.lang.String,\ java.lang.String)
+comment6.params=
+comment6.target=int\ total()
+comment7.params=end
+comment7.target=int\ Mesmo_end(java.lang.String)
+comment8.params=e\ a\ m\ d\ as\ t
+comment8.target=java.util.ArrayList\ palavra(java.lang.String,\ int,\ int,\ int,\ java.lang.String,\ java.lang.String)
+comment9.params=a\ m\ d
+comment9.target=void\ elim_data_ante(int,\ int,\ int)
+numComments=12

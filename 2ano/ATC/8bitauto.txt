@@ -1,0 +1,28 @@
+#include <c8051f380.h>
+
+void main(void)
+{
+
+    int C = 0; // Variavel de contagem das 2000 vezes na	contador
+
+    PCA0MD = 0x00;
+    XBR1 = 0x40;
+
+    CLKSEL |= 0x02; // Oscilador interno de alta frequência:48MHz ISYSCLK derivado do Oscil/2 = 48MHz/2 =24MHz
+    CKCON |= 0x02;  // Divide o clock 48 assim	T= 1/24MHz/48 => T = 2us
+    TMOD |= 0x02;   // Modo 8 bits com auto reload
+    TR0 = 1;
+
+    while (1)
+    {
+        while (!TF0)
+            ; // Aguarda fim da contagem
+        TF0 = 0;
+        C++; // Incrementar a variavel da contagem
+        if (C == 2000)
+        {
+            P2_7 = !P2_7; // Piscar o ponto do display
+            C = 0;        // Redefini contagem
+        }
+    }
+}

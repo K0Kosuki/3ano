@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=MBox
+comment1.params=n
+comment1.target=MBox(int)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ MBox\r\n
+comment2.params=
+comment2.target=int\ origens()
+comment3.params=
+comment3.target=int\ num_chamadas()
+comment4.params=c
+comment4.target=void\ add(Chamada)
+comment5.params=num
+comment5.target=double\ valor_chamadas(int)
+comment6.params=
+comment6.target=int\ max_sms()
+numComments=7

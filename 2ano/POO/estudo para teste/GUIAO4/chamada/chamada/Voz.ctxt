@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Voz
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Voz\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=o\ d\ p\ h
+comment1.target=Voz(int,\ int,\ double,\ boolean)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Voz\r\n
+comment2.params=h
+comment2.target=void\ setHappy_hour(boolean)
+comment3.params=
+comment3.target=boolean\ getHappy_hour()
+comment4.params=
+comment4.target=double\ valor()
+comment5.params=
+comment5.target=Voz\ clone()
+numComments=6

@@ -1,0 +1,33 @@
+You are using the solver gurobi_ampl.
+
+%% COMMENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Med11
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Checking ampl.mod for gurobi_options...
+Checking ampl.com for gurobi_options...
+Executing AMPL.
+processing data.
+processing commands.
+Executing on prod-exec-1.neos-server.org
+
+Presolve eliminates 100 constraints.
+Adjusted problem:
+10100 variables:
+        100 binary variables
+        10000 linear variables
+10101 constraints, all linear; 21100 nonzeros
+        101 equality constraints
+        10000 inequality constraints
+1 linear objective; 807 nonzeros.
+
+x-Gurobi 10.0.0: tech:threads=4
+x-Gurobi 10.0.0: infeasible problem
+108693 simplex iterations
+905 branching nodes
+
+suffix dunbdd OUT;
+:_varname[j] _var[j]    :=
+;
+
+:_varname[j] _var[j]    :=
+;

@@ -1,0 +1,43 @@
+drop table if exists clientes;
+drop table if exists editoras;
+drop table if exists jogos;
+create table clientes(
+ncliente     int primary key,
+nome        varchar(20) not null,
+morada      varchar(20) not null,
+nif         varchar(9) not null,
+data_nasc       date,
+data_insc       date,
+unique (nif)
+    );
+ 
+ create table editoras (
+    cod_editora varchar(10) primary key, 
+    designacao varchar(10)
+    );
+    
+create table jogos (
+    cod_jogo varchar(10) primary key,
+    titulo varchar(20),
+    cod_editora varchar(10),
+    preco_aluguer double,
+    multa_diaria double
+    
+     foreign key (cod_editora)
+    references editoras (cod_editoras)
+    on update cascade 
+    on delete restrict
+    
+    );
+
+create table exemplares (
+    num_exemplar int primary key, 
+    cod_jogo varchar(10),
+    consola varchar(10),
+    data_compra date,
+    preco_compra double,
+    foreign key (cod_jogo)
+    references jogos (cod_jogo)
+    on update cascade 
+    on delete restrict 
+    );select * from 

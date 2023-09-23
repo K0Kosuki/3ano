@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Premium
+comment1.params=n\ l\ p\ num\ e
+comment1.target=Premium(java.lang.String,\ java.lang.String,\ double,\ int,\ int)
+comment2.params=
+comment2.target=int\ getEstrela()
+comment3.params=x
+comment3.target=void\ setEstrela(int)
+comment4.params=mes
+comment4.target=double\ dormida(int)
+comment5.params=
+comment5.target=Premium\ clone()
+numComments=6

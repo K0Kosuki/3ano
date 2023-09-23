@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Placa
+comment1.params=c
+comment1.target=Placa(int)
+comment2.params=
+comment2.target=int\ getCod()
+comment3.params=c
+comment3.target=void\ add(Circuito)
+numComments=4

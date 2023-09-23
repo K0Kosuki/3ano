@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Maquina
+comment1.params=c\ t
+comment1.target=Maquina(int,\ int)
+comment2.params=
+comment2.target=int\ getCodigo()
+comment3.params=
+comment3.target=int\ getTempo()
+comment4.params=t
+comment4.target=void\ gastaHoras(int)
+comment5.params=
+comment5.target=java.util.List\ getLista()
+comment6.params=
+comment6.target=int\ tam_lista()
+comment7.params=c
+comment7.target=void\ add(Componente)
+comment8.params=
+comment8.target=double\ valor()
+comment9.params=
+comment9.target=Maquina\ clone()
+numComments=10

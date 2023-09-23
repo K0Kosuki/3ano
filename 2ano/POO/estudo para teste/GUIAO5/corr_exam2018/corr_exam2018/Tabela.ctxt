@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Tabela
+comment0.text=\r\n\ Exemplo\ do\ que\ podia\ ser\ a\ classe\ Tabela\ com\ uma\ tabela\ de\ pre\u00E7os\!\r\n\ \u00C9\ apenas\ um\ exemplo.\ Podia\ ter\ muitas\ implementa\u00E7\u00F5es\ diferentes.\r\n\ Est\u00E1\ aqui\ apenas\ para\ ser\ poss\u00EDvel\ "compilar"\ o\ programa\ todo\!\r\n
+comment1.params=componente
+comment1.target=double\ precos(int)
+numComments=2

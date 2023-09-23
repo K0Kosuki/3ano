@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=FichaCapital
+comment1.params=nome_Cap\ num_velculo\ popula\ salar\ cus
+comment1.target=FichaCapital(java.lang.String,\ int,\ int,\ double,\ double)
+comment2.params=f
+comment2.target=FichaCapital(FichaCapital)
+comment3.params=
+comment3.target=java.lang.String\ getNome()
+comment4.params=
+comment4.target=int\ getNumV()
+comment5.params=
+comment5.target=int\ getPopulacao()
+comment6.params=popula
+comment6.target=void\ setPopulacao(int)
+comment7.params=
+comment7.target=double\ getSalariomed()
+comment8.params=
+comment8.target=double\ getCusto()
+comment9.params=
+comment9.target=FichaCapital\ clone()
+numComments=10

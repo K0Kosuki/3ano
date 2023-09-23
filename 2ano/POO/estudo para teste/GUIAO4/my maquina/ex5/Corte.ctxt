@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Corte
+comment1.params=c\ t
+comment1.target=Corte(int,\ int)
+comment2.params=
+comment2.target=double\ valor()
+comment3.params=
+comment3.target=Corte\ clone()
+comment4.params=
+comment4.target=int\ getCod()
+comment5.params=
+comment5.target=double\ custo()
+numComments=6

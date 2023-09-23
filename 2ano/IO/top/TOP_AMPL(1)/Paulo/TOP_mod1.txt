@@ -1,0 +1,51 @@
+param n;
+
+param carros;
+
+param tmax;
+
+param premio{i in 1..n};
+
+param custos{i in 1..n, j in 1..n};
+
+param pontos{i in 1..n, j in 1..3};
+
+var x{c in 1..carros, i in 1..n-1, j in 2..n : i!=j} binary;
+
+var X{i in 1..n} >=0;
+
+var xy{c in 1..carros, i in 1..n-1, j in 2..n : i!=j} >=0;
+
+var y{c in 1..carros, i in 2..n-1} binary;
+
+var w{c in 1..carros, i in 2..n-1} binary;
+
+var W{c in 1..carros} >=0;
+
+maximize profit: sum{c in 1..carros, i in 1..n-1, j in 2..n : i!=j} x[c,i,j]*premio[j];
+
+subject to inicio{c in 1..carros}: sum{j in 2..n-1} x[c,1,j] = 1;
+
+subject to fluxo{c in 1..carros, j in 2..n-1}: sum{i in 1..n-1 : i!=j} x[c,i,j] = sum{i in 2..n : i!=j} x[c,j,i];
+
+subject to fim{c in 1..carros}: sum{i in 2..n-1} x[c,i,n] = 1;
+
+subject to nodo{j in 2..n-1} : sum{c in 1..carros, i in 1..n-1 : i!=j} x[c,i,j] <= 1;
+
+subject to custo{c in 1..carros}: sum{i in 1..n-1, j in 2..n : i!=j} x[c,i,j]*custos[i,j] <= tmax;
+
+subject to voltar {c in 1..carros, i in 2..n-1, j in 2..n-1 : i!=j}: x[c,i,j] + x[c,j,i] <= 1;
+
+subject to ativarIDrota{c in 1..carros, j in 2..n-1}: sum{i in 1..n-1: i!=j} x[c,i,j]<= y[c,j];
+
+subject to ativarID1vert{c in 1..carros, j in 2..n-1}: w[c,j]<=x[c,1,j];
+
+#subject to ativarvisitavert{c in 1..carros, j in 2..n-1}: X[j]<=x[c,1,j];
+
+subject to custo1{c in 1..carros}: sum{i in 1..n-1, j in 2..n : i!=j} x[c,i,j]*custos[i,j] <= W[c];
+
+subject to Teste{c in 1..carros, i in 1..n-1, j in 2..n : i!=j}: x[c,i,j]*custos[i,j]=xy[c,i,j];
+
+subject to cont1: X[1]=1;
+
+subject to contagem{c in 1..carros, i in 1..n-1, j in 2..n : i!=j}: X[j]>=X[i]+x[c,i,j]-1000*(1-x[c,i,j]);

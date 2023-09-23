@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=Vinha
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Videiras\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=int\ getValor()
+comment2.params=v
+comment2.target=void\ setValor(int)
+comment3.params=c\ a\ mi\ ma\ n
+comment3.target=Vinha(int,\ int,\ int,\ int,\ int)
+comment3.text=\r\n\ Constructor\ for\ objects\ of\ class\ Videiras\r\n
+comment4.params=
+comment4.target=int\ getPes()
+comment5.params=
+comment5.target=double\ valorTotal()
+comment5.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
+comment6.params=
+comment6.target=Vinha\ clone()
+comment7.params=
+comment7.target=int\ cardinalidade()
+numComments=8

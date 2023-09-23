@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Empresa
+comment1.params=
+comment1.target=Empresa()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Empresa\r\n
+comment2.params=p
+comment2.target=void\ add(Placa)
+comment3.params=
+comment3.target=int\ maisValor()
+comment4.params=
+comment4.target=int\ mais_frequente()
+comment5.params=
+comment5.target=java.util.Map\ componentes_placas()
+comment6.params=
+comment6.target=java.lang.String\ pares()
+numComments=7

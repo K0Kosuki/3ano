@@ -1,0 +1,591 @@
+ASxxxx Linker V03.00 + NoICE + sdld,  page 1.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CABS                                00000000    00000000 =           0. bytes (ABS,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000000  l_BSEG                          
+C:   00000000  l_BSEG_BYTES                    
+C:   00000000  l_CABS                          
+C:   00000000  l_CONST                         
+C:   00000000  l_GSINIT1                       
+C:   00000000  l_GSINIT5                       
+C:   00000000  l_IABS                          
+C:   00000000  l_ISEG                          
+C:   00000000  l_OSEG                          
+C:   00000000  l_PSEG                          
+C:   00000000  l_REG_BANK_1                    
+C:   00000000  l_REG_BANK_2                    
+C:   00000000  l_REG_BANK_3                    
+C:   00000000  l_RSEG                          
+C:   00000000  l_RSEG0                         
+C:   00000000  l_RSEG1                         
+C:   00000000  l_XABS                          
+C:   00000000  l_XINIT                         
+C:   00000000  l_XISEG                         
+C:   00000000  l_XSEG                          
+C:   00000000  l__CODE                         
+C:   00000000  s_BSEG                          
+C:   00000000  s_CABS                          
+C:   00000000  s_DSEG                          
+C:   00000000  s_HOME                          
+C:   00000000  s_IABS                          
+C:   00000000  s_ISEG                          
+C:   00000000  s_REG_BANK_0                    
+C:   00000000  s_RSEG                          
+C:   00000000  s_RSEG0                         
+C:   00000000  s_RSEG1                         
+C:   00000000  s_XABS                          
+C:   00000001  l_BIT_BANK                      
+C:   00000001  s_PSEG                          
+C:   00000001  s_XISEG                         
+C:   00000001  s_XSEG                          
+C:   00000003  l_GSFINAL                       
+C:   00000003  l_GSINIT0                       
+C:   00000008  l_REG_BANK_0                    
+C:   00000008  s_REG_BANK_1                    
+C:   0000000A  l_GSINIT2                       
+C:   0000000B  l_GSINIT                        
+C:   00000010  s_REG_BANK_2                    
+C:   00000011  l_HOME                          
+C:   00000011  s_GSINIT0                       
+C:   00000014  s_GSINIT1                       
+C:   00000014  s_GSINIT2                       
+C:   00000018  s_REG_BANK_3                    
+C:   0000001E  s_GSINIT3                       
+C:   00000020  s_BIT_BANK                      
+ASxxxx Linker V03.00 + NoICE + sdld,  page 2.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CABS                                00000000    00000000 =           0. bytes (ABS,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000020  s_BSEG_BYTES                    
+C:   00000020  s_OSEG                          
+C:   00000020  s__CODE                         
+C:   00000021  s_SSEG                          
+C:   00000022  l_GSINIT3                       
+C:   0000002A  l_GSINIT4                       
+C:   00000040  s_GSINIT4                       
+C:   0000006A  s_GSINIT                        
+C:   0000006A  s_GSINIT5                       
+C:   0000006C  l_DSEG                          
+C:   00000075  s_GSFINAL                       
+C:   00000078  s_CSEG                          
+C:   00000086  l_CSEG                          
+C:   000000DF  l_SSEG                          
+C:   000000FE  s_CONST                         
+C:   000000FE  s_XINIT                         
+C:   00000100  l_IRAM                          
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 3.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000000  .__.ABS.                           _startup
+     00000080  _P0                                pisca
+     00000080  _P0_0                              pisca
+     00000081  _P0_1                              pisca
+     00000081  _SP                                pisca
+     00000082  _DPL                               pisca
+     00000082  _P0_2                              pisca
+     00000083  _DPH                               pisca
+     00000083  _P0_3                              pisca
+     00000084  _EMI0TC                            pisca
+     00000084  _P0_4                              pisca
+     00000085  _EMI0CF                            pisca
+     00000085  _P0_5                              pisca
+     00000086  _OSCLCN                            pisca
+     00000086  _P0_6                              pisca
+     00000087  _P0_7                              pisca
+     00000087  _PCON                              pisca
+     00000088  _IT0                               pisca
+     00000088  _TCON                              pisca
+     00000089  _IE0                               pisca
+     00000089  _TMOD                              pisca
+     0000008A  _IT1                               pisca
+     0000008A  _TL0                               pisca
+     0000008B  _IE1                               pisca
+     0000008B  _TL1                               pisca
+     0000008C  _TH0                               pisca
+     0000008C  _TR0                               pisca
+     0000008D  _TF0                               pisca
+     0000008D  _TH1                               pisca
+     0000008E  _CKCON                             pisca
+     0000008E  _TR1                               pisca
+     0000008F  _PSCTL                             pisca
+     0000008F  _TF1                               pisca
+     00000090  _P1                                pisca
+     00000090  _P1_0                              pisca
+     00000091  _P1_1                              pisca
+     00000091  _TMR3CN                            pisca
+     00000091  _TMR4CN                            pisca
+     00000092  _P1_2                              pisca
+     00000092  _TMR3RLL                           pisca
+     00000092  _TMR4RLL                           pisca
+     00000093  _P1_3                              pisca
+     00000093  _TMR3RLH                           pisca
+     00000093  _TMR4RLH                           pisca
+     00000094  _P1_4                              pisca
+     00000094  _TMR3L                             pisca
+     00000095  _P1_5                              pisca
+     00000095  _TMR3H                             pisca
+     00000096  _P1_6                              pisca
+     00000096  _USB0ADR                           pisca
+ASxxxx Linker V03.00 + NoICE + sdld,  page 4.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000097  _P1_7                              pisca
+     00000097  _USB0DAT                           pisca
+     00000098  _RI0                               pisca
+     00000098  _SCON0                             pisca
+     00000099  _SBUF0                             pisca
+     00000099  _TI0                               pisca
+     0000009A  _CPT1CN                            pisca
+     0000009A  _RB80                              pisca
+     0000009B  _CPT0CN                            pisca
+     0000009B  _TB80                              pisca
+     0000009C  _CPT1MD                            pisca
+     0000009C  _REN0                              pisca
+     0000009D  _CPT0MD                            pisca
+     0000009D  _MCE0                              pisca
+     0000009E  _CPT1MX                            pisca
+     0000009F  _CPT0MX                            pisca
+     0000009F  _S0MODE                            pisca
+     000000A0  _P2                                pisca
+     000000A0  _P2_0                              pisca
+     000000A1  _P2_1                              pisca
+     000000A1  _SPI0CFG                           pisca
+     000000A2  _P2_2                              pisca
+     000000A2  _SPI0CKR                           pisca
+     000000A3  _P2_3                              pisca
+     000000A3  _SPI0DAT                           pisca
+     000000A4  _P0MDOUT                           pisca
+     000000A4  _P2_4                              pisca
+     000000A5  _P1MDOUT                           pisca
+     000000A5  _P2_5                              pisca
+     000000A6  _P2MDOUT                           pisca
+     000000A6  _P2_6                              pisca
+     000000A7  _P2_7                              pisca
+     000000A7  _P3MDOUT                           pisca
+     000000A8  _EX0                               pisca
+     000000A8  _IE                                pisca
+     000000A9  _CLKSEL                            pisca
+     000000A9  _ET0                               pisca
+     000000AA  _EMI0CN                            pisca
+     000000AA  _EX1                               pisca
+     000000AA  __XPAGE                            pisca
+     000000AB  _ET1                               pisca
+     000000AC  _ES0                               pisca
+     000000AC  _SBCON1                            pisca
+     000000AD  _ET2                               pisca
+     000000AE  _ESPI0                             pisca
+     000000AE  _P4MDOUT                           pisca
+     000000AF  _EA                                pisca
+     000000AF  _PFE0CN                            pisca
+     000000B0  _P3                                pisca
+     000000B0  _P3_0                              pisca
+     000000B1  _OSCXCN                            pisca
+ASxxxx Linker V03.00 + NoICE + sdld,  page 5.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000B1  _P3_1                              pisca
+     000000B2  _OSCICN                            pisca
+     000000B2  _P3_2                              pisca
+     000000B3  _OSCICL                            pisca
+     000000B3  _P3_3                              pisca
+     000000B4  _P3_4                              pisca
+     000000B4  _SBRLL1                            pisca
+     000000B5  _P3_5                              pisca
+     000000B5  _SBRLH1                            pisca
+     000000B6  _FLSCL                             pisca
+     000000B6  _P3_6                              pisca
+     000000B7  _FLKEY                             pisca
+     000000B7  _P3_7                              pisca
+     000000B8  _IP                                pisca
+     000000B8  _PX0                               pisca
+     000000B9  _CLKMUL                            pisca
+     000000B9  _PT0                               pisca
+     000000B9  _SMBTC                             pisca
+     000000BA  _AMX0N                             pisca
+     000000BA  _PX1                               pisca
+     000000BB  _AMX0P                             pisca
+     000000BB  _PT1                               pisca
+     000000BC  _ADC0CF                            pisca
+     000000BC  _PS0                               pisca
+     000000BD  _ADC0L                             pisca
+     000000BD  _PT2                               pisca
+     000000BE  _ADC0H                             pisca
+     000000BE  _PSPI0                             pisca
+     000000BF  _SFRPAGE                           pisca
+     000000C0  _SI0                               pisca
+     000000C0  _SI1                               pisca
+     000000C0  _SMB0CN                            pisca
+     000000C0  _SMB1CN                            pisca
+     000000C1  _ACK0                              pisca
+     000000C1  _ACK1                              pisca
+     000000C1  _SMB0CF                            pisca
+     000000C1  _SMB1CF                            pisca
+     000000C2  _ARBLOST0                          pisca
+     000000C2  _ARBLOST1                          pisca
+     000000C2  _SMB0DAT                           pisca
+     000000C2  _SMB1DAT                           pisca
+     000000C3  _ACKRQ0                            pisca
+     000000C3  _ACKRQ1                            pisca
+     000000C3  _ADC0GTL                           pisca
+     000000C4  _ADC0GTH                           pisca
+     000000C4  _STO0                              pisca
+     000000C4  _STO1                              pisca
+     000000C5  _ADC0LTL                           pisca
+     000000C5  _STA0                              pisca
+     000000C5  _STA1                              pisca
+     000000C6  _ADC0LTH                           pisca
+ASxxxx Linker V03.00 + NoICE + sdld,  page 6.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000C6  _TXMODE0                           pisca
+     000000C6  _TXMODE1                           pisca
+     000000C7  _MASTER0                           pisca
+     000000C7  _MASTER1                           pisca
+     000000C7  _P4                                pisca
+     000000C8  _T2CON                             pisca
+     000000C8  _T2XCLK                            pisca
+     000000C8  _T5XCLK                            pisca
+     000000C8  _TMR2CN                            pisca
+     000000C8  _TMR5CN                            pisca
+     000000C9  _REG01CN                           pisca
+     000000C9  _T2CSS                             pisca
+     000000CA  _RCAP2L                            pisca
+     000000CA  _TMR2RLL                           pisca
+     000000CA  _TMR5RLL                           pisca
+     000000CA  _TR2                               pisca
+     000000CA  _TR5                               pisca
+     000000CB  _RCAP2H                            pisca
+     000000CB  _T2SPLIT                           pisca
+     000000CB  _T5SPLIT                           pisca
+     000000CB  _TMR2RLH                           pisca
+     000000CB  _TMR5RLH                           pisca
+     000000CC  _TF2CEN                            pisca
+     000000CC  _TL2                               pisca
+     000000CC  _TMR2L                             pisca
+     000000CC  _TMR5L                             pisca
+     000000CD  _TF2LEN                            pisca
+     000000CD  _TF5LEN                            pisca
+     000000CD  _TH2                               pisca
+     000000CD  _TMR2H                             pisca
+     000000CD  _TMR5H                             pisca
+     000000CE  _SMB0ADM                           pisca
+     000000CE  _SMB1ADM                           pisca
+     000000CE  _TF2L                              pisca
+     000000CE  _TF5L                              pisca
+     000000CF  _SMB0ADR                           pisca
+     000000CF  _SMB1ADR                           pisca
+     000000CF  _TF2H                              pisca
+     000000CF  _TF5H                              pisca
+     000000D0  _PARITY                            pisca
+     000000D0  _PSW                               pisca
+     000000D1  _F1                                pisca
+     000000D1  _REF0CN                            pisca
+     000000D2  _OV                                pisca
+     000000D2  _SCON1                             pisca
+     000000D3  _RS0                               pisca
+     000000D3  _SBUF1                             pisca
+     000000D4  _P0SKIP                            pisca
+     000000D4  _RS1                               pisca
+     000000D5  _F0                                pisca
+     000000D5  _P1SKIP                            pisca
+ASxxxx Linker V03.00 + NoICE + sdld,  page 7.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000D6  _AC                                pisca
+     000000D6  _P2SKIP                            pisca
+     000000D7  _CY                                pisca
+     000000D7  _USB0XCN                           pisca
+     000000D8  _CCF0                              pisca
+     000000D8  _PCA0CN                            pisca
+     000000D9  _CCF1                              pisca
+     000000D9  _PCA0MD                            pisca
+     000000DA  _CCF2                              pisca
+     000000DA  _PCA0CPM0                          pisca
+     000000DB  _CCF3                              pisca
+     000000DB  _PCA0CPM1                          pisca
+     000000DC  _CCF4                              pisca
+     000000DC  _PCA0CPM2                          pisca
+     000000DD  _PCA0CPM3                          pisca
+     000000DE  _CR                                pisca
+     000000DE  _PCA0CPM4                          pisca
+     000000DF  _CF                                pisca
+     000000DF  _P3SKIP                            pisca
+     000000E0  _ACC                               pisca
+     000000E1  _XBR0                              pisca
+     000000E2  _XBR1                              pisca
+     000000E3  _XBR2                              pisca
+     000000E4  _CKCON1                            pisca
+     000000E4  _IT01CF                            pisca
+     000000E5  _SMOD1                             pisca
+     000000E6  _EIE1                              pisca
+     000000E7  _EIE2                              pisca
+     000000E8  _AD0CM0                            pisca
+     000000E8  _ADC0CN                            pisca
+     000000E9  _AD0CM1                            pisca
+     000000E9  _PCA0CPL1                          pisca
+     000000EA  _AD0CM2                            pisca
+     000000EA  _PCA0CPH1                          pisca
+     000000EB  _AD0WINT                           pisca
+     000000EB  _PCA0CPL2                          pisca
+     000000EC  _AD0BUSY                           pisca
+     000000EC  _PCA0CPH2                          pisca
+     000000ED  _AD0INT                            pisca
+     000000ED  _PCA0CPL3                          pisca
+     000000EE  _AD0TM                             pisca
+     000000EE  _PCA0CPH3                          pisca
+     000000EF  _AD0EN                             pisca
+     000000EF  _RSTSRC                            pisca
+     000000F0  _B                                 pisca
+     000000F1  _P0MDIN                            pisca
+     000000F2  _P1MDIN                            pisca
+     000000F3  _P2MDIN                            pisca
+     000000F4  _P3MDIN                            pisca
+     000000F5  _P4MDIN                            pisca
+     000000F6  _EIP1                              pisca
+ASxxxx Linker V03.00 + NoICE + sdld,  page 8.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000F7  _EIP2                              pisca
+     000000F8  _SPI0CN                            pisca
+     000000F8  _SPIEN                             pisca
+     000000F9  _PCA0L                             pisca
+     000000F9  _TXBMT                             pisca
+     000000FA  _NSSMD0                            pisca
+     000000FA  _PCA0H                             pisca
+     000000FB  _NSSMD1                            pisca
+     000000FB  _PCA0CPL0                          pisca
+     000000FC  _PCA0CPH0                          pisca
+     000000FC  _RXOVRN                            pisca
+     000000FD  _MODF                              pisca
+     000000FD  _PCA0CPL4                          pisca
+     000000FE  _PCA0CPH4                          pisca
+     000000FE  _WCOL                              pisca
+     000000FF  _SPIF                              pisca
+     000000FF  _VDM0CN                            pisca
+     00008382  _DP                                pisca
+     00009392  _TMR3RL                            pisca
+     00009392  _TMR4RL                            pisca
+     00009594  _TMR3                              pisca
+     00009594  _TMR4                              pisca
+     0000B5B4  _SBRL1                             pisca
+     0000BEBD  _ADC0                              pisca
+     0000C4C3  _ADC0GT                            pisca
+     0000C6C5  _ADC0LT                            pisca
+     0000CBCA  _TMR2RL                            pisca
+     0000CBCA  _TMR5RL                            pisca
+     0000CDCC  _TMR2                              pisca
+     0000CDCC  _TMR5                              pisca
+     0000EAE9  _PCA0CP1                           pisca
+     0000ECEB  _PCA0CP2                           pisca
+     0000EEED  _PCA0CP3                           pisca
+     0000FAF9  _PCA0                              pisca
+     0000FCFB  _PCA0CP0                           pisca
+     0000FEFD  _PCA0CP4                           pisca
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 9.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+REG_BANK_0                          00000000    00000008 =           8. bytes (REL,OVR)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 10.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+BIT_BANK                            00000020    00000001 =           1. bytes (REL,OVR)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 11.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+DSEG                                00000000    0000006C =         108. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000008  _reload                            pisca
+     0000000A  _aux                               pisca
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 12.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+SSEG                                00000021    000000DF =         223. bytes (REL,OVR)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000021  __start__stack                     pisca
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 13.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+HOME                                00000000    00000011 =          17. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   0000000E  __sdcc_program_startup             pisca
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 14.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT0                             00000011    00000003 =           3. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000011  __sdcc_gsinit_startup              
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 15.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT2                             00000014    0000000A =          10. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 16.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT3                             0000001E    00000022 =          34. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   0000001E  __mcs51_genXINIT                   
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 17.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT4                             00000040    0000002A =          42. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000040  __mcs51_genRAMCLEAR                
+C:   00000046  __mcs51_genXRAMCLEAR               
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 18.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT                              0000006A    0000000B =          11. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 19.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSFINAL                             00000075    00000003 =           3. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 20.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                00000078    00000086 =         134. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000078  _confi                             pisca
+C:   0000008C  _inicio                            pisca
+C:   00000095  _timer0_overflow                   pisca
+C:   000000F2  _main                              pisca
+C:   000000FA  __sdcc_external_startup            _startup
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 21.
+
+Files Linked                              [ module(s) ]
+
+C:\2ano\ATC\Estudo para\pisca1s\pisca.rel
+                                          [  ]
+
+
+Libraries Linked                          [ object file ]
+
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtclear.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtxinit.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtxclear.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtstart.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libsdcc.lib
+                                          [ _startup.rel ]
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 22.
+
+User Base Address Definitions
+
+HOME = 0x0000
+XSEG = 0x0001
+PSEG = 0x0001
+ISEG = 0x0000
+BSEG = 0x0000
+
+

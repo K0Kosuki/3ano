@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=SMS
+comment1.params=ori\ cara\ preco\ tex
+comment1.target=SMS(int,\ int,\ double,\ java.lang.String)
+comment2.params=c
+comment2.target=void\ add(java.lang.String)
+comment3.params=
+comment3.target=double\ valor()
+comment3.text=public\ Chamada\ find(int\ ori)\r\n\ {\r\n\ \ \ \ \ Chamada\ contar\ \=null;\r\n\ \ \ \ \ Iterator<Chamada>\ i\ \=\ lista.iterator();\r\n\ \ \ \ \ boolean\ ha\=\ false;\r\n\ \ \ \ \ while(i.hasNext()\ &&\ \!ha)\r\n\ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ contar\ \=\ i.next();\r\n\ \ \ \ \ \ \ \ \ if(contar.getOrigem()\ \=\=ori)\r\n\ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ ha\ \=\ true;\r\n\ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ }\r\n\ \ \ \ \ if(ha)\r\n\ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ return\ contar;\r\n\ \ \ \ \ }\r\n\ \ \ \ \ else\r\n\ \ \ \ \ return\ null;\r\n\ }\r\n
+comment4.params=
+comment4.target=SMS\ clone()
+numComments=5

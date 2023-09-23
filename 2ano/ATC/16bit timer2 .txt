@@ -1,0 +1,20 @@
+#include <c8051f380.h>
+
+void main () 
+{
+
+PCA0MD = 0x00;
+XBR1 = 0x40;
+CLKSEL
+CKCON |= 0x02; 
+T2SPLIT =0;
+TR2 = 1; 
+
+while (1) 
+
+{
+while (TF2H==0); // Aguarda fim da contagem
+TF2H = 0;
+P2_7 = !P2_7; // Complementa o pino do porto
+}
+}

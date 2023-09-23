@@ -1,0 +1,1071 @@
+ASxxxx Linker V03.00 + NoICE + sdld,  page 1.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CABS                                00000000    00000000 =           0. bytes (ABS,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000000  l_BIT_BANK                      
+C:   00000000  l_BSEG                          
+C:   00000000  l_BSEG_BYTES                    
+C:   00000000  l_CABS                          
+C:   00000000  l_CONST                         
+C:   00000000  l_GSINIT                        
+C:   00000000  l_GSINIT1                       
+C:   00000000  l_GSINIT5                       
+C:   00000000  l_IABS                          
+C:   00000000  l_ISEG                          
+C:   00000000  l_OSEG                          
+C:   00000000  l_PSEG                          
+C:   00000000  l_REG_BANK_1                    
+C:   00000000  l_REG_BANK_2                    
+C:   00000000  l_REG_BANK_3                    
+C:   00000000  l_RSEG                          
+C:   00000000  l_RSEG0                         
+C:   00000000  l_RSEG1                         
+C:   00000000  l_XABS                          
+C:   00000000  l_XINIT                         
+C:   00000000  l_XISEG                         
+C:   00000000  l_XSEG                          
+C:   00000000  l__CODE                         
+C:   00000000  s_BSEG                          
+C:   00000000  s_CABS                          
+C:   00000000  s_DSEG                          
+C:   00000000  s_HOME                          
+C:   00000000  s_IABS                          
+C:   00000000  s_ISEG                          
+C:   00000000  s_REG_BANK_0                    
+C:   00000000  s_RSEG                          
+C:   00000000  s_RSEG0                         
+C:   00000000  s_RSEG1                         
+C:   00000000  s_XABS                          
+C:   00000001  s_PSEG                          
+C:   00000001  s_XISEG                         
+C:   00000001  s_XSEG                          
+C:   00000003  l_GSFINAL                       
+C:   00000003  l_GSINIT0                       
+C:   00000006  l_HOME                          
+C:   00000006  s_GSINIT0                       
+C:   00000008  l_REG_BANK_0                    
+C:   00000008  s_REG_BANK_1                    
+C:   00000009  s_GSINIT1                       
+C:   00000009  s_GSINIT2                       
+C:   0000000A  l_GSINIT2                       
+C:   00000010  s_REG_BANK_2                    
+C:   00000012  s_SSEG                          
+C:   00000013  s_GSINIT3                       
+C:   00000018  s_BIT_BANK                      
+ASxxxx Linker V03.00 + NoICE + sdld,  page 2.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CABS                                00000000    00000000 =           0. bytes (ABS,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000018  s_OSEG                          
+C:   00000018  s_REG_BANK_3                    
+C:   00000020  s_BSEG_BYTES                    
+C:   00000020  s__CODE                         
+C:   00000022  l_GSINIT3                       
+C:   0000002A  l_GSINIT4                       
+C:   00000035  s_GSINIT4                       
+C:   0000005F  s_GSFINAL                       
+C:   0000005F  s_GSINIT                        
+C:   0000005F  s_GSINIT5                       
+C:   00000062  s_CSEG                          
+C:   00000080  l_DSEG                          
+C:   000000E4  l_CSEG                          
+C:   000000EE  l_SSEG                          
+C:   00000100  l_IRAM                          
+C:   00000146  s_CONST                         
+C:   00000146  s_XINIT                         
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 3.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000000  .__.ABS.                           _startup
+     00000080  G$P0$0_0$0                         timer2
+     00000080  G$P0_0$0_0$0                       timer2
+     00000080  _P0                                timer2
+     00000080  _P0_0                              timer2
+     00000081  G$P0_1$0_0$0                       timer2
+     00000081  G$SP$0_0$0                         timer2
+     00000081  _P0_1                              timer2
+     00000081  _SP                                timer2
+     00000082  G$DPL$0_0$0                        timer2
+     00000082  G$P0_2$0_0$0                       timer2
+     00000082  _DPL                               timer2
+     00000082  _P0_2                              timer2
+     00000083  G$DPH$0_0$0                        timer2
+     00000083  G$P0_3$0_0$0                       timer2
+     00000083  _DPH                               timer2
+     00000083  _P0_3                              timer2
+     00000084  G$EMI0TC$0_0$0                     timer2
+     00000084  G$P0_4$0_0$0                       timer2
+     00000084  _EMI0TC                            timer2
+     00000084  _P0_4                              timer2
+     00000085  G$EMI0CF$0_0$0                     timer2
+     00000085  G$P0_5$0_0$0                       timer2
+     00000085  _EMI0CF                            timer2
+     00000085  _P0_5                              timer2
+     00000086  G$OSCLCN$0_0$0                     timer2
+     00000086  G$P0_6$0_0$0                       timer2
+     00000086  _OSCLCN                            timer2
+     00000086  _P0_6                              timer2
+     00000087  G$P0_7$0_0$0                       timer2
+     00000087  G$PCON$0_0$0                       timer2
+     00000087  _P0_7                              timer2
+     00000087  _PCON                              timer2
+     00000088  G$IT0$0_0$0                        timer2
+     00000088  G$TCON$0_0$0                       timer2
+     00000088  _IT0                               timer2
+     00000088  _TCON                              timer2
+     00000089  G$IE0$0_0$0                        timer2
+     00000089  G$TMOD$0_0$0                       timer2
+     00000089  _IE0                               timer2
+     00000089  _TMOD                              timer2
+     0000008A  G$IT1$0_0$0                        timer2
+     0000008A  G$TL0$0_0$0                        timer2
+     0000008A  _IT1                               timer2
+     0000008A  _TL0                               timer2
+     0000008B  G$IE1$0_0$0                        timer2
+     0000008B  G$TL1$0_0$0                        timer2
+     0000008B  _IE1                               timer2
+     0000008B  _TL1                               timer2
+     0000008C  G$TH0$0_0$0                        timer2
+ASxxxx Linker V03.00 + NoICE + sdld,  page 4.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000008C  G$TR0$0_0$0                        timer2
+     0000008C  _TH0                               timer2
+     0000008C  _TR0                               timer2
+     0000008D  G$TF0$0_0$0                        timer2
+     0000008D  G$TH1$0_0$0                        timer2
+     0000008D  _TF0                               timer2
+     0000008D  _TH1                               timer2
+     0000008E  G$CKCON$0_0$0                      timer2
+     0000008E  G$TR1$0_0$0                        timer2
+     0000008E  _CKCON                             timer2
+     0000008E  _TR1                               timer2
+     0000008F  G$PSCTL$0_0$0                      timer2
+     0000008F  G$TF1$0_0$0                        timer2
+     0000008F  _PSCTL                             timer2
+     0000008F  _TF1                               timer2
+     00000090  G$P1$0_0$0                         timer2
+     00000090  G$P1_0$0_0$0                       timer2
+     00000090  _P1                                timer2
+     00000090  _P1_0                              timer2
+     00000091  G$P1_1$0_0$0                       timer2
+     00000091  G$TMR3CN$0_0$0                     timer2
+     00000091  G$TMR4CN$0_0$0                     timer2
+     00000091  _P1_1                              timer2
+     00000091  _TMR3CN                            timer2
+     00000091  _TMR4CN                            timer2
+     00000092  G$P1_2$0_0$0                       timer2
+     00000092  G$TMR3RLL$0_0$0                    timer2
+     00000092  G$TMR4RLL$0_0$0                    timer2
+     00000092  _P1_2                              timer2
+     00000092  _TMR3RLL                           timer2
+     00000092  _TMR4RLL                           timer2
+     00000093  G$P1_3$0_0$0                       timer2
+     00000093  G$TMR3RLH$0_0$0                    timer2
+     00000093  G$TMR4RLH$0_0$0                    timer2
+     00000093  _P1_3                              timer2
+     00000093  _TMR3RLH                           timer2
+     00000093  _TMR4RLH                           timer2
+     00000094  G$P1_4$0_0$0                       timer2
+     00000094  G$TMR3L$0_0$0                      timer2
+     00000094  _P1_4                              timer2
+     00000094  _TMR3L                             timer2
+     00000095  G$P1_5$0_0$0                       timer2
+     00000095  G$TMR3H$0_0$0                      timer2
+     00000095  _P1_5                              timer2
+     00000095  _TMR3H                             timer2
+     00000096  G$P1_6$0_0$0                       timer2
+     00000096  G$USB0ADR$0_0$0                    timer2
+     00000096  _P1_6                              timer2
+     00000096  _USB0ADR                           timer2
+     00000097  G$P1_7$0_0$0                       timer2
+     00000097  G$USB0DAT$0_0$0                    timer2
+ASxxxx Linker V03.00 + NoICE + sdld,  page 5.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000097  _P1_7                              timer2
+     00000097  _USB0DAT                           timer2
+     00000098  G$RI0$0_0$0                        timer2
+     00000098  G$SCON0$0_0$0                      timer2
+     00000098  _RI0                               timer2
+     00000098  _SCON0                             timer2
+     00000099  G$SBUF0$0_0$0                      timer2
+     00000099  G$TI0$0_0$0                        timer2
+     00000099  _SBUF0                             timer2
+     00000099  _TI0                               timer2
+     0000009A  G$CPT1CN$0_0$0                     timer2
+     0000009A  G$RB80$0_0$0                       timer2
+     0000009A  _CPT1CN                            timer2
+     0000009A  _RB80                              timer2
+     0000009B  G$CPT0CN$0_0$0                     timer2
+     0000009B  G$TB80$0_0$0                       timer2
+     0000009B  _CPT0CN                            timer2
+     0000009B  _TB80                              timer2
+     0000009C  G$CPT1MD$0_0$0                     timer2
+     0000009C  G$REN0$0_0$0                       timer2
+     0000009C  _CPT1MD                            timer2
+     0000009C  _REN0                              timer2
+     0000009D  G$CPT0MD$0_0$0                     timer2
+     0000009D  G$MCE0$0_0$0                       timer2
+     0000009D  _CPT0MD                            timer2
+     0000009D  _MCE0                              timer2
+     0000009E  G$CPT1MX$0_0$0                     timer2
+     0000009E  _CPT1MX                            timer2
+     0000009F  G$CPT0MX$0_0$0                     timer2
+     0000009F  G$S0MODE$0_0$0                     timer2
+     0000009F  _CPT0MX                            timer2
+     0000009F  _S0MODE                            timer2
+     000000A0  G$P2$0_0$0                         timer2
+     000000A0  G$P2_0$0_0$0                       timer2
+     000000A0  _P2                                timer2
+     000000A0  _P2_0                              timer2
+     000000A1  G$P2_1$0_0$0                       timer2
+     000000A1  G$SPI0CFG$0_0$0                    timer2
+     000000A1  _P2_1                              timer2
+     000000A1  _SPI0CFG                           timer2
+     000000A2  G$P2_2$0_0$0                       timer2
+     000000A2  G$SPI0CKR$0_0$0                    timer2
+     000000A2  _P2_2                              timer2
+     000000A2  _SPI0CKR                           timer2
+     000000A3  G$P2_3$0_0$0                       timer2
+     000000A3  G$SPI0DAT$0_0$0                    timer2
+     000000A3  _P2_3                              timer2
+     000000A3  _SPI0DAT                           timer2
+     000000A4  G$P0MDOUT$0_0$0                    timer2
+     000000A4  G$P2_4$0_0$0                       timer2
+     000000A4  _P0MDOUT                           timer2
+ASxxxx Linker V03.00 + NoICE + sdld,  page 6.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000A4  _P2_4                              timer2
+     000000A5  G$P1MDOUT$0_0$0                    timer2
+     000000A5  G$P2_5$0_0$0                       timer2
+     000000A5  _P1MDOUT                           timer2
+     000000A5  _P2_5                              timer2
+     000000A6  G$P2MDOUT$0_0$0                    timer2
+     000000A6  G$P2_6$0_0$0                       timer2
+     000000A6  _P2MDOUT                           timer2
+     000000A6  _P2_6                              timer2
+     000000A7  G$P2_7$0_0$0                       timer2
+     000000A7  G$P3MDOUT$0_0$0                    timer2
+     000000A7  _P2_7                              timer2
+     000000A7  _P3MDOUT                           timer2
+     000000A8  G$EX0$0_0$0                        timer2
+     000000A8  G$IE$0_0$0                         timer2
+     000000A8  _EX0                               timer2
+     000000A8  _IE                                timer2
+     000000A9  G$CLKSEL$0_0$0                     timer2
+     000000A9  G$ET0$0_0$0                        timer2
+     000000A9  _CLKSEL                            timer2
+     000000A9  _ET0                               timer2
+     000000AA  G$EMI0CN$0_0$0                     timer2
+     000000AA  G$EX1$0_0$0                        timer2
+     000000AA  G$_XPAGE$0_0$0                     timer2
+     000000AA  _EMI0CN                            timer2
+     000000AA  _EX1                               timer2
+     000000AA  __XPAGE                            timer2
+     000000AB  G$ET1$0_0$0                        timer2
+     000000AB  _ET1                               timer2
+     000000AC  G$ES0$0_0$0                        timer2
+     000000AC  G$SBCON1$0_0$0                     timer2
+     000000AC  _ES0                               timer2
+     000000AC  _SBCON1                            timer2
+     000000AD  G$ET2$0_0$0                        timer2
+     000000AD  _ET2                               timer2
+     000000AE  G$ESPI0$0_0$0                      timer2
+     000000AE  G$P4MDOUT$0_0$0                    timer2
+     000000AE  _ESPI0                             timer2
+     000000AE  _P4MDOUT                           timer2
+     000000AF  G$EA$0_0$0                         timer2
+     000000AF  G$PFE0CN$0_0$0                     timer2
+     000000AF  _EA                                timer2
+     000000AF  _PFE0CN                            timer2
+     000000B0  G$P3$0_0$0                         timer2
+     000000B0  G$P3_0$0_0$0                       timer2
+     000000B0  _P3                                timer2
+     000000B0  _P3_0                              timer2
+     000000B1  G$OSCXCN$0_0$0                     timer2
+     000000B1  G$P3_1$0_0$0                       timer2
+     000000B1  _OSCXCN                            timer2
+     000000B1  _P3_1                              timer2
+ASxxxx Linker V03.00 + NoICE + sdld,  page 7.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000B2  G$OSCICN$0_0$0                     timer2
+     000000B2  G$P3_2$0_0$0                       timer2
+     000000B2  _OSCICN                            timer2
+     000000B2  _P3_2                              timer2
+     000000B3  G$OSCICL$0_0$0                     timer2
+     000000B3  G$P3_3$0_0$0                       timer2
+     000000B3  _OSCICL                            timer2
+     000000B3  _P3_3                              timer2
+     000000B4  G$P3_4$0_0$0                       timer2
+     000000B4  G$SBRLL1$0_0$0                     timer2
+     000000B4  _P3_4                              timer2
+     000000B4  _SBRLL1                            timer2
+     000000B5  G$P3_5$0_0$0                       timer2
+     000000B5  G$SBRLH1$0_0$0                     timer2
+     000000B5  _P3_5                              timer2
+     000000B5  _SBRLH1                            timer2
+     000000B6  G$FLSCL$0_0$0                      timer2
+     000000B6  G$P3_6$0_0$0                       timer2
+     000000B6  _FLSCL                             timer2
+     000000B6  _P3_6                              timer2
+     000000B7  G$FLKEY$0_0$0                      timer2
+     000000B7  G$P3_7$0_0$0                       timer2
+     000000B7  _FLKEY                             timer2
+     000000B7  _P3_7                              timer2
+     000000B8  G$IP$0_0$0                         timer2
+     000000B8  G$PX0$0_0$0                        timer2
+     000000B8  _IP                                timer2
+     000000B8  _PX0                               timer2
+     000000B9  G$CLKMUL$0_0$0                     timer2
+     000000B9  G$PT0$0_0$0                        timer2
+     000000B9  G$SMBTC$0_0$0                      timer2
+     000000B9  _CLKMUL                            timer2
+     000000B9  _PT0                               timer2
+     000000B9  _SMBTC                             timer2
+     000000BA  G$AMX0N$0_0$0                      timer2
+     000000BA  G$PX1$0_0$0                        timer2
+     000000BA  _AMX0N                             timer2
+     000000BA  _PX1                               timer2
+     000000BB  G$AMX0P$0_0$0                      timer2
+     000000BB  G$PT1$0_0$0                        timer2
+     000000BB  _AMX0P                             timer2
+     000000BB  _PT1                               timer2
+     000000BC  G$ADC0CF$0_0$0                     timer2
+     000000BC  G$PS0$0_0$0                        timer2
+     000000BC  _ADC0CF                            timer2
+     000000BC  _PS0                               timer2
+     000000BD  G$ADC0L$0_0$0                      timer2
+     000000BD  G$PT2$0_0$0                        timer2
+     000000BD  _ADC0L                             timer2
+     000000BD  _PT2                               timer2
+     000000BE  G$ADC0H$0_0$0                      timer2
+ASxxxx Linker V03.00 + NoICE + sdld,  page 8.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000BE  G$PSPI0$0_0$0                      timer2
+     000000BE  _ADC0H                             timer2
+     000000BE  _PSPI0                             timer2
+     000000BF  G$SFRPAGE$0_0$0                    timer2
+     000000BF  _SFRPAGE                           timer2
+     000000C0  G$SI0$0_0$0                        timer2
+     000000C0  G$SI1$0_0$0                        timer2
+     000000C0  G$SMB0CN$0_0$0                     timer2
+     000000C0  G$SMB1CN$0_0$0                     timer2
+     000000C0  _SI0                               timer2
+     000000C0  _SI1                               timer2
+     000000C0  _SMB0CN                            timer2
+     000000C0  _SMB1CN                            timer2
+     000000C1  G$ACK0$0_0$0                       timer2
+     000000C1  G$ACK1$0_0$0                       timer2
+     000000C1  G$SMB0CF$0_0$0                     timer2
+     000000C1  G$SMB1CF$0_0$0                     timer2
+     000000C1  _ACK0                              timer2
+     000000C1  _ACK1                              timer2
+     000000C1  _SMB0CF                            timer2
+     000000C1  _SMB1CF                            timer2
+     000000C2  G$ARBLOST0$0_0$0                   timer2
+     000000C2  G$ARBLOST1$0_0$0                   timer2
+     000000C2  G$SMB0DAT$0_0$0                    timer2
+     000000C2  G$SMB1DAT$0_0$0                    timer2
+     000000C2  _ARBLOST0                          timer2
+     000000C2  _ARBLOST1                          timer2
+     000000C2  _SMB0DAT                           timer2
+     000000C2  _SMB1DAT                           timer2
+     000000C3  G$ACKRQ0$0_0$0                     timer2
+     000000C3  G$ACKRQ1$0_0$0                     timer2
+     000000C3  G$ADC0GTL$0_0$0                    timer2
+     000000C3  _ACKRQ0                            timer2
+     000000C3  _ACKRQ1                            timer2
+     000000C3  _ADC0GTL                           timer2
+     000000C4  G$ADC0GTH$0_0$0                    timer2
+     000000C4  G$STO0$0_0$0                       timer2
+     000000C4  G$STO1$0_0$0                       timer2
+     000000C4  _ADC0GTH                           timer2
+     000000C4  _STO0                              timer2
+     000000C4  _STO1                              timer2
+     000000C5  G$ADC0LTL$0_0$0                    timer2
+     000000C5  G$STA0$0_0$0                       timer2
+     000000C5  G$STA1$0_0$0                       timer2
+     000000C5  _ADC0LTL                           timer2
+     000000C5  _STA0                              timer2
+     000000C5  _STA1                              timer2
+     000000C6  G$ADC0LTH$0_0$0                    timer2
+     000000C6  G$TXMODE0$0_0$0                    timer2
+     000000C6  G$TXMODE1$0_0$0                    timer2
+     000000C6  _ADC0LTH                           timer2
+ASxxxx Linker V03.00 + NoICE + sdld,  page 9.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000C6  _TXMODE0                           timer2
+     000000C6  _TXMODE1                           timer2
+     000000C7  G$MASTER0$0_0$0                    timer2
+     000000C7  G$MASTER1$0_0$0                    timer2
+     000000C7  G$P4$0_0$0                         timer2
+     000000C7  _MASTER0                           timer2
+     000000C7  _MASTER1                           timer2
+     000000C7  _P4                                timer2
+     000000C8  G$T2CON$0_0$0                      timer2
+     000000C8  G$T2XCLK$0_0$0                     timer2
+     000000C8  G$T5XCLK$0_0$0                     timer2
+     000000C8  G$TMR2CN$0_0$0                     timer2
+     000000C8  G$TMR5CN$0_0$0                     timer2
+     000000C8  _T2CON                             timer2
+     000000C8  _T2XCLK                            timer2
+     000000C8  _T5XCLK                            timer2
+     000000C8  _TMR2CN                            timer2
+     000000C8  _TMR5CN                            timer2
+     000000C9  G$REG01CN$0_0$0                    timer2
+     000000C9  G$T2CSS$0_0$0                      timer2
+     000000C9  _REG01CN                           timer2
+     000000C9  _T2CSS                             timer2
+     000000CA  G$RCAP2L$0_0$0                     timer2
+     000000CA  G$TMR2RLL$0_0$0                    timer2
+     000000CA  G$TMR5RLL$0_0$0                    timer2
+     000000CA  G$TR2$0_0$0                        timer2
+     000000CA  G$TR5$0_0$0                        timer2
+     000000CA  _RCAP2L                            timer2
+     000000CA  _TMR2RLL                           timer2
+     000000CA  _TMR5RLL                           timer2
+     000000CA  _TR2                               timer2
+     000000CA  _TR5                               timer2
+     000000CB  G$RCAP2H$0_0$0                     timer2
+     000000CB  G$T2SPLIT$0_0$0                    timer2
+     000000CB  G$T5SPLIT$0_0$0                    timer2
+     000000CB  G$TMR2RLH$0_0$0                    timer2
+     000000CB  G$TMR5RLH$0_0$0                    timer2
+     000000CB  _RCAP2H                            timer2
+     000000CB  _T2SPLIT                           timer2
+     000000CB  _T5SPLIT                           timer2
+     000000CB  _TMR2RLH                           timer2
+     000000CB  _TMR5RLH                           timer2
+     000000CC  G$TF2CEN$0_0$0                     timer2
+     000000CC  G$TL2$0_0$0                        timer2
+     000000CC  G$TMR2L$0_0$0                      timer2
+     000000CC  G$TMR5L$0_0$0                      timer2
+     000000CC  _TF2CEN                            timer2
+     000000CC  _TL2                               timer2
+     000000CC  _TMR2L                             timer2
+     000000CC  _TMR5L                             timer2
+     000000CD  G$TF2LEN$0_0$0                     timer2
+ASxxxx Linker V03.00 + NoICE + sdld,  page 10.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000CD  G$TF5LEN$0_0$0                     timer2
+     000000CD  G$TH2$0_0$0                        timer2
+     000000CD  G$TMR2H$0_0$0                      timer2
+     000000CD  G$TMR5H$0_0$0                      timer2
+     000000CD  _TF2LEN                            timer2
+     000000CD  _TF5LEN                            timer2
+     000000CD  _TH2                               timer2
+     000000CD  _TMR2H                             timer2
+     000000CD  _TMR5H                             timer2
+     000000CE  G$SMB0ADM$0_0$0                    timer2
+     000000CE  G$SMB1ADM$0_0$0                    timer2
+     000000CE  G$TF2L$0_0$0                       timer2
+     000000CE  G$TF5L$0_0$0                       timer2
+     000000CE  _SMB0ADM                           timer2
+     000000CE  _SMB1ADM                           timer2
+     000000CE  _TF2L                              timer2
+     000000CE  _TF5L                              timer2
+     000000CF  G$SMB0ADR$0_0$0                    timer2
+     000000CF  G$SMB1ADR$0_0$0                    timer2
+     000000CF  G$TF2H$0_0$0                       timer2
+     000000CF  G$TF5H$0_0$0                       timer2
+     000000CF  _SMB0ADR                           timer2
+     000000CF  _SMB1ADR                           timer2
+     000000CF  _TF2H                              timer2
+     000000CF  _TF5H                              timer2
+     000000D0  G$PARITY$0_0$0                     timer2
+     000000D0  G$PSW$0_0$0                        timer2
+     000000D0  _PARITY                            timer2
+     000000D0  _PSW                               timer2
+     000000D1  G$F1$0_0$0                         timer2
+     000000D1  G$REF0CN$0_0$0                     timer2
+     000000D1  _F1                                timer2
+     000000D1  _REF0CN                            timer2
+     000000D2  G$OV$0_0$0                         timer2
+     000000D2  G$SCON1$0_0$0                      timer2
+     000000D2  _OV                                timer2
+     000000D2  _SCON1                             timer2
+     000000D3  G$RS0$0_0$0                        timer2
+     000000D3  G$SBUF1$0_0$0                      timer2
+     000000D3  _RS0                               timer2
+     000000D3  _SBUF1                             timer2
+     000000D4  G$P0SKIP$0_0$0                     timer2
+     000000D4  G$RS1$0_0$0                        timer2
+     000000D4  _P0SKIP                            timer2
+     000000D4  _RS1                               timer2
+     000000D5  G$F0$0_0$0                         timer2
+     000000D5  G$P1SKIP$0_0$0                     timer2
+     000000D5  _F0                                timer2
+     000000D5  _P1SKIP                            timer2
+     000000D6  G$AC$0_0$0                         timer2
+     000000D6  G$P2SKIP$0_0$0                     timer2
+ASxxxx Linker V03.00 + NoICE + sdld,  page 11.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000D6  _AC                                timer2
+     000000D6  _P2SKIP                            timer2
+     000000D7  G$CY$0_0$0                         timer2
+     000000D7  G$USB0XCN$0_0$0                    timer2
+     000000D7  _CY                                timer2
+     000000D7  _USB0XCN                           timer2
+     000000D8  G$CCF0$0_0$0                       timer2
+     000000D8  G$PCA0CN$0_0$0                     timer2
+     000000D8  _CCF0                              timer2
+     000000D8  _PCA0CN                            timer2
+     000000D9  G$CCF1$0_0$0                       timer2
+     000000D9  G$PCA0MD$0_0$0                     timer2
+     000000D9  _CCF1                              timer2
+     000000D9  _PCA0MD                            timer2
+     000000DA  G$CCF2$0_0$0                       timer2
+     000000DA  G$PCA0CPM0$0_0$0                   timer2
+     000000DA  _CCF2                              timer2
+     000000DA  _PCA0CPM0                          timer2
+     000000DB  G$CCF3$0_0$0                       timer2
+     000000DB  G$PCA0CPM1$0_0$0                   timer2
+     000000DB  _CCF3                              timer2
+     000000DB  _PCA0CPM1                          timer2
+     000000DC  G$CCF4$0_0$0                       timer2
+     000000DC  G$PCA0CPM2$0_0$0                   timer2
+     000000DC  _CCF4                              timer2
+     000000DC  _PCA0CPM2                          timer2
+     000000DD  G$PCA0CPM3$0_0$0                   timer2
+     000000DD  _PCA0CPM3                          timer2
+     000000DE  G$CR$0_0$0                         timer2
+     000000DE  G$PCA0CPM4$0_0$0                   timer2
+     000000DE  _CR                                timer2
+     000000DE  _PCA0CPM4                          timer2
+     000000DF  G$CF$0_0$0                         timer2
+     000000DF  G$P3SKIP$0_0$0                     timer2
+     000000DF  _CF                                timer2
+     000000DF  _P3SKIP                            timer2
+     000000E0  G$ACC$0_0$0                        timer2
+     000000E0  _ACC                               timer2
+     000000E1  G$XBR0$0_0$0                       timer2
+     000000E1  _XBR0                              timer2
+     000000E2  G$XBR1$0_0$0                       timer2
+     000000E2  _XBR1                              timer2
+     000000E3  G$XBR2$0_0$0                       timer2
+     000000E3  _XBR2                              timer2
+     000000E4  G$CKCON1$0_0$0                     timer2
+     000000E4  G$IT01CF$0_0$0                     timer2
+     000000E4  _CKCON1                            timer2
+     000000E4  _IT01CF                            timer2
+     000000E5  G$SMOD1$0_0$0                      timer2
+     000000E5  _SMOD1                             timer2
+     000000E6  G$EIE1$0_0$0                       timer2
+ASxxxx Linker V03.00 + NoICE + sdld,  page 12.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000E6  _EIE1                              timer2
+     000000E7  G$EIE2$0_0$0                       timer2
+     000000E7  _EIE2                              timer2
+     000000E8  G$AD0CM0$0_0$0                     timer2
+     000000E8  G$ADC0CN$0_0$0                     timer2
+     000000E8  _AD0CM0                            timer2
+     000000E8  _ADC0CN                            timer2
+     000000E9  G$AD0CM1$0_0$0                     timer2
+     000000E9  G$PCA0CPL1$0_0$0                   timer2
+     000000E9  _AD0CM1                            timer2
+     000000E9  _PCA0CPL1                          timer2
+     000000EA  G$AD0CM2$0_0$0                     timer2
+     000000EA  G$PCA0CPH1$0_0$0                   timer2
+     000000EA  _AD0CM2                            timer2
+     000000EA  _PCA0CPH1                          timer2
+     000000EB  G$AD0WINT$0_0$0                    timer2
+     000000EB  G$PCA0CPL2$0_0$0                   timer2
+     000000EB  _AD0WINT                           timer2
+     000000EB  _PCA0CPL2                          timer2
+     000000EC  G$AD0BUSY$0_0$0                    timer2
+     000000EC  G$PCA0CPH2$0_0$0                   timer2
+     000000EC  _AD0BUSY                           timer2
+     000000EC  _PCA0CPH2                          timer2
+     000000ED  G$AD0INT$0_0$0                     timer2
+     000000ED  G$PCA0CPL3$0_0$0                   timer2
+     000000ED  _AD0INT                            timer2
+     000000ED  _PCA0CPL3                          timer2
+     000000EE  G$AD0TM$0_0$0                      timer2
+     000000EE  G$PCA0CPH3$0_0$0                   timer2
+     000000EE  _AD0TM                             timer2
+     000000EE  _PCA0CPH3                          timer2
+     000000EF  G$AD0EN$0_0$0                      timer2
+     000000EF  G$RSTSRC$0_0$0                     timer2
+     000000EF  _AD0EN                             timer2
+     000000EF  _RSTSRC                            timer2
+     000000F0  G$B$0_0$0                          timer2
+     000000F0  _B                                 timer2
+     000000F1  G$P0MDIN$0_0$0                     timer2
+     000000F1  _P0MDIN                            timer2
+     000000F2  G$P1MDIN$0_0$0                     timer2
+     000000F2  _P1MDIN                            timer2
+     000000F3  G$P2MDIN$0_0$0                     timer2
+     000000F3  _P2MDIN                            timer2
+     000000F4  G$P3MDIN$0_0$0                     timer2
+     000000F4  _P3MDIN                            timer2
+     000000F5  G$P4MDIN$0_0$0                     timer2
+     000000F5  _P4MDIN                            timer2
+     000000F6  G$EIP1$0_0$0                       timer2
+     000000F6  _EIP1                              timer2
+     000000F7  G$EIP2$0_0$0                       timer2
+     000000F7  _EIP2                              timer2
+ASxxxx Linker V03.00 + NoICE + sdld,  page 13.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000F8  G$SPI0CN$0_0$0                     timer2
+     000000F8  G$SPIEN$0_0$0                      timer2
+     000000F8  _SPI0CN                            timer2
+     000000F8  _SPIEN                             timer2
+     000000F9  G$PCA0L$0_0$0                      timer2
+     000000F9  G$TXBMT$0_0$0                      timer2
+     000000F9  _PCA0L                             timer2
+     000000F9  _TXBMT                             timer2
+     000000FA  G$NSSMD0$0_0$0                     timer2
+     000000FA  G$PCA0H$0_0$0                      timer2
+     000000FA  _NSSMD0                            timer2
+     000000FA  _PCA0H                             timer2
+     000000FB  G$NSSMD1$0_0$0                     timer2
+     000000FB  G$PCA0CPL0$0_0$0                   timer2
+     000000FB  _NSSMD1                            timer2
+     000000FB  _PCA0CPL0                          timer2
+     000000FC  G$PCA0CPH0$0_0$0                   timer2
+     000000FC  G$RXOVRN$0_0$0                     timer2
+     000000FC  _PCA0CPH0                          timer2
+     000000FC  _RXOVRN                            timer2
+     000000FD  G$MODF$0_0$0                       timer2
+     000000FD  G$PCA0CPL4$0_0$0                   timer2
+     000000FD  _MODF                              timer2
+     000000FD  _PCA0CPL4                          timer2
+     000000FE  G$PCA0CPH4$0_0$0                   timer2
+     000000FE  G$WCOL$0_0$0                       timer2
+     000000FE  _PCA0CPH4                          timer2
+     000000FE  _WCOL                              timer2
+     000000FF  G$SPIF$0_0$0                       timer2
+     000000FF  G$VDM0CN$0_0$0                     timer2
+     000000FF  _SPIF                              timer2
+     000000FF  _VDM0CN                            timer2
+     00008382  G$DP$0_0$0                         timer2
+     00008382  _DP                                timer2
+     00009392  G$TMR3RL$0_0$0                     timer2
+     00009392  G$TMR4RL$0_0$0                     timer2
+     00009392  _TMR3RL                            timer2
+     00009392  _TMR4RL                            timer2
+     00009594  G$TMR3$0_0$0                       timer2
+     00009594  G$TMR4$0_0$0                       timer2
+     00009594  _TMR3                              timer2
+     00009594  _TMR4                              timer2
+     0000B5B4  G$SBRL1$0_0$0                      timer2
+     0000B5B4  _SBRL1                             timer2
+     0000BEBD  G$ADC0$0_0$0                       timer2
+     0000BEBD  _ADC0                              timer2
+     0000C4C3  G$ADC0GT$0_0$0                     timer2
+     0000C4C3  _ADC0GT                            timer2
+     0000C6C5  G$ADC0LT$0_0$0                     timer2
+     0000C6C5  _ADC0LT                            timer2
+     0000CBCA  G$TMR2RL$0_0$0                     timer2
+ASxxxx Linker V03.00 + NoICE + sdld,  page 14.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000CBCA  G$TMR5RL$0_0$0                     timer2
+     0000CBCA  _TMR2RL                            timer2
+     0000CBCA  _TMR5RL                            timer2
+     0000CDCC  G$TMR2$0_0$0                       timer2
+     0000CDCC  G$TMR5$0_0$0                       timer2
+     0000CDCC  _TMR2                              timer2
+     0000CDCC  _TMR5                              timer2
+     0000EAE9  G$PCA0CP1$0_0$0                    timer2
+     0000EAE9  _PCA0CP1                           timer2
+     0000ECEB  G$PCA0CP2$0_0$0                    timer2
+     0000ECEB  _PCA0CP2                           timer2
+     0000EEED  G$PCA0CP3$0_0$0                    timer2
+     0000EEED  _PCA0CP3                           timer2
+     0000FAF9  G$PCA0$0_0$0                       timer2
+     0000FAF9  _PCA0                              timer2
+     0000FCFB  G$PCA0CP0$0_0$0                    timer2
+     0000FCFB  _PCA0CP0                           timer2
+     0000FEFD  G$PCA0CP4$0_0$0                    timer2
+     0000FEFD  _PCA0CP4                           timer2
+ASxxxx Linker V03.00 + NoICE + sdld,  page 15.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+REG_BANK_0                          00000000    00000008 =           8. bytes (REL,OVR)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 16.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+DSEG                                00000000    00000080 =         128. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000008  Ltimer2.main$zero_nine$1_1$7       timer2
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 17.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+SSEG                                00000012    000000EE =         238. bytes (REL,OVR)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000012  __start__stack                     timer2
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 18.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+HOME                                00000000    00000006 =           6. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000000  A$timer2$957                       timer2
+C:   00000003  A$timer2$979                       timer2
+C:   00000003  __sdcc_program_startup             timer2
+ASxxxx Linker V03.00 + NoICE + sdld,  page 19.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT0                             00000006    00000003 =           3. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000006  __sdcc_gsinit_startup              
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 20.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT2                             00000009    0000000A =          10. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 21.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT3                             00000013    00000022 =          34. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000013  __mcs51_genXINIT                   
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 22.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT4                             00000035    0000002A =          42. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000035  __mcs51_genRAMCLEAR                
+C:   0000003B  __mcs51_genXRAMCLEAR               
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 23.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSFINAL                             0000005F    00000003 =           3. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   0000005F  A$timer2$972                       timer2
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 24.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                00000062    000000E4 =         228. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000062  A$timer2$1007                      timer2
+C:   00000062  C$timer2.c$4$0_0$3                 timer2
+C:   00000062  G$sdelay$0$0                       timer2
+C:   00000062  _sdelay                            timer2
+C:   00000064  A$timer2$1008                      timer2
+C:   00000066  A$timer2$1011                      timer2
+C:   00000068  A$timer2$1012                      timer2
+C:   0000006A  A$timer2$1014                      timer2
+C:   0000006B  A$timer2$1015                      timer2
+C:   0000006C  A$timer2$1016                      timer2
+C:   0000006D  A$timer2$1017                      timer2
+C:   0000006E  A$timer2$1018                      timer2
+C:   00000070  A$timer2$1019                      timer2
+C:   00000072  A$timer2$1020                      timer2
+C:   00000075  A$timer2$1021                      timer2
+C:   00000077  A$timer2$1022                      timer2
+C:   00000079  A$timer2$1025                      timer2
+C:   00000079  C$timer2.c$9$2_0$3                 timer2
+C:   0000007B  A$timer2$1026                      timer2
+C:   0000007D  A$timer2$1028                      timer2
+C:   0000007E  A$timer2$1029                      timer2
+C:   0000007F  A$timer2$1030                      timer2
+C:   00000081  A$timer2$1031                      timer2
+C:   00000082  A$timer2$1032                      timer2
+C:   00000084  A$timer2$1033                      timer2
+C:   00000086  A$timer2$1034                      timer2
+C:   00000088  A$timer2$1035                      timer2
+C:   00000089  A$timer2$1036                      timer2
+C:   0000008C  A$timer2$1037                      timer2
+C:   0000008D  A$timer2$1038                      timer2
+C:   0000008F  A$timer2$1042                      timer2
+C:   0000008F  C$timer2.c$7$2_0$3                 timer2
+C:   00000090  A$timer2$1043                      timer2
+C:   00000093  A$timer2$1044                      timer2
+C:   00000094  A$timer2$1045                      timer2
+C:   00000096  A$timer2$1051                      timer2
+C:   00000096  C$timer2.c$11$2_0$3                timer2
+C:   00000096  XG$sdelay$0$0                      timer2
+C:   00000097  A$timer2$1068                      timer2
+C:   00000097  C$timer2.c$16$2_0$6                timer2
+C:   00000097  C$timer2.c$19$1_0$6                timer2
+C:   00000097  G$main$0$0                         timer2
+C:   00000097  _main                              timer2
+C:   0000009A  A$timer2$1071                      timer2
+C:   0000009A  C$timer2.c$20$1_0$6                timer2
+C:   0000009D  A$timer2$1074                      timer2
+C:   0000009D  C$timer2.c$25$2_0$7                timer2
+C:   000000A0  A$timer2$1075                      timer2
+C:   000000A3  A$timer2$1076                      timer2
+C:   000000A6  A$timer2$1077                      timer2
+ASxxxx Linker V03.00 + NoICE + sdld,  page 25.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                00000062    000000E4 =         228. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000000A9  A$timer2$1078                      timer2
+C:   000000AC  A$timer2$1079                      timer2
+C:   000000AF  A$timer2$1080                      timer2
+C:   000000B2  A$timer2$1081                      timer2
+C:   000000B5  A$timer2$1082                      timer2
+C:   000000B8  A$timer2$1083                      timer2
+C:   000000BB  A$timer2$1089                      timer2
+C:   000000BB  C$timer2.c$27$1_1$7                timer2
+C:   000000BB  C$timer2.c$29$2_1$8                timer2
+C:   000000BE  A$timer2$1092                      timer2
+C:   000000BE  C$timer2.c$30$2_1$8                timer2
+C:   000000C1  A$timer2$1093                      timer2
+C:   000000C4  A$timer2$1097                      timer2
+C:   000000C4  C$timer2.c$32$1_1$6                timer2
+C:   000000C6  A$timer2$1098                      timer2
+C:   000000C8  A$timer2$1100                      timer2
+C:   000000C9  A$timer2$1101                      timer2
+C:   000000CA  A$timer2$1102                      timer2
+C:   000000CC  A$timer2$1103                      timer2
+C:   000000CD  A$timer2$1104                      timer2
+C:   000000CF  A$timer2$1105                      timer2
+C:   000000D1  A$timer2$1106                      timer2
+C:   000000D3  A$timer2$1109                      timer2
+C:   000000D3  C$timer2.c$34$1_1$6                timer2
+C:   000000D5  A$timer2$1110                      timer2
+C:   000000D7  A$timer2$1112                      timer2
+C:   000000D8  A$timer2$1113                      timer2
+C:   000000DA  A$timer2$1114                      timer2
+C:   000000DB  A$timer2$1115                      timer2
+C:   000000DD  A$timer2$1116                      timer2
+C:   000000DF  A$timer2$1117                      timer2
+C:   000000E2  A$timer2$1118                      timer2
+C:   000000E4  A$timer2$1121                      timer2
+C:   000000E4  C$timer2.c$36$7_1$13               timer2
+C:   000000E6  A$timer2$1122                      timer2
+C:   000000E7  A$timer2$1123                      timer2
+C:   000000E9  A$timer2$1124                      timer2
+C:   000000EA  A$timer2$1125                      timer2
+C:   000000EC  A$timer2$1126                      timer2
+C:   000000EE  A$timer2$1127                      timer2
+C:   000000F0  A$timer2$1130                      timer2
+C:   000000F0  C$timer2.c$38$8_1$14               timer2
+C:   000000F1  A$timer2$1131                      timer2
+C:   000000F3  A$timer2$1132                      timer2
+C:   000000F4  A$timer2$1133                      timer2
+C:   000000F6  A$timer2$1136                      timer2
+C:   000000F6  C$timer2.c$39$8_1$14               timer2
+C:   000000F9  A$timer2$1137                      timer2
+C:   000000FB  A$timer2$1138                      timer2
+C:   000000FD  A$timer2$1139                      timer2
+C:   000000FF  A$timer2$1140                      timer2
+ASxxxx Linker V03.00 + NoICE + sdld,  page 26.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                00000062    000000E4 =         228. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000101  A$timer2$1141                      timer2
+C:   00000104  A$timer2$1142                      timer2
+C:   00000106  A$timer2$1143                      timer2
+C:   00000108  A$timer2$1144                      timer2
+C:   0000010A  A$timer2$1145                      timer2
+C:   0000010C  A$timer2$1146                      timer2
+C:   0000010E  A$timer2$1150                      timer2
+C:   0000010E  C$timer2.c$43$8_1$15               timer2
+C:   00000110  A$timer2$1151                      timer2
+C:   00000111  A$timer2$1152                      timer2
+C:   00000112  A$timer2$1153                      timer2
+C:   00000114  A$timer2$1154                      timer2
+C:   00000115  A$timer2$1155                      timer2
+C:   00000117  A$timer2$1158                      timer2
+C:   00000117  C$timer2.c$44$8_1$15               timer2
+C:   0000011A  A$timer2$1159                      timer2
+C:   0000011C  A$timer2$1160                      timer2
+C:   0000011E  A$timer2$1161                      timer2
+C:   00000120  A$timer2$1162                      timer2
+C:   00000122  A$timer2$1163                      timer2
+C:   00000125  A$timer2$1164                      timer2
+C:   00000127  A$timer2$1165                      timer2
+C:   00000129  A$timer2$1166                      timer2
+C:   0000012B  A$timer2$1167                      timer2
+C:   0000012D  A$timer2$1171                      timer2
+C:   0000012D  C$timer2.c$34$6_1$12               timer2
+C:   0000012E  A$timer2$1172                      timer2
+C:   00000131  A$timer2$1173                      timer2
+C:   00000132  A$timer2$1174                      timer2
+C:   00000134  A$timer2$1178                      timer2
+C:   00000134  C$timer2.c$32$4_1$10               timer2
+C:   00000135  A$timer2$1179                      timer2
+C:   00000138  A$timer2$1180                      timer2
+C:   00000139  A$timer2$1181                      timer2
+C:   0000013B  A$timer2$1185                      timer2
+C:   0000013B  C$timer2.c$50$2_1$8                timer2
+C:   0000013E  A$timer2$1186                      timer2
+C:   00000141  A$timer2$1191                      timer2
+C:   00000141  C$timer2.c$52$1_1$6                timer2
+C:   00000141  XG$main$0$0                        timer2
+C:   00000142  __sdcc_external_startup            _startup
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 27.
+
+Files Linked                              [ module(s) ]
+
+C:\2ano\ATC\timer_auto_1-9\timer2.rel     [  ]
+
+
+Libraries Linked                          [ object file ]
+
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtclear.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtxinit.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtxclear.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtstart.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libsdcc.lib
+                                          [ _startup.rel ]
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 28.
+
+User Base Address Definitions
+
+HOME = 0x0000
+XSEG = 0x0001
+PSEG = 0x0001
+ISEG = 0x0000
+BSEG = 0x0000
+
+

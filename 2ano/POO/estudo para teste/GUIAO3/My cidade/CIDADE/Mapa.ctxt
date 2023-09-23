@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Mapa
+comment1.params=
+comment1.target=Mapa()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Mapa\r\n
+comment2.params=nome
+comment2.target=void\ add(java.lang.String)
+comment3.params=nome\ c\ k
+comment3.target=void\ addLiga(java.lang.String,\ java.lang.String,\ int)
+comment4.params=a\ b
+comment4.target=boolean\ ligDireto(java.lang.String,\ java.lang.String)
+comment5.params=
+comment5.target=java.lang.String\ maiorNumLiga()
+comment6.params=
+comment6.target=java.lang.String\ menorLigaCidades()
+comment7.params=c\ K
+comment7.target=java.util.ArrayList\ cidadesMenosK(java.lang.String,\ int)
+numComments=8

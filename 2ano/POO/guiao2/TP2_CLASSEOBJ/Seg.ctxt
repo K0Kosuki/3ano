@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Seg
+comment1.params=x1\ y1\ x2\ y2
+comment1.target=Seg(double,\ double,\ double,\ double)
+comment2.params=
+comment2.target=double\ comprimento()
+comment3.params=
+comment3.target=double\ declive()
+comment4.params=
+comment4.target=java.lang.String\ Up_or_Downn()
+comment5.params=xx\ yy
+comment5.target=void\ desloca(double,\ double)
+comment6.params=
+comment6.target=double\ pri()
+numComments=7

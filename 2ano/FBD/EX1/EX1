@@ -1,0 +1,3 @@
+select n_cartao,tipo,cb.n_conta
+from cartoes_credito cc join contas_bancarias cb on cc.n_conta = cb.n_conta
+where cb.saldo_contab < 1000;

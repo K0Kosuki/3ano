@@ -1,0 +1,581 @@
+ASxxxx Linker V03.00 + NoICE + sdld,  page 1.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CABS                                00000000    00000000 =           0. bytes (ABS,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000000  l_BIT_BANK                      
+C:   00000000  l_BSEG                          
+C:   00000000  l_BSEG_BYTES                    
+C:   00000000  l_CABS                          
+C:   00000000  l_CONST                         
+C:   00000000  l_GSINIT1                       
+C:   00000000  l_GSINIT5                       
+C:   00000000  l_IABS                          
+C:   00000000  l_ISEG                          
+C:   00000000  l_OSEG                          
+C:   00000000  l_PSEG                          
+C:   00000000  l_REG_BANK_1                    
+C:   00000000  l_REG_BANK_2                    
+C:   00000000  l_REG_BANK_3                    
+C:   00000000  l_RSEG                          
+C:   00000000  l_RSEG0                         
+C:   00000000  l_RSEG1                         
+C:   00000000  l_XABS                          
+C:   00000000  l_XINIT                         
+C:   00000000  l_XISEG                         
+C:   00000000  l_XSEG                          
+C:   00000000  l__CODE                         
+C:   00000000  s_BSEG                          
+C:   00000000  s_CABS                          
+C:   00000000  s_DSEG                          
+C:   00000000  s_HOME                          
+C:   00000000  s_IABS                          
+C:   00000000  s_ISEG                          
+C:   00000000  s_REG_BANK_0                    
+C:   00000000  s_RSEG                          
+C:   00000000  s_RSEG0                         
+C:   00000000  s_RSEG1                         
+C:   00000000  s_XABS                          
+C:   00000001  s_PSEG                          
+C:   00000001  s_XISEG                         
+C:   00000001  s_XSEG                          
+C:   00000003  l_GSFINAL                       
+C:   00000003  l_GSINIT0                       
+C:   00000008  l_REG_BANK_0                    
+C:   00000008  s_REG_BANK_1                    
+C:   0000000A  l_GSINIT2                       
+C:   0000000C  l_GSINIT                        
+C:   00000010  s_REG_BANK_2                    
+C:   00000018  s_BIT_BANK                      
+C:   00000018  s_OSEG                          
+C:   00000018  s_REG_BANK_3                    
+C:   00000020  s_BSEG_BYTES                    
+C:   00000020  s__CODE                         
+C:   00000022  l_GSINIT3                       
+C:   00000029  l_HOME                          
+ASxxxx Linker V03.00 + NoICE + sdld,  page 2.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CABS                                00000000    00000000 =           0. bytes (ABS,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000029  s_GSINIT0                       
+C:   0000002A  l_GSINIT4                       
+C:   0000002C  s_GSINIT1                       
+C:   0000002C  s_GSINIT2                       
+C:   00000036  s_GSINIT3                       
+C:   0000003D  s_SSEG                          
+C:   00000058  s_GSINIT4                       
+C:   00000080  l_DSEG                          
+C:   00000082  s_GSINIT                        
+C:   00000082  s_GSINIT5                       
+C:   0000008E  s_GSFINAL                       
+C:   00000091  s_CSEG                          
+C:   000000C3  l_SSEG                          
+C:   00000100  l_IRAM                          
+C:   000001B0  l_CSEG                          
+C:   00000241  s_CONST                         
+C:   00000241  s_XINIT                         
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 3.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000000  .__.ABS.                           _startup
+     00000080  _P0                                desafio7
+     00000080  _P0_0                              desafio7
+     00000081  _P0_1                              desafio7
+     00000081  _SP                                desafio7
+     00000082  _DPL                               desafio7
+     00000082  _P0_2                              desafio7
+     00000083  _DPH                               desafio7
+     00000083  _P0_3                              desafio7
+     00000084  _EMI0TC                            desafio7
+     00000084  _P0_4                              desafio7
+     00000085  _EMI0CF                            desafio7
+     00000085  _P0_5                              desafio7
+     00000086  _OSCLCN                            desafio7
+     00000086  _P0_6                              desafio7
+     00000087  _P0_7                              desafio7
+     00000087  _PCON                              desafio7
+     00000088  _IT0                               desafio7
+     00000088  _TCON                              desafio7
+     00000089  _IE0                               desafio7
+     00000089  _TMOD                              desafio7
+     0000008A  _IT1                               desafio7
+     0000008A  _TL0                               desafio7
+     0000008B  _IE1                               desafio7
+     0000008B  _TL1                               desafio7
+     0000008C  _TH0                               desafio7
+     0000008C  _TR0                               desafio7
+     0000008D  _TF0                               desafio7
+     0000008D  _TH1                               desafio7
+     0000008E  _CKCON                             desafio7
+     0000008E  _TR1                               desafio7
+     0000008F  _PSCTL                             desafio7
+     0000008F  _TF1                               desafio7
+     00000090  _P1                                desafio7
+     00000090  _P1_0                              desafio7
+     00000091  _P1_1                              desafio7
+     00000091  _TMR3CN                            desafio7
+     00000091  _TMR4CN                            desafio7
+     00000092  _P1_2                              desafio7
+     00000092  _TMR3RLL                           desafio7
+     00000092  _TMR4RLL                           desafio7
+     00000093  _P1_3                              desafio7
+     00000093  _TMR3RLH                           desafio7
+     00000093  _TMR4RLH                           desafio7
+     00000094  _P1_4                              desafio7
+     00000094  _TMR3L                             desafio7
+     00000095  _P1_5                              desafio7
+     00000095  _TMR3H                             desafio7
+     00000096  _P1_6                              desafio7
+     00000096  _USB0ADR                           desafio7
+ASxxxx Linker V03.00 + NoICE + sdld,  page 4.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000097  _P1_7                              desafio7
+     00000097  _USB0DAT                           desafio7
+     00000098  _RI0                               desafio7
+     00000098  _SCON0                             desafio7
+     00000099  _SBUF0                             desafio7
+     00000099  _TI0                               desafio7
+     0000009A  _CPT1CN                            desafio7
+     0000009A  _RB80                              desafio7
+     0000009B  _CPT0CN                            desafio7
+     0000009B  _TB80                              desafio7
+     0000009C  _CPT1MD                            desafio7
+     0000009C  _REN0                              desafio7
+     0000009D  _CPT0MD                            desafio7
+     0000009D  _MCE0                              desafio7
+     0000009E  _CPT1MX                            desafio7
+     0000009F  _CPT0MX                            desafio7
+     0000009F  _S0MODE                            desafio7
+     000000A0  _P2                                desafio7
+     000000A0  _P2_0                              desafio7
+     000000A1  _P2_1                              desafio7
+     000000A1  _SPI0CFG                           desafio7
+     000000A2  _P2_2                              desafio7
+     000000A2  _SPI0CKR                           desafio7
+     000000A3  _P2_3                              desafio7
+     000000A3  _SPI0DAT                           desafio7
+     000000A4  _P0MDOUT                           desafio7
+     000000A4  _P2_4                              desafio7
+     000000A5  _P1MDOUT                           desafio7
+     000000A5  _P2_5                              desafio7
+     000000A6  _P2MDOUT                           desafio7
+     000000A6  _P2_6                              desafio7
+     000000A7  _P2_7                              desafio7
+     000000A7  _P3MDOUT                           desafio7
+     000000A8  _EX0                               desafio7
+     000000A8  _IE                                desafio7
+     000000A9  _CLKSEL                            desafio7
+     000000A9  _ET0                               desafio7
+     000000AA  _EMI0CN                            desafio7
+     000000AA  _EX1                               desafio7
+     000000AA  __XPAGE                            desafio7
+     000000AB  _ET1                               desafio7
+     000000AC  _ES0                               desafio7
+     000000AC  _SBCON1                            desafio7
+     000000AD  _ET2                               desafio7
+     000000AE  _ESPI0                             desafio7
+     000000AE  _P4MDOUT                           desafio7
+     000000AF  _EA                                desafio7
+     000000AF  _PFE0CN                            desafio7
+     000000B0  _P3                                desafio7
+     000000B0  _P3_0                              desafio7
+     000000B1  _OSCXCN                            desafio7
+ASxxxx Linker V03.00 + NoICE + sdld,  page 5.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000B1  _P3_1                              desafio7
+     000000B2  _OSCICN                            desafio7
+     000000B2  _P3_2                              desafio7
+     000000B3  _OSCICL                            desafio7
+     000000B3  _P3_3                              desafio7
+     000000B4  _P3_4                              desafio7
+     000000B4  _SBRLL1                            desafio7
+     000000B5  _P3_5                              desafio7
+     000000B5  _SBRLH1                            desafio7
+     000000B6  _FLSCL                             desafio7
+     000000B6  _P3_6                              desafio7
+     000000B7  _FLKEY                             desafio7
+     000000B7  _P3_7                              desafio7
+     000000B8  _IP                                desafio7
+     000000B8  _PX0                               desafio7
+     000000B9  _CLKMUL                            desafio7
+     000000B9  _PT0                               desafio7
+     000000B9  _SMBTC                             desafio7
+     000000BA  _AMX0N                             desafio7
+     000000BA  _PX1                               desafio7
+     000000BB  _AMX0P                             desafio7
+     000000BB  _PT1                               desafio7
+     000000BC  _ADC0CF                            desafio7
+     000000BC  _PS0                               desafio7
+     000000BD  _ADC0L                             desafio7
+     000000BD  _PT2                               desafio7
+     000000BE  _ADC0H                             desafio7
+     000000BE  _PSPI0                             desafio7
+     000000BF  _SFRPAGE                           desafio7
+     000000C0  _SI0                               desafio7
+     000000C0  _SI1                               desafio7
+     000000C0  _SMB0CN                            desafio7
+     000000C0  _SMB1CN                            desafio7
+     000000C1  _ACK0                              desafio7
+     000000C1  _ACK1                              desafio7
+     000000C1  _SMB0CF                            desafio7
+     000000C1  _SMB1CF                            desafio7
+     000000C2  _ARBLOST0                          desafio7
+     000000C2  _ARBLOST1                          desafio7
+     000000C2  _SMB0DAT                           desafio7
+     000000C2  _SMB1DAT                           desafio7
+     000000C3  _ACKRQ0                            desafio7
+     000000C3  _ACKRQ1                            desafio7
+     000000C3  _ADC0GTL                           desafio7
+     000000C4  _ADC0GTH                           desafio7
+     000000C4  _STO0                              desafio7
+     000000C4  _STO1                              desafio7
+     000000C5  _ADC0LTL                           desafio7
+     000000C5  _STA0                              desafio7
+     000000C5  _STA1                              desafio7
+     000000C6  _ADC0LTH                           desafio7
+ASxxxx Linker V03.00 + NoICE + sdld,  page 6.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000C6  _TXMODE0                           desafio7
+     000000C6  _TXMODE1                           desafio7
+     000000C7  _MASTER0                           desafio7
+     000000C7  _MASTER1                           desafio7
+     000000C7  _P4                                desafio7
+     000000C8  _T2CON                             desafio7
+     000000C8  _T2XCLK                            desafio7
+     000000C8  _T5XCLK                            desafio7
+     000000C8  _TMR2CN                            desafio7
+     000000C8  _TMR5CN                            desafio7
+     000000C9  _REG01CN                           desafio7
+     000000C9  _T2CSS                             desafio7
+     000000CA  _RCAP2L                            desafio7
+     000000CA  _TMR2RLL                           desafio7
+     000000CA  _TMR5RLL                           desafio7
+     000000CA  _TR2                               desafio7
+     000000CA  _TR5                               desafio7
+     000000CB  _RCAP2H                            desafio7
+     000000CB  _T2SPLIT                           desafio7
+     000000CB  _T5SPLIT                           desafio7
+     000000CB  _TMR2RLH                           desafio7
+     000000CB  _TMR5RLH                           desafio7
+     000000CC  _TF2CEN                            desafio7
+     000000CC  _TL2                               desafio7
+     000000CC  _TMR2L                             desafio7
+     000000CC  _TMR5L                             desafio7
+     000000CD  _TF2LEN                            desafio7
+     000000CD  _TF5LEN                            desafio7
+     000000CD  _TH2                               desafio7
+     000000CD  _TMR2H                             desafio7
+     000000CD  _TMR5H                             desafio7
+     000000CE  _SMB0ADM                           desafio7
+     000000CE  _SMB1ADM                           desafio7
+     000000CE  _TF2L                              desafio7
+     000000CE  _TF5L                              desafio7
+     000000CF  _SMB0ADR                           desafio7
+     000000CF  _SMB1ADR                           desafio7
+     000000CF  _TF2H                              desafio7
+     000000CF  _TF5H                              desafio7
+     000000D0  _PARITY                            desafio7
+     000000D0  _PSW                               desafio7
+     000000D1  _F1                                desafio7
+     000000D1  _REF0CN                            desafio7
+     000000D2  _OV                                desafio7
+     000000D2  _SCON1                             desafio7
+     000000D3  _RS0                               desafio7
+     000000D3  _SBUF1                             desafio7
+     000000D4  _P0SKIP                            desafio7
+     000000D4  _RS1                               desafio7
+     000000D5  _F0                                desafio7
+     000000D5  _P1SKIP                            desafio7
+ASxxxx Linker V03.00 + NoICE + sdld,  page 7.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000D6  _AC                                desafio7
+     000000D6  _P2SKIP                            desafio7
+     000000D7  _CY                                desafio7
+     000000D7  _USB0XCN                           desafio7
+     000000D8  _CCF0                              desafio7
+     000000D8  _PCA0CN                            desafio7
+     000000D9  _CCF1                              desafio7
+     000000D9  _PCA0MD                            desafio7
+     000000DA  _CCF2                              desafio7
+     000000DA  _PCA0CPM0                          desafio7
+     000000DB  _CCF3                              desafio7
+     000000DB  _PCA0CPM1                          desafio7
+     000000DC  _CCF4                              desafio7
+     000000DC  _PCA0CPM2                          desafio7
+     000000DD  _PCA0CPM3                          desafio7
+     000000DE  _CR                                desafio7
+     000000DE  _PCA0CPM4                          desafio7
+     000000DF  _CF                                desafio7
+     000000DF  _P3SKIP                            desafio7
+     000000E0  _ACC                               desafio7
+     000000E1  _XBR0                              desafio7
+     000000E2  _XBR1                              desafio7
+     000000E3  _XBR2                              desafio7
+     000000E4  _CKCON1                            desafio7
+     000000E4  _IT01CF                            desafio7
+     000000E5  _SMOD1                             desafio7
+     000000E6  _EIE1                              desafio7
+     000000E7  _EIE2                              desafio7
+     000000E8  _AD0CM0                            desafio7
+     000000E8  _ADC0CN                            desafio7
+     000000E9  _AD0CM1                            desafio7
+     000000E9  _PCA0CPL1                          desafio7
+     000000EA  _AD0CM2                            desafio7
+     000000EA  _PCA0CPH1                          desafio7
+     000000EB  _AD0WINT                           desafio7
+     000000EB  _PCA0CPL2                          desafio7
+     000000EC  _AD0BUSY                           desafio7
+     000000EC  _PCA0CPH2                          desafio7
+     000000ED  _AD0INT                            desafio7
+     000000ED  _PCA0CPL3                          desafio7
+     000000EE  _AD0TM                             desafio7
+     000000EE  _PCA0CPH3                          desafio7
+     000000EF  _AD0EN                             desafio7
+     000000EF  _RSTSRC                            desafio7
+     000000F0  _B                                 desafio7
+     000000F1  _P0MDIN                            desafio7
+     000000F2  _P1MDIN                            desafio7
+     000000F3  _P2MDIN                            desafio7
+     000000F4  _P3MDIN                            desafio7
+     000000F5  _P4MDIN                            desafio7
+     000000F6  _EIP1                              desafio7
+ASxxxx Linker V03.00 + NoICE + sdld,  page 8.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000F7  _EIP2                              desafio7
+     000000F8  _SPI0CN                            desafio7
+     000000F8  _SPIEN                             desafio7
+     000000F9  _PCA0L                             desafio7
+     000000F9  _TXBMT                             desafio7
+     000000FA  _NSSMD0                            desafio7
+     000000FA  _PCA0H                             desafio7
+     000000FB  _NSSMD1                            desafio7
+     000000FB  _PCA0CPL0                          desafio7
+     000000FC  _PCA0CPH0                          desafio7
+     000000FC  _RXOVRN                            desafio7
+     000000FD  _MODF                              desafio7
+     000000FD  _PCA0CPL4                          desafio7
+     000000FE  _PCA0CPH4                          desafio7
+     000000FE  _WCOL                              desafio7
+     000000FF  _SPIF                              desafio7
+     000000FF  _VDM0CN                            desafio7
+     00008382  _DP                                desafio7
+     00009392  _TMR3RL                            desafio7
+     00009392  _TMR4RL                            desafio7
+     00009594  _TMR3                              desafio7
+     00009594  _TMR4                              desafio7
+     0000B5B4  _SBRL1                             desafio7
+     0000BEBD  _ADC0                              desafio7
+     0000C4C3  _ADC0GT                            desafio7
+     0000C6C5  _ADC0LT                            desafio7
+     0000CBCA  _TMR2RL                            desafio7
+     0000CBCA  _TMR5RL                            desafio7
+     0000CDCC  _TMR2                              desafio7
+     0000CDCC  _TMR5                              desafio7
+     0000EAE9  _PCA0CP1                           desafio7
+     0000ECEB  _PCA0CP2                           desafio7
+     0000EEED  _PCA0CP3                           desafio7
+     0000FAF9  _PCA0                              desafio7
+     0000FCFB  _PCA0CP0                           desafio7
+     0000FEFD  _PCA0CP4                           desafio7
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 9.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+REG_BANK_0                          00000000    00000008 =           8. bytes (REL,OVR)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 10.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+DSEG                                00000000    00000080 =         128. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000008  _RxDado                            desafio7
+     0000000A  _TxDado                            desafio7
+     0000000C  _dado                              desafio7
+ASxxxx Linker V03.00 + NoICE + sdld,  page 11.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+SSEG                                0000003D    000000C3 =         195. bytes (REL,OVR)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000003D  __start__stack                     desafio7
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 12.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+HOME                                00000000    00000029 =          41. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000026  __sdcc_program_startup             desafio7
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 13.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT0                             00000029    00000003 =           3. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000029  __sdcc_gsinit_startup              
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 14.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT2                             0000002C    0000000A =          10. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 15.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT3                             00000036    00000022 =          34. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000036  __mcs51_genXINIT                   
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 16.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT4                             00000058    0000002A =          42. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000058  __mcs51_genRAMCLEAR                
+C:   0000005E  __mcs51_genXRAMCLEAR               
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 17.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT                              00000082    0000000C =          12. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 18.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSFINAL                             0000008E    00000003 =           3. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 19.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                00000091    000001B0 =         432. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000091  _configUART0                       desafio7
+C:   000000B3  _inter                             desafio7
+C:   000000E1  _enviaUART                         desafio7
+C:   000000F4  _recebeUART                        desafio7
+C:   00000108  _main                              desafio7
+C:   0000023D  __sdcc_external_startup            _startup
+ASxxxx Linker V03.00 + NoICE + sdld,  page 20.
+
+Files Linked                              [ module(s) ]
+
+C:\Gdownload\desafio7.rel                 [  ]
+
+
+Libraries Linked                          [ object file ]
+
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtclear.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtxinit.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtxclear.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtstart.rel ]
+C:\Program Files\SDCC\bin\..\lib\small/libsdcc.lib
+                                          [ _startup.rel ]
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 21.
+
+User Base Address Definitions
+
+HOME = 0x0000
+XSEG = 0x0001
+PSEG = 0x0001
+ISEG = 0x0000
+BSEG = 0x0000
+
+

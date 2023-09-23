@@ -1,0 +1,24 @@
+create function multa_a_pagar (jogo char(4), dia_em_atraso int)
+returns decimal (5,2)
+begin
+    declare multa decimal(5,2);
+    select multa_diaria
+    into multa
+    from jogos
+    where cod_jogo=jogo;
+
+ 
+    return(multa * dia_em_atraso);
+end;
+
+create function disponiveis (jogo char(4),tipo_consola char(3))
+return ints
+select * from 
+begin declare exemplarez_adquiridos,exemplares_alugados;
+select count(*)
+into exemplares_adquiridos
+from exemplares
+where
+
+return (exemplares_adquiridos -exemplares_alugados);
+end;

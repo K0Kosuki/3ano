@@ -1,0 +1,23 @@
+decimal(base10)           binário(base2)
+       0                    (...)000 
+       1                    (...)001
+       2                    (...)010
+       3                    (...)011
+
+     int main()
+{
+int x = 2;
+int y = 3
+printf("%d",x&y);
+
+& e logica entre bits
+| ou entre bits
+<<shift esquerda
+>>shift direta
+
+
+010
+&011
+ 010
+
+

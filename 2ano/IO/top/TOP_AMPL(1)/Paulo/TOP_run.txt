@@ -1,0 +1,14 @@
+for{k in 1..n}{
+	let premio[k] := pontos[k,3];
+}
+
+for{i in 1..n}{
+	for{j in 1..n}{
+		let custos[i,j] := sqrt((pontos[i,1]-pontos[j,1])^2 + (pontos[i,2]-pontos[j,2])^2);
+	}
+}
+
+solve;
+
+#display _varname, _var;
+display {j in 1.._nvars : _var[j]>0} (_varname[j],_var[j]);

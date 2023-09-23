@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=MBox_AL
+comment1.params=x
+comment1.target=MBox_AL(int)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ MBox_AL\r\n
+comment2.params=
+comment2.target=int\ recebidas()
+comment3.params=
+comment3.target=int\ diferentes()
+comment4.params=c
+comment4.target=void\ add(Chamada)
+comment5.params=orig
+comment5.target=double\ valor_total(int)
+comment6.params=
+comment6.target=int\ mais_sms()
+numComments=7

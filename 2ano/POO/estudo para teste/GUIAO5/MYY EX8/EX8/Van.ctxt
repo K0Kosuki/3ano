@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Van
+comment1.params=m\ c\ d\ p\ cli
+comment1.target=Van(java.lang.String,\ double,\ double,\ double,\ java.lang.String)
+comment2.params=
+comment2.target=double\ getDistancia()
+comment3.params=
+comment3.target=double\ getPeso()
+comment4.params=
+comment4.target=java.lang.String\ getCliente()
+comment5.params=
+comment5.target=int\ getNc()
+comment6.params=ct
+comment6.target=double\ custoPorContrato(Contratavel)
+numComments=7

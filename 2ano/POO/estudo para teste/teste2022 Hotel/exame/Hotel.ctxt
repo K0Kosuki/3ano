@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Hotel
+comment1.params=n\ l\ p\ num
+comment1.target=Hotel(java.lang.String,\ java.lang.String,\ double,\ int)
+comment10.params=mes
+comment10.target=double\ dormida(int)
+comment11.params=
+comment11.target=Hotel\ clone()
+comment2.params=
+comment2.target=java.lang.String\ getNome()
+comment3.params=
+comment3.target=java.lang.String\ getLocal()
+comment4.params=
+comment4.target=double\ getPreco()
+comment5.params=
+comment5.target=int\ getNum()
+comment6.params=c
+comment6.target=void\ add(java.lang.Integer)
+comment7.params=c
+comment7.target=void\ remover(java.lang.Integer)
+comment8.params=
+comment8.target=java.util.Set\ getOcupa()
+comment9.params=
+comment9.target=int\ getNumOcupa()
+numComments=12

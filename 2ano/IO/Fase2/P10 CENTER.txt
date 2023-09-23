@@ -1,0 +1,31 @@
+You are using the solver gurobi_ampl.
+
+%% COMMENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+centerp10
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Checking ampl.mod for gurobi_options...
+Checking ampl.com for gurobi_options...
+Executing AMPL.
+processing data.
+processing commands.
+Executing on prod-exec-2.neos-server.org
+
+10101 variables:
+        100 binary variables
+        10001 linear variables
+10201 constraints, all linear; 22007 nonzeros
+        101 equality constraints
+        10100 inequality constraints
+1 linear objective; 1 nonzero.
+
+x-Gurobi 10.0.0: tech:threads=4
+x-Gurobi 10.0.0: infeasible problem
+14707 simplex iterations
+76 branching nodes
+
+suffix dunbdd OUT;
+:_varname[j] _var[j]    :=
+;
+
+:_varname[j] _var[j]    :=
+;

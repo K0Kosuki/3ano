@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=MailList
+comment1.params=e
+comment1.target=MailList(java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ MailList\r\n
+comment10.params=
+comment10.target=int\ mailAnexos()
+comment2.params=m
+comment2.target=void\ add(Mail)
+comment3.params=e\ a\ m\ d\ s\ t
+comment3.target=void\ add(java.lang.String,\ int,\ int,\ int,\ java.lang.String,\ java.lang.String)
+comment4.params=
+comment4.target=int\ tamanho()
+comment4.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
+comment5.params=e
+comment5.target=int\ mailPorEndereco(java.lang.String)
+comment6.params=pal
+comment6.target=java.util.ArrayList\ listaPalavra(java.lang.String)
+comment7.params=ano\ mes\ dia
+comment7.target=void\ elimina_data(int,\ int,\ int)
+comment8.params=ano\ mes\ dia
+comment8.target=void\ elimina_data2(int,\ int,\ int)
+comment9.params=
+comment9.target=java.util.ArrayList\ mailsDia()
+numComments=11

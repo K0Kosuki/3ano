@@ -1,0 +1,38 @@
+drop table if exists funcionarios;
+drop table if exists departamentos; 
+-- se já estiver criado ignora e n cria de bivi
+
+create table departamentos (    
+    cod         int primary key auto_increment,
+    designacao char(40) not null,
+    localidade varchar(50)
+);
+
+create table funcionarios (    
+    cod_func      int primary key auto_increment,
+    nome          char(40) not null,
+    data_contra   date default "2023-01-01",
+    hora_Entrada  time default "09:00",
+    salario       decimal(7,2) not null,
+    cod_dep       int,
+    
+    constraint salario_Aceitavel 
+        check (salario>700),
+    
+    foreign key (cod_dep) references departamentos(cod)
+    on update cascade
+    on delete restrict
+);
+
+-- select * from funcionarios;
+-- select * from departamentos;
+
+insert into departamentos
+values (1,"sistemas de informação","Guimarães"),
+       (2,"Informática","Braga");
+insert into departamentos (designacao, localidade)
+values("comercial","Porto");
+insert into funcionarios (nome, salario, cod_dep)
+values("Alberto Sampaio", 800, 1);
+
+commit;

@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Placa
+comment1.params=c
+comment1.target=Placa(int)
+comment2.params=
+comment2.target=int\ getCodigo()
+comment3.params=c
+comment3.target=void\ add(Circuito)
+comment4.params=
+comment4.target=int\ tamanho()
+comment5.params=
+comment5.target=double\ valor_total()
+comment6.params=
+comment6.target=double\ valor_total2()
+comment7.params=
+comment7.target=java.util.Map\ compUsados()
+comment8.params=
+comment8.target=java.util.Map\ circuComps()
+comment9.params=
+comment9.target=Placa\ clone()
+numComments=10

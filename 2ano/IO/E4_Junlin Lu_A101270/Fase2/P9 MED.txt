@@ -1,0 +1,51 @@
+   NEOS Server Version 6.0
+   Job#     : 13111379
+   Password : hZngmLcI
+   User     : 464185339
+   Solver   : milp:Gurobi:AMPL
+   Start    : 2023-06-06 08:00:09
+   End      : 2023-06-06 08:00:24
+   Host     : prod-sub-1.neos-server.org
+
+   Disclaimer:
+
+   This information is provided without any express or
+   implied warranty. In particular, there is no warranty
+   of any kind concerning the fitness of this
+   information for any particular purpose.
+
+   Announcements:
+*************************************************************
+You are using the solver gurobi_ampl.
+
+%% COMMENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+P9MED
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Checking ampl.mod for gurobi_options...
+Checking ampl.com for gurobi_options...
+Executing AMPL.
+processing data.
+processing commands.
+Executing on prod-exec-5.neos-server.org
+
+Presolve eliminates 100 constraints.
+Adjusted problem:
+10100 variables:
+	100 binary variables
+	10000 linear variables
+10101 constraints, all linear; 21100 nonzeros
+	101 equality constraints
+	10000 inequality constraints
+1 linear objective; 807 nonzeros.
+
+x-Gurobi 10.0.0: tech:threads=4
+x-Gurobi 10.0.0: infeasible problem
+1647 simplex iterations
+1 branching nodes
+
+suffix dunbdd OUT;
+:_varname[j] _var[j]    :=
+;
+
+:_varname[j] _var[j]    :=
+;

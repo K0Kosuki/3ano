@@ -1,0 +1,87 @@
+drop table if exists alugueres;
+drop table if exists clientes;
+drop table if exists exemplares;
+drop table if exists jogos;
+drop table if exists editoras;
+
+
+create table clientes(
+    ncliente int primary key auto_increment,
+    nome varchar(50) not null,
+    morada varchar(100) not null,
+    nif char(9) unique,
+    data_nasc date,
+    data_insc date
+);
+
+create table editoras(
+    cod_editora char(3) primary key,
+    designacao varchar(30)
+);
+
+create table jogos(
+    cod_jogo char(4) primary key,
+    titulo varchar(50) not null,
+    cod_editora char(3) not null,
+    preco_aluguer decimal(2,1) not null,
+    multa_diaria decimal(2,1) not null,
+
+    foreign key(cod_editora) references editoras(cod_editora)
+    on update cascade
+    on delete restrict
+);
+
+create table exemplares(
+    cod_jogo char(4),
+    nexemplar int ,
+    consola char(4),
+    data_compra date,
+    preco_compra decimal(5,2),
+
+    primary key(cod_jogo,nexemplar),
+
+    foreign key(cod_jogo) references jogos(cod_jogo)
+    on update cascade
+    on delete restrict
+);
+
+A101270.clientes
+
+    foreign key(ncliente) references clientes(ncliente)
+    on update cascade
+    on delete restrict,
+
+
+    foreign key(cod_jogo,nexemplar) references exemplares(cod_jogo,nexemplar)
+    on update cascade
+    on delete restrict
+    
+    
+-------------
+----Q9
+select ncliente,nome
+from clientes c
+where not exists (select *
+                  from jogos j
+                  where cod_jogo in (select cod_jogo
+                                    from exemplares
+                                   where consola = "NDS")
+                                   and not exists (select *
+                                   from alugueres a
+                                   where a.cod_jogo = j.cod_jogo
+                                   and a.ncliente = c.ncliente));
+            
+            
+           
+
+Create view num_multas_por_cliente (cliente,multas)
+as select ncliente,count(*)
+            from alugueres
+            where multa >0
+            group by ncliente
+    
+select ncliente,nome
+from clientes c,num_multas_por_clientes nmpc
+where c.ncliente = nmpc.cliente and
+
+----------Q11

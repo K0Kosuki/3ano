@@ -1,0 +1,12 @@
+1 aula 
+
+Printf ---into---» terminal
+sconf«---into--- terminal
+
+int main(int arg,char*argv)
+{
+
+int x ;
+printf("Insita um inteiro\n");
+
+scant("%i",8x);

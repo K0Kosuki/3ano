@@ -1,0 +1,101 @@
+CREATE TABLE Curso (
+  ID_Curso INT PRIMARY KEY,
+  Designacao VARCHAR(255),
+  Data_Inicio DATE,
+  Data_Fim DATE,
+  Carga_Letiva INT,
+  Vagas INT,
+  Preco_Propina DECIMAL(10, 2)
+);
+
+CREATE TABLE Aluno (
+  Numero_Aluno INT PRIMARY KEY,
+  Nome VARCHAR(255),
+  Morada VARCHAR(255),
+  NIF VARCHAR(9),
+  Telemovel VARCHAR(9),
+  Email VARCHAR(255),
+  Nota_Final VARCHAR(100)
+);
+
+CREATE TABLE Docente (
+  Numero_Docente INT PRIMARY KEY,
+  ID_Curso INT ,
+  Nome VARCHAR(255),
+  Morada VARCHAR(255),
+  NIF VARCHAR(9),
+  Telemovel VARCHAR(9),
+  Email VARCHAR(255),
+  Data_Contratacao DATE,
+  FOREIGN KEY (ID_Curso) REFERENCES Curso(ID_Curso)
+);
+
+CREATE TABLE Inscricao (
+  Id_inscricao INT,
+  Numero_Aluno INT,
+  ID_Curso INT,
+  Nota INT,
+constraint chave_primaria_inscricao primary key (Id_inscricao),
+
+constraint chave_estrangeira_curso foreign key (ID_Curso)references Curso (ID_Curso)
+on update cascade
+on delete set null,
+
+constraint chave_estrangeira_aluno foreign key(Numero_Aluno) references Aluno(Numero_Aluno)
+on update cascade 
+on delete set null
+);
+
+--------
+Drop
+INSERT INTO Curso
+Values(1,'LETI','2022-01-01','2025-01-01','50','50','70')
+
+INSERT INTO Curso
+Values(2,'METI','2022-01-01','2025-01-01','40','40','70')
+
+INSERT INTO Curso
+Values(3,'LEI','2021-01-01','2024-01-01','50','24','80')
+-------
+INSERT INTO Inscricao
+Values(1,'101270','1','20')
+INSERT INTO Inscricao
+Values(2,'104272','2',30)
+INSERT INTO Inscricao
+Values(3,'10578','3',40)
+INSERT INTO Inscricao
+Values(4,'105378','3',410)
+INSERT INTO Inscricao
+Values(5,'555','3',90)
+---------
+
+INSERT INTO Aluno
+Values('101270','Lu','Rua ABC','114514','1919810','1145@gmail.com','20')
+INSERT INTO Aluno
+Values(104272','Joao','Rua AC','11454','191910','145mail.com','30')
+INSERT INTO Aluno
+Values(10578,'Ana','Rua C','1454','19910','145mail.com','40')
+INSERT INTO Aluno
+Values(105378,'Joana','Rua cC','1454','19910','145mail.com',410)
+INSERT INTO Aluno
+Values(555,'Jorge','Rua cAC','14354','19910','145mail.com',90)
+---QB--
+SELECT ID_Curso,Designacao
+From Curso
+where Data_Inicio='2022-01-01' AND Carga_Letiva = Vagas 
+--QB--
+SELECT ID_Curso, Designacao
+FROM Curso
+WHERE Data_Inicio = '2022-01-01' AND Carga_Letiva = Vagas;
+drop view inscricoes_por_curso
+-----
+CREATE VIEW inscricoes_por_curso AS
+SELECT C.ID_Curso, C.Designacao, COUNT(I.Numero_Aluno) AS Numero_de_Inscricoes
+FROM Curso C,Inscricao I
+WHERE C.ID_Curso = I.ID_Curso
+GROUP BY C.ID_Curso, C.Designacao;
+
+SELECT *
+FROM inscricoes_por_curso
+ORDER BY Numero_de_Inscricoes DESC;
+

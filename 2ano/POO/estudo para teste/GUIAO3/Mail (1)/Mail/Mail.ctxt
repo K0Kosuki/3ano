@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Mail
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Mail\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=e\ ano\ mes\ dia\ ass\ texto
+comment1.target=Mail(java.lang.String,\ int,\ int,\ int,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Mail\r\n
+comment10.params=m
+comment10.target=boolean\ equals(Mail)
+comment2.params=en\ e\ d\ ass\ texto
+comment2.target=Mail(java.lang.String,\ java.util.GregorianCalendar,\ java.util.GregorianCalendar,\ java.lang.String,\ java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getEnd()
+comment4.params=
+comment4.target=java.lang.String\ getSubjet()
+comment5.params=
+comment5.target=java.lang.String\ getTexto()
+comment6.params=
+comment6.target=java.util.GregorianCalendar\ getDatae()
+comment7.params=
+comment7.target=java.util.GregorianCalendar\ getDatar()
+comment8.params=a
+comment8.target=boolean\ existe(java.lang.String)
+comment9.params=
+comment9.target=Mail\ clone()
+numComments=11

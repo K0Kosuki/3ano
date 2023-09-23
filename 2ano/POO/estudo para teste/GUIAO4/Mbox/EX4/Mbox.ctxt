@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Mbox
+comment1.params=num
+comment1.target=Mbox(int)
+comment2.params=c
+comment2.target=void\ add(Chamada)
+comment3.params=numero
+comment3.target=int\ numeroDiferente(int)
+numComments=4

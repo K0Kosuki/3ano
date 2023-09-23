@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Fabrica
+comment1.params=
+comment1.target=Fabrica()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Fabrica\r\n
+comment2.params=nova
+comment2.target=void\ add(Maquina)
+comment2.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\r\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\r\n
+comment3.params=preco
+comment3.target=java.util.Set\ max_consumo(double)
+comment4.params=
+comment4.target=java.util.Map\ maqDoCli()
+comment5.params=
+comment5.target=int\ maxMaq()
+comment6.params=
+comment6.target=int\ maxDura()
+numComments=7

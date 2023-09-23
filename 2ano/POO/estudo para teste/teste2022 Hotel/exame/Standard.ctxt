@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Standard
+comment1.params=n\ l\ p\ num
+comment1.target=Standard(java.lang.String,\ java.lang.String,\ double,\ int)
+comment2.params=mes
+comment2.target=double\ dormida(int)
+comment3.params=
+comment3.target=Standard\ clone()
+numComments=4

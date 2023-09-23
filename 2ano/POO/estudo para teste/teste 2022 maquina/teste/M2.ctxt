@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=M2
+comment1.params=c\ preco
+comment1.target=M2(int,\ double)
+comment2.params=
+comment2.target=double\ getPreco()
+comment3.params=preco
+comment3.target=double\ consumo(double)
+comment4.params=
+comment4.target=M2\ clone()
+numComments=5

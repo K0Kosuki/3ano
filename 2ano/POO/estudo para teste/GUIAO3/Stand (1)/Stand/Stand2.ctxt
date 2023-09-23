@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Stand2
+comment1.params=
+comment1.target=Stand2()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Stand\r\n
+comment2.params=n\ tam
+comment2.target=Stand2(java.lang.String,\ int)
+comment3.params=m\ kms\ cap\ l\ med\ v
+comment3.target=boolean\ adicionar(java.lang.String,\ int,\ int,\ int,\ double,\ int)
+comment4.params=v
+comment4.target=boolean\ adicionar(Veiculo)
+comment5.params=m
+comment5.target=boolean\ vender(java.lang.String)
+comment6.params=
+comment6.target=int\ numveiculos()
+comment7.params=
+comment7.target=java.lang.String\ maisuso()
+comment8.params=
+comment8.target=long\ totalgas()
+comment9.params=k
+comment9.target=java.lang.String\ veiculosViagem(int)
+numComments=10

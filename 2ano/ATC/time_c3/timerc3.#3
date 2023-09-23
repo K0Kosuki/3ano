@@ -1,0 +1,27 @@
+#include<c8051f380.h>
+
+
+ 
+
+
+    void main()
+{
+
+    PCA0MD = 0x00;
+    XBR1 = 0x40;
+
+	char scan = 0;
+
+
+	while(1){
+    if(scan = 0){
+	P2 = 0xb0;}
+	else{P2=0Xff;}
+	
+	if(P0_6==0){
+	while(P0_6 == 0;){
+	scan = ~scan;
+		}	
+	}
+  }		
+ }

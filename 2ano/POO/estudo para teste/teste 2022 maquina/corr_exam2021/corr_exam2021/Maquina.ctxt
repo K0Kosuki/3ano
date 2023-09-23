@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Maquina
+comment1.params=n
+comment1.target=Maquina(int)
+comment2.params=
+comment2.target=int\ getCod()
+comment3.params=
+comment3.target=java.util.List\ getListTasks()
+comment4.params=c
+comment4.target=void\ add(Tarefa)
+comment5.params=
+comment5.target=int\ numTasks()
+comment6.params=preco
+comment6.target=double\ consumo(double)
+comment7.params=
+comment7.target=Maquina\ clone()
+numComments=8

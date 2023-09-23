@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=AgenciaViagens
+comment1.params=
+comment1.target=AgenciaViagens()
+comment2.params=h\ id
+comment2.target=void\ add(Hotel,\ int)
+comment3.params=id\ room
+comment3.target=void\ checkin(int,\ int)
+comment4.params=id\ room
+comment4.target=void\ checkout(int,\ int)
+comment5.params=nif\ id\ qty
+comment5.target=void\ addEstadia(int,\ int,\ int)
+comment6.params=mes\ local
+comment6.target=int\ mais_barato(int,\ java.lang.String)
+comment7.params=mes\ local
+comment7.target=int\ mais_barato2(int,\ java.lang.String)
+comment8.params=id
+comment8.target=java.util.Set\ disponiveis(int)
+numComments=9

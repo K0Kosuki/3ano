@@ -1,0 +1,132 @@
+
+#include <c8051f380.h>
+
+void enviaUART(unsigned char x);
+void realiza_buffer(char comando);
+unsigned char recebeUART();
+volatile int RxDado = 0; // Sem dados de RX
+volatile int TxDado = 1; // Disponivel p/ TX
+volatile unsigned char dado = 0;
+// macros
+#define setbit(x, n) x |= (1 << n)
+#define clearbit(x, n) x &= ~(1 << n) //é feito em compile time, ou seja n vai para o código mas sim apenas faz as alterações no compilador "macro"
+#define isset(x, n)(x >> n) & 0x01
+#define isclear(x, n) !((x >> n) & 0x01)
+
+// UART1 N PRECISA DE TIMER ASSOCIADO POIS TEM UM INTERNO -- MAS PRECISA QEU SE DEFINA NA MESMA O BOUDRATE;//
+//  P0_0  as ligações externas começam neste registo, mas aqueles qeu estão conctaos com trx e
+// registo que pertence ao croosbar P0SKIP (=0x0f) que ativa o P0_4 E P0_5;
+void configUART0(void)
+{
+
+  PCA0MD = 0x00; // Desliga watchdog
+  XBR1 = 0x40;   // Ativa crossbar
+
+  SBRLL1 = 0xF9;
+  SBRLH1 = 0xFF;
+  SCON1 = 0x10;
+  SBCON1 = 0x43;
+
+  P0SKIP = 0x0F;
+  XBR1 = 0x40;
+  XBR2 = 0x01;
+
+  EIE2 = 0x02;
+  IE = 0x80;
+
+  
+}
+
+void inter(void) __interrupt(16)
+{
+  if (isset(SCON1,0))
+  {          // acabou de receber
+    clearbit(SCON1,0); // limpa a flg de recepcao
+    RxDado = 1;
+    dado = SBUF1; // recebe o byte
+  }
+  if (isset(SCON1,1))
+  {
+    clearbit(SCON1,1);
+    if (TxDado)
+    { // TI foi ativado manualmente
+      SBUF1 = dado;
+      TxDado = 0;
+    } // A enviar...
+    else
+    { // Acabou de enviar
+      TxDado = 1;
+    }
+  }
+}
+
+void enviaUART(unsigned char x)
+{
+  while (!TxDado)
+    ; // aguarda pelo fim do envio anterior
+  dado = x;
+  TxDado = 1;
+  setbit(SCON1,1);
+}
+
+unsigned char recebeUART()
+{
+  unsigned char x;
+  if (RxDado)
+  {
+    x = dado;
+    RxDado = 0;
+  }
+  else
+  {
+    x = -1;
+  }
+
+  return x;
+}
+
+void main(void)
+{
+  unsigned int c = 0;
+  unsigned char a;
+
+  char sequencia[16] = {0xc0, 0xf9, 0xa4, 0xb0, 0x99, 0x92, 0x82, 0xf8, 0x80, 0x90, 0x88, 0x83, 0xc6, 0xa1, 0x86, 0x8e};
+  configUART0();
+  int trans[16] = {48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 65, 66, 67, 68, 69, 70};
+
+  P2 = 0xc0;
+  while (1)
+  {
+    a = recebeUART();
+
+    switch (a)
+    {
+    case 'i':
+      c++;
+      enviaUART(trans[c & 0x0f]);
+      P2 = sequencia[c & 0x0f];
+
+      break;
+
+    case 'd':
+      c--;
+      P2 = sequencia[c & 0x0f];
+      enviaUART(trans[c & 0x0f]);
+      break;
+    }
+
+    P2 = sequencia[c & 0x0f];
+    if (P0_7 == 0)
+    {
+      while (P0_7 == 0)
+        ;
+      c++;
+    }
+
+    if (P0_6 == 0)
+    {
+      while (P0_6 == 0)
+        ;
+}
+}
+}

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=n\ q\ u\ c
+comment0.target=Ingrediente(java.lang.String,\ int,\ java.lang.String,\ int)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Ingrediente\r\n
+comment1.params=
+comment1.target=java.lang.String\ getNome()
+comment2.params=
+comment2.target=int\ getQty()
+comment3.params=
+comment3.target=java.lang.String\ getUni()
+comment4.params=
+comment4.target=int\ getCal()
+comment5.params=i
+comment5.target=boolean\ equals(java.lang.Object)
+comment6.params=
+comment6.target=Ingrediente\ clone()
+numComments=7

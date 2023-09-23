@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Conta
+comment1.params=
+comment1.target=java.lang.String\ getTitular()
+comment2.params=
+comment2.target=double\ getSaldo()
+comment3.params=
+comment3.target=int\ getNumeCliente()
+comment4.params=a\ m\ d\ titu\ sal
+comment4.target=Conta(int,\ int,\ int,\ java.lang.String,\ double)
+comment5.params=
+comment5.target=int\ getNum()
+comment6.params=a\ m\ d\ des\ valor
+comment6.target=boolean\ debito(int,\ int,\ int,\ java.lang.String,\ double)
+comment7.params=a\ m\ d\ des\ valor
+comment7.target=void\ credito(int,\ int,\ int,\ java.lang.String,\ double)
+comment8.params=
+comment8.target=java.lang.String\ lista_movs()
+comment9.params=
+comment9.target=java.lang.Object\ clone()
+numComments=10

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Costura
+comment1.params=c\ t\ p
+comment1.target=Costura(int,\ int,\ double)
+comment2.params=
+comment2.target=double\ valor()
+comment3.params=
+comment3.target=double\ custo()
+comment4.params=
+comment4.target=Costura\ clone()
+comment5.params=
+comment5.target=int\ getCod()
+numComments=6

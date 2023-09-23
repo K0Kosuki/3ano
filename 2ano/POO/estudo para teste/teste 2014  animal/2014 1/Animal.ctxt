@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Animal
+comment1.params=c\ p\ r
+comment1.target=Animal(int,\ int,\ double)
+comment2.params=
+comment2.target=int\ getCodigo()
+comment3.params=
+comment3.target=int\ getPeso()
+comment4.params=
+comment4.target=double\ getResiduos()
+comment5.params=
+comment5.target=double\ valor()
+comment6.params=
+comment6.target=double\ custo()
+comment7.params=
+comment7.target=Animal\ clone()
+numComments=8

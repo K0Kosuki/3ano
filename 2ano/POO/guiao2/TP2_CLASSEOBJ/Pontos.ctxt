@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Pontos
+comment1.params=x\ y
+comment1.target=Pontos(double,\ double)
+comment2.params=
+comment2.target=double\ getX()
+comment3.params=x
+comment3.target=double\ setX(double)
+comment4.params=
+comment4.target=double\ getY()
+comment5.params=y
+comment5.target=double\ setY(double)
+numComments=6

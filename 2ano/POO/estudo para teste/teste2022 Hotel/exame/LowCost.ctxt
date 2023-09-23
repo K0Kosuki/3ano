@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=LowCost
+comment1.params=n\ l\ p\ num\ pro
+comment1.target=LowCost(java.lang.String,\ java.lang.String,\ double,\ int,\ boolean)
+comment2.params=
+comment2.target=boolean\ getPro()
+comment3.params=p
+comment3.target=void\ setPro(boolean)
+comment4.params=mes
+comment4.target=double\ dormida(int)
+comment5.params=
+comment5.target=LowCost\ clone()
+numComments=6

@@ -1,0 +1,52 @@
+#include <c8051f380.h>
+int reload = -50000;
+volatile int aux=0;
+void confi()
+{
+	PCA0MD = 0x00;
+    XBR1 = 0x40;
+    CLKSEL = 0x03;
+    CKCON = 0x02;
+    TMOD = 0x01;
+	IE=0x81;
+	
+}
+void inicio()
+{
+    TR0=1;
+    TL0=reload;
+	TH0=(reload>>8);
+}
+
+void timer0_overflow(void) __interrupt(0)
+{
+    inicio();
+ 
+    aux++;
+   switch(aux)
+   {
+   		
+		case (1):
+            P2 = 0xFF;
+            break;
+		case(21):
+		P2_7=!P2_7;
+		aux=0;
+		break;
+   }
+    
+}
+
+
+void main()
+{
+confi();
+inicio();
+P2_7=0;
+
+while (1)
+{
+    
+}
+
+}
