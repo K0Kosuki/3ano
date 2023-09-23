@@ -1,0 +1,107 @@
+%[1] Os alunos dever~ao explicar e interpretar as equac~oes do modelo, referindo:
+%a) Qual o signicado de cada uma das constantes a; b; k; c; d; `;
+%b) Qual o signicado de cada um dos termos em cada equac~ao (basta fazer para uma das
+%equac~oes);
+%c) Como evoluiria cada uma destas especies na aus^encia da outra.
+
+%Apresenta¸c˜ao e explica¸c˜ao do modelo. Classifica¸c˜ao das equa¸c˜oes. Significado das equa¸c˜oes e
+%dos termos envolvidos nas equa¸c˜oes. O que o modelo %escreve. Aplica¸c˜oes usuais do modelo.
+%Eventuais limita¸c˜oes do modelo.
+%Apresenta¸c˜ao e explica¸c˜ao do tema. Dedu¸c˜ao de f´ormulas ou de procedimentos (algoritmos) de
+%contagem Resultados sobre o tema. Casos particulares, se aplic´avel. Constru¸c˜ao e justifica¸c˜ao
+%de fun¸c˜oes geradoras utilizadas. Resultados auxiliares utilizados, etc etc
+
+
+\section{Evolução de uma espécie na ausência da outra (espécie isolada)}
+\subsection{Equações do modelo}
+\begin{equation}
+\left\{
+\begin{array}{l}
+P'(t)=[a-bP(t)]\;P(t)]=aP(t)\left[1-\frac{P(t)}{s}\right]  \medskip  \\
+Q'(t)=[c-dQ(t)]\;Q(t)]=cQ(t)\left[1-\frac{Q(t)}{r}\right]
+\end{array}
+\right.
+\end{equation}
+
+%\bigskip
+%\begin{equation}
+%\begin{array}{l}
+%P(0)>s \rightarrow P'(0)=aP(0)\left[1-\frac{P(0)}{s}\right]=-C \cdot aP(0) \medskip   \\
+%P(0)<s \rightarrow P'(0)=aP(0)\left[1-\frac{P(0)}{s}\right]=C \cdot aP(0)  \medskip  \\
+%P(0)=s \rightarrow P'(0)=aP(0)\left[1-\frac{P(0)}{s}\right]=0 \cdot aP(0)   \\
+%\end{array}
+%\end{equation}
+
+
+\subsection{Análise do modelo}
+\noindent
+Após analisar matematicamente a equação tal retiramos as seguintes conclusões:\smallskip\newline
+Quando  $P(0)>s$, a população diminui.\newline
+Quando  $P(0)<s$, a população aumenta.\newline
+Quando  $P(0)=s$, a população estabiliza.
+
+
+
+
+\noindent
+\section{Evolução de uma espécie em competição com a outra}
+\subsection{Equações do modelo}
+%[1] Os alunos dever~ao explicar e interpretar as equac~oes do modelo, referindo:
+%a) Qual o signicado de cada uma das constantes a; b; k; c; d; `;
+%b) Qual o signicado de cada um dos termos em cada equac~ao (basta fazer para uma das
+%equac~oes);
+%c) Como evoluiria cada uma destas especies na aus^encia da outra.
+
+%Apresenta¸c˜ao e explica¸c˜ao do modelo. Classifica¸c˜ao das equa¸c˜oes. Significado das equa¸c˜oes e
+%dos termos envolvidos nas equa¸c˜oes. O que o modelo %escreve. Aplica¸c˜oes usuais do modelo.
+%Eventuais limita¸c˜oes do modelo.
+%Apresenta¸c˜ao e explica¸c˜ao do tema. Dedu¸c˜ao de f´ormulas ou de procedimentos (algoritmos) de
+%contagem Resultados sobre o tema. Casos particulares, se aplic´avel. Constru¸c˜ao e justifica¸c˜ao
+%de fun¸c˜oes geradoras utilizadas. Resultados auxiliares utilizados, etc etc
+\noindent
+A evolução das populações é descrita pelo modelo
+\begin{equation}
+\left\{
+\begin{array}{l}
+P'(t)=[a-bP(t)-kQ(t)]\;P(t)]  \medskip  \\
+Q'(t)=[c-dQ(t)-\ell P(t)]\;Q(t)]
+\end{array}
+\right.
+\end{equation}
+
+%\medskip
+\noindent
+onde a,b,k,c,d,$\ell$ são constantes positivas.
+
+\subsection{Análise do modelo}
+%Qual o signicado de cada uma das constantes a; b; k; c; d; `;
+\noindent
+As constantes $a$ e $c$ correspondem às taxas de crescimento intrínseco das espécies.\newline
+As constantes $b$ e $d$ correspondem às taxas inibidoras de crescimento das espécies.\newline
+As constantes $k$ e $\ell$ correspondem ao efeito competitivo de uma espécie sobre a outra.
+\medskip
+%Qual o signicado de cada um dos termos em cada equac~ao (basta fazer para uma das« equac~oes);
+
+
+
+
+%c) Como evoluiria cada uma destas especies na aus^encia da outra.
+%Link para Equações https://www.ine.pt/revstat/pdf/Paper1_BrilhanteETAL.pdf
+%https://www.khanacademy.org/science/ap-biology/ecology-ap/population-ecology-ap/a/exponential-logistic-growth IMPORTANTE!
+
+
+
+
+
+
+%\noindent
+%O crescimento exponencial ocorre quando existe poucos indivíduos e muitos recursos. Mas quando o número de indivíduos aumenta o suficiente, os recursos começam a ficar escassos, diminuindo assim a taxa de crescimento. Eventualmente, a taxa de crescimento irá estabilizar.\newline
+%O tamanho da população no qual o crescimento se estabiliza representa o tamanho máximo da população que um determinado ambiente pode suportar, que é denominado de nível de saturação que corresponde ao número máximo de indivíduos.
+\medskip\noindent Após analisarmos o sistema verificamos que existes três possibilidades:
+\begin{enumerate}[ {(}1{)} ]
+\item Ocorre a extinção de ambas as espécies.
+\item Uma espécie sobrevive, enquanto a outra se extingue.
+\item Ambas as espécies sobrevivem, e encontram uma “convivência estável”.
+\end{enumerate}
+
+

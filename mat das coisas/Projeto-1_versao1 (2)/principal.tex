@@ -1,0 +1,208 @@
+%Classe do documento
+\documentclass[11pt,a4paper]{article}
+\usepackage[dvipdf]{epsfig}
+\usepackage{amsfonts,amsmath,amssymb,amsthm}
+
+\usepackage[pdftex,
+            pdfauthor={Your Name},
+            pdftitle={The Title},
+            pdfsubject={The Subject},
+            pdfkeywords={Some Keywords},
+            pdfproducer={Latex with hyperref, or other system},
+            pdfcreator={pdflatex, or other tool}]{hyperref}
+% Portuges
+\usepackage[portuges]{babel}
+% Cores
+\usepackage{color}
+\usepackage{enumerate}
+\usepackage{hyperref}
+% Carateres internacionais.
+\usepackage[utf8]{inputenc}
+
+\usepackage[gen]{eurosym}
+\usepackage{enumerate}
+
+% Fontes internacionais de melhor qualidade.
+\usepackage[T1]{fontenc}
+
+% Incluir imagens.
+\usepackage{graphicx}
+
+% Tabelas
+\usepackage{tabularx}
+
+%Tabelas multi-coluna
+\usepackage{multirow}
+
+% When it comes to bibliography management in LATEX, the package natbib is a package for customising citations (especially author-year citation schemes) when using BibTeX. 
+%\usepackage{natbib}
+\usepackage{biblatex}
+
+% Caminho para a bibliografia
+\addbibresource{bibliografia.bib}
+
+% The package enables the user to typeset programs (programming code).
+\usepackage{listings}
+
+% The caption package provides many ways to customise the captions in floating environments like figure and table, and cooperates with many other packages.
+\usepackage{subcaption}
+
+%The package enables the user to produce and typeset one or more indexes simultaneously with a document.
+\usepackage{imakeidx}
+
+%Usado para pagestyles
+\usepackage{fancyhdr}
+
+%Tipo e margens do documento
+%\usepackage[a4paper,top=3cm,bottom=3cm,left=3cm,right=3cm]{geometry}
+
+% Para definir a mancha de texto e a sua posicao
+\hoffset -0.7in
+\voffset -0.5in
+\addtolength{\textwidth}{3.5cm}
+\addtolength{\textheight}{2cm}
+
+% Define figures como o path para as imagens.
+\graphicspath{ {imagens/} }
+
+% A general purpose hierarchical index generator; it accepts one or more input files.
+\makeindex
+
+
+
+
+% Para os Cabeçalhos            
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\leftmark}
+\fancyhead[L]{\rightmark}
+\fancyfoot[R]{\thepage}
+\lhead{CSE 101}
+\rhead{\leftmark}
+\lhead{\rightmark}
+\fancyfoot[R]{\thepage}
+%------------------------------
+
+
+
+%%%%%%%%%%%%%
+% Para definir a mancha de texto e a sua posicao
+\hoffset -0.7in
+\voffset -0.5in
+\addtolength{\textwidth}{3.5cm}
+\addtolength{\textheight}{2cm}
+
+%%%%%%%%%%%%%%%%%%%
+% Simbolos
+\def\RR{\mathbb R}
+\def\QQ{\mathbb Q}
+\def\NN{\mathbb N}
+\def\ZZ{\mathbb Z}
+\def\PP{\mathbb P}
+\def\CC{\mathbb C}
+
+\def\u{\mbox{\boldmath$u$}}
+\def\v{\mbox{\boldmath$v$}}
+\def\q{\mbox{\boldmath$q$}}
+
+%%%%%%%%%%%%%%%%%%%
+% Para definir cores
+
+\definecolor{cinz}{cmyk}{0,0,0,.5}
+\definecolor{cinzz}{cmyk}{0,0,0,.75}
+\definecolor{violeta}{cmyk}{0.3,1,0,0}
+\definecolor{cast}{cmyk}{0,.4,1,.4}
+\definecolor{ggreen}{cmyk}{1,     0,      1,      0}
+\definecolor{ror}{cmyk}{0, 0.77, 0.87, 0}
+\definecolor{amber(sae/ece)}{rgb}{1.0, 0.49, 0.0}
+\definecolor{navyblue}{rgb}{0.2, 0.2, 0.6}
+\definecolor{azul}{rgb}{0.2, 0.29996, 0.8 }
+\definecolor{myred}{cmyk}{0.1, 1, 0.5, 0}
+
+%%%%%%%%%%%%%%%%%%%
+% Teoremas e outros ambiente
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}{Lemma}[section]
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+\newtheorem{conj}{Conjecture}[section]
+\newtheorem{exmp}{Example}[section]
+
+\theoremstyle{remark}
+\newtheorem*{rem}{Remark}
+\newtheorem*{note}{Note}
+
+%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\dps}{\displaystyle}
+\allowdisplaybreaks[1]
+
+%%%%%%%%%%%%%%%%%%%
+% Operadores
+
+\DeclareMathOperator{\sen}{sen}
+%\DeclareMathOperator{\cos}{cos}
+\DeclareMathOperator{\tg}{tg}
+\DeclareMathOperator{\cotg}{cotg}
+
+\DeclareMathOperator{\asen}{arcsen}
+\DeclareMathOperator{\arcos}{arccos}
+\DeclareMathOperator{\arctg}{arctg}
+\DeclareMathOperator{\arccotg}{arccotg}
+
+\DeclareMathOperator{\sh}{sh}
+\DeclareMathOperator{\ch}{ch}
+\DeclareMathOperator{\tah}{th}
+%\DeclareMathOperator{\coth}{coth}
+
+\DeclareMathOperator{\agc}{argch}
+\DeclareMathOperator{\ags}{argsh}
+\DeclareMathOperator{\agt}{argth}
+\DeclareMathOperator{\agct}{argcoth}
+
+%%%%%%%%%%%%%%
+
+% Inicio do documento.
+\begin{document}
+
+%NAO SEI BEM PARA QUE SERVE
+%\baselineskip=1.4em
+
+% Capa
+%\input{capa}
+
+% Indice
+%\tableofcontents
+%\pagebreak
+
+% Indice de figuras
+%\listoffigures
+%\pagebreak
+
+%Indice de Tabelas
+%\listoftables
+%\pagebreak
+
+% Teoria
+%\input{teoria}
+
+% Modelo ou Tema
+%\input{modelo}
+
+% Estudo e exploraçao do modelo ou do tema de combinatoria
+%\input{equilibrio}
+
+% Aplicacoes e simulacoes numericas
+%\input{Condicoes}
+
+Ricardo Filipe Sousa Oliveira Ricardo Filipe Sousa Oliveira Ricardo Filipe Sousa Oliveira Ricardo Filipe Sousa Oliveira Ricardo Filipe Sousa Oliveira Ricardo Filipe Sousa Oliveira Ricardo Filipe Sousa Oliveira Ricardo Filipe Sousa Oliveira Ricardo Filipe Sousa Oliveira Ricardo Filipe Sousa Oliveira Ricardo Filipe Sousa Oliveira Ricardo Filipe Sousa Oliveira Ricardo Filipe Sousa Oliveira Ricardo Filipe Sousa Oliveira Ricardo Filipe Sousa Oliveira Ricardo Filipe Sousa Oliveira 
+%\pagebreak
+%\printbibliography
+%----------------------------------------------------------------------------------------
+
+\end{document}

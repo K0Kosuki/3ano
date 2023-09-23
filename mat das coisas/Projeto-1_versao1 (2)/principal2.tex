@@ -1,0 +1,232 @@
+% Matematica das Coisas
+% Exemplo LaTeX
+% 2021/2022
+% Ana Jacinta Soares
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[dvipdf]{epsfig}
+\usepackage{amsfonts,amsmath,amssymb,amsthm}
+\usepackage[portuges]{babel}
+\usepackage{color}
+\usepackage{enumerate}
+\usepackage{hyperref}
+%\usepackage[applemac]{inputenc}   % para acentos no Mac
+\usepackage[T1]{fontenc}              % para acentos noutros computadores
+% \usepackage[utf8]{inputenc}          % para acentos noutros computadores
+\usepackage[gen]{eurosym}
+\usepackage{enumerate}
+
+%%%%%%%%%%%%%
+% Para definir a mancha de texto e a sua posicao
+\hoffset -0.7in
+\voffset -0.5in
+\addtolength{\textwidth}{3.5cm}
+\addtolength{\textheight}{2cm}
+
+%%%%%%%%%%%%%%%%%%%
+% Simbolos
+\def\RR{\mathbb R}
+\def\QQ{\mathbb Q}
+\def\NN{\mathbb N}
+\def\ZZ{\mathbb Z}
+\def\PP{\mathbb P}
+\def\CC{\mathbb C}
+
+\def\u{\mbox{\boldmath$u$}}
+\def\v{\mbox{\boldmath$v$}}
+\def\q{\mbox{\boldmath$q$}}
+
+%%%%%%%%%%%%%%%%%%%
+% Para definir cores
+
+\definecolor{cinz}{cmyk}{0,0,0,.5}
+\definecolor{cinzz}{cmyk}{0,0,0,.75}
+\definecolor{violeta}{cmyk}{0.3,1,0,0}
+\definecolor{cast}{cmyk}{0,.4,1,.4}
+\definecolor{ggreen}{cmyk}{1,     0,      1,      0}
+\definecolor{ror}{cmyk}{0, 0.77, 0.87, 0}
+\definecolor{amber(sae/ece)}{rgb}{1.0, 0.49, 0.0}
+\definecolor{navyblue}{rgb}{0.2, 0.2, 0.6}
+\definecolor{azul}{rgb}{0.2, 0.29996, 0.8 }
+\definecolor{myred}{cmyk}{0.1, 1, 0.5, 0}
+
+%%%%%%%%%%%%%%%%%%%
+% Teoremas e outros ambiente
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}{Lemma}[section]
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+\newtheorem{conj}{Conjecture}[section]
+\newtheorem{exmp}{Example}[section]
+
+\theoremstyle{remark}
+\newtheorem*{rem}{Remark}
+\newtheorem*{note}{Note}
+
+%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\dps}{\displaystyle}
+\allowdisplaybreaks[1]
+
+%%%%%%%%%%%%%%%%%%%
+% Operadores
+
+\DeclareMathOperator{\sen}{sen}
+%\DeclareMathOperator{\cos}{cos}
+\DeclareMathOperator{\tg}{tg}
+\DeclareMathOperator{\cotg}{cotg}
+
+\DeclareMathOperator{\asen}{arcsen}
+\DeclareMathOperator{\arcos}{arccos}
+\DeclareMathOperator{\arctg}{arctg}
+\DeclareMathOperator{\arccotg}{arccotg}
+
+\DeclareMathOperator{\sh}{sh}
+\DeclareMathOperator{\ch}{ch}
+\DeclareMathOperator{\tah}{th}
+%\DeclareMathOperator{\coth}{coth}
+
+\DeclareMathOperator{\agc}{argch}
+\DeclareMathOperator{\ags}{argsh}
+\DeclareMathOperator{\agt}{argth}
+\DeclareMathOperator{\agct}{argcoth}
+
+
+
+
+%%%%%%%%%%%%%%
+\usepackage{graphicx}
+
+% Define figures como o path para as imagens.
+\graphicspath{ {imagens/} }
+
+
+
+% Informações do PDF
+%\usepackage[pdftex,
+ %           pdfauthor={Ricardo Filipe Sousa Oliveira},
+  %          pdftitle={Dinâmica de populações em competição},
+    %        pdfsubject={Projecto 1B},
+     %       pdfkeywords={Matemática das Coisas},
+       %     pdfproducer={Latex},
+       %     pdfcreator={Overleaf}]
+
+
+% Informações do PDF
+
+%Usado para pagestyles
+%\usepackage{fancyhdr}
+% Para os Cabeçalhos            
+%\pagestyle{fancy}
+%\fancyhf{}
+%\fancyhead[R]{\leftmark}
+%\fancyhead[L]{\rightmark}
+%\fancyfoot[R]{\thepage}
+%\lhead{CSE 101}
+%\rhead{\leftmark}
+%\lhead{\rightmark}
+%\fancyfoot[R]{\thepage}
+%\rfoot{\thepage}
+
+\begin{document}
+\baselineskip=1.4em
+%\pagestyle{plain}
+
+% Capa
+\input{capa}
+\pagebreak
+
+% Indice
+\tableofcontents
+\pagebreak
+
+% Indice de figuras
+\listoffigures
+\pagebreak
+
+%Indice de Tabelas
+\listoftables
+\pagebreak
+
+\input{introducao}
+\pagebreak
+
+
+\input{modelo}
+\pagebreak
+
+
+\input{equilibrio}
+\pagebreak
+
+
+\input{condicoes}
+\pagebreak
+
+\section{Conclusão}
+\pagebreak
+
+\input{bibliografia}
+\pagebreak
+
+
+%%%%%
+%\input{project_plan}
+
+
+%CONDICOES INICIAIS
+
+%\begin{table}[h!]
+
+%\vspace*{0.25cm}
+
+%\begin{center}
+%\begin{tabular}{| c | c | c | c | c |}
+%\hline \hline
+%{\small Caso}  &  {\small 1}   &   {\small 2}   &  {\small 3}   &  {\small 4} 
+%\\ \hline \hline
+%$P(0)$  &  $1$ & $1$  & $1$  & $2$
+%\\ \hline
+%$Q(0)$  &  $1$ & $1$  & $1$  & $2$
+%\\ \hline
+%$a$  &  $1$ & $1$  & $1$  & $0,1$
+%\\ \hline
+%$b$  &  $1$ & $1$  & $1$  & $0,05$
+%\\ \hline
+%$c$  &  $0,5$ & $0,75$  & $1,5$  & $0,2$ 
+%\\ \hline
+%$d$  &  $0,25$ & $1$  & $1$  & $0,2/120$
+%\\ \hline
+%$k$  &  $1$ & $1$  & $1$  & $0,001$
+%\\ \hline
+%$\ell$  &  $0,75$ & $0,5$  & $1$  & $0,02$
+%\\ \hline \hline 
+%%%%%
+%\end{tabular}
+%\end{center}
+%\label{tab1}
+%\caption{Aqui escrevo a legenda desta tabela.}
+%\end{table}
+%\bigskip
+
+
+%\section{Conclusão}
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+

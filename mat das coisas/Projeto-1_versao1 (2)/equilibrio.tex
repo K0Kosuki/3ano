@@ -1,0 +1,373 @@
+%Pretende-se, ainda, que os alunos determinem os pontos de equilbrio, em geral, e estudem a
+%sua estabilidade.
+
+%Resolu¸c˜ao anal´ıtica das equa¸c˜oes, quando aplic´avel. Representa¸c˜ao das solu¸c˜oes. Campo de direc¸c˜oes. Propriedades e significado das equa¸c˜oes ou das solu¸c˜oes. Pontos de equil´ıbrio. Diagrama
+%de fases. An´alise da estabilidade dos pontos de equil´ıbrio. Outros estudos pertinentes para o
+%modelo escolhido. Pode fazer sentido estudar o modelo em diversas fases: por exemplo incluindo
+%ou n˜ao diversos efeitos nas equa¸c˜oes.
+%Para um tema de combinat´oria, poder´a fazer sentido apenas exemplos, exerc´ıcios, problemas de
+%aplica¸c˜ao, etc
+
+\subsection{Determinação dos pontos de equilíbrio}
+Recorrendo a técnicas da \textbf{Teoria dos Sistemas Dinâmicos}, podemos prever estas situações, fazendo uma \textbf{análise quantitativa da solução do modelo}, calculando os \textbf{pontos de equilíbrio} e a sua \textbf{estabilidade}.\newline
+Estudo do \textbf{sistema dinâmico “reduzido”}:
+
+\begin{equation}
+\left\{
+\begin{array}{l}
+P'=(a-bP-kQ)P  \medskip  \\
+Q'=(c-dQ-\ell P)Q
+\end{array}
+\right.
+\label{eq:reduzida}
+\end{equation}
+\bigskip\medskip\newline\noindent Procurando os \textbf{pontos de equilíbrio}: \bigskip\medskip\newline\noindent
+$
+\left\{
+\begin{array}{l}
+(a-bP-kQ)P=0  \medskip  \\
+(c-dQ-\ell P)Q=0
+\end{array}
+\right.
+\Leftrightarrow\;\;
+\left\{
+\begin{array}{l}
+P=0 \vee a-bP-kQ=0  \medskip  \\
+Q=0 \vee c-dQ-\ell P=0
+\end{array}
+\right.
+$
+\bigskip\medskip\newline\noindent Obtemos os \textbf{sistemas de equações}, sendo que posteriormente, determinamos as suas \textbf{soluções}: \bigskip\medskip\newline\noindent
+$
+\left\{
+\begin{array}{l}
+P=0  \medskip  \\
+Q=0
+\end{array}
+\right.
+\vee\;\;
+\left\{
+\begin{array}{l}
+P=0  \medskip  \\
+Q=c-dQ-\ell P=0
+\end{array}
+\right.
+\vee\;\;
+\left\{
+\begin{array}{l}
+a-bP-kQ=0  \medskip  \\
+Q=0
+\end{array}
+\right.
+\vee\;\;
+\left\{
+\begin{array}{l}
+a-bP-kQ=0  \medskip  \\
+c-dQ-\ell P=0
+\end{array}
+\right.
+$
+\bigskip\medskip\newline\noindent Cálculos necessários para determinação das soluções do \textbf{primeiro} sistema de equações:  \bigskip\medskip\newline\noindent
+$
+\left\{
+\begin{array}{l}
+P=0  \medskip  \\
+Q=0
+\end{array}
+\right.
+$
+\bigskip\medskip\newline\noindent Cálculos necessários para determinação das soluções do \textbf{segundo} sistema de equações:  \bigskip\medskip\newline\noindent
+$
+\left\{
+\begin{array}{l}
+P=0  \medskip  \\
+c-dQ-\ell P=0
+\end{array}
+\right.
+\Leftrightarrow\;\;
+\left\{
+\begin{array}{l}
+P=0  \medskip  \\
+Q=\frac{-c}{-d}
+\end{array}
+\right.
+\Leftrightarrow\;\;
+\left\{
+\begin{array}{l}
+P=0  \medskip  \\
+Q=\frac{c}{d}
+\end{array}
+\right.
+$
+\bigskip\medskip\newline\noindent Cálculos necessários para determinação das soluções do \textbf{terceiro} sistema de equações: \bigskip\medskip\newline\noindent
+$
+\left\{
+\begin{array}{l}
+a-bP-kQ=0  \medskip  \\
+Q=0
+\end{array}
+\right.
+\Leftrightarrow\;\;
+\left\{
+\begin{array}{l}
+P=\frac{-a}{-b}  \medskip  \\
+Q=0
+\end{array}
+\right.
+\Leftrightarrow\;\;
+\left\{
+\begin{array}{l}
+P=\frac{a}{b}  \medskip  \\
+Q=0
+\end{array}
+\right.
+$
+\bigskip\medskip\newline\noindent Cálculos necessários para determinação das soluções do \textbf{quarto} sistema de equações: \bigskip\medskip\newline\noindent
+$
+\left\{
+\begin{array}{l}
+a-bP-kQ=0  \medskip  \\
+Q=c-dQ-\ell P
+\end{array}
+\right.
+\Leftrightarrow\;\;
+\left\{
+\begin{array}{l}
+P=\frac{-a+kQ}{-b}  \medskip  \\
+Q=c-dQ-\ell P
+\end{array}
+\right.
+\Leftrightarrow\;\;
+\left\{
+\begin{array}{l}
+P=\frac{a-kQ}{b}  \medskip  \\
+Q=c-dQ-\ell P
+\end{array}
+\right.
+\Leftrightarrow\;\;
+$
+\bigskip\newline\noindent
+$
+\left\{
+\begin{array}{l}
+P=\frac{a-kQ}{b}  \medskip  \\
+c-dQ-\ell \left(\frac{a-kQ}{b}\right)=0
+\end{array}
+\right.
+\Leftrightarrow\;\;
+\left\{
+\begin{array}{l}
+P=\frac{a-kQ}{b}  \medskip  \\
+c-dQ-\frac{\ell a}{b}+\frac{\ell kQ}{b}=0
+\end{array}
+\right.
+\Leftrightarrow\;\;
+\left\{
+\begin{array}{l}
+P=\frac{a-kQ}{b}  \medskip  \\
+Q\left(-d+\frac{\ell k}{b}\right)=\frac{\ell a}{b}-c
+\end{array}
+\right.
+\Leftrightarrow\;\;
+$
+%TRE
+\bigskip\newline\noindent
+$
+\left\{
+\begin{array}{l}
+P=\frac{a-kQ}{b}  \medskip  \\
+Q=\frac{\frac{\ell a}{b}-c}{\frac{\ell k}{b}-d}
+\end{array}
+\right.
+=\;\;
+\left\{
+\begin{array}{l}
+P=\frac{a-kQ}{b}  \medskip  \\
+Q=\frac{\frac{\ell a}{b}-cb}{\frac{\ell k}{b}-db}
+\end{array}
+\right.
+\Leftrightarrow\;\;
+\left\{
+\begin{array}{l}
+P=\frac{a-kQ}{b}  \medskip  \\
+Q=\frac{\ell a-cb}{\ell k-db}
+\end{array}
+\right.
+\Leftrightarrow\;\;
+\left\{
+\begin{array}{l}
+P=\frac{a-kQ}{b}  \medskip  \\
+Q=\frac{a \ell-bc}{k \ell-bd}
+\end{array}
+\right.
+\Leftrightarrow\;\;
+$
+%LASTTTT
+\bigskip\newline\noindent
+$
+\left\{
+\begin{array}{l}
+P=\frac{a-k\left(\frac{al-bc}{kl-bd}\right)}{b}  \medskip  \\
+Q=\frac{a \ell-bc}{k \ell-bd}
+\end{array}
+\right.
+\Leftrightarrow\;\;
+\left\{
+\begin{array}{l}
+P=\frac{\left(\frac{ak \ell - abd -ka \ell + kbc}{k \ell-bd}\right)}{b}  \medskip  \\
+Q=\frac{a \ell-bc}{k \ell-bd}
+\end{array}
+\right.
+\Leftrightarrow\;\;
+\left\{
+\begin{array}{l}
+P=\frac{\left(\frac{ak \ell -ak \ell -abd +bck}{k \ell-bd}\right)}{b}  \medskip  \\
+Q=\frac{a \ell-bc}{k \ell-bd}
+\end{array}
+\right.
+\Leftrightarrow\;\;
+$
+\bigskip\newline\noindent
+$
+\left\{
+\begin{array}{l}
+P=\frac{\left(\frac{-abd +bck}{k \ell-bd}\right)}{b}  \medskip  \\
+Q=\frac{a \ell-bc}{k \ell-bd}
+\end{array}
+\right.
+\Leftrightarrow\;\;
+\left\{
+\begin{array}{l}
+P=\frac {b(-abd+bck)}{kl-bd}  \medskip  \\
+Q=\frac{a \ell-bc}{k \ell-bd}
+\end{array}
+\right.
+\Leftrightarrow\;\;
+\left\{
+\begin{array}{l}
+P=\frac {-ad+ck}{kl-bd}  \medskip  \\
+Q=\frac{a \ell-bc}{k \ell-bd}
+\end{array}
+\right.
+$
+%\left(\right)
+\bigskip\medskip\newline\noindent Após termos determinado as \textbf{soluções}, obtemos os \textbf{pontos de equilíbrio}:\medskip\newline\noindent
+$(P_{1}^{*},Q_{1}^{*})=\left(0,0\right)$\medskip\newline
+$(P_{2}^{*},Q_{2}^{*})=\left(0,\frac{c}{d}\right)$\medskip\newline
+$(P_{3}^{*},Q_{3}^{*})=\left(\frac{a}{b},0\right)$\medskip\newline
+$(P_{4}^{*},Q_{4}^{*})=\left(\frac {-ad+ck}{kl-bd},\frac{a \ell-bc}{k \ell-bd}\right)$
+
+\newpage
+
+\subsection{Estabilidade}
+Partimos da equação (\ref{eq:reduzida}) e definimos as funções:\bigskip\medskip\newline\noindent
+$
+\left\{
+\begin{array}{l}
+F(P,Q)=(a-bP-kQ)P=aP-bP^2-kQP  \medskip  \\
+G(P,Q)=(c-dQ-\ell P)Q=cQ-dQ^2-\ell PQ
+\end{array}
+\right.
+$
+\bigskip\medskip\newline\noindent Construímos a \textbf{matriz Jacobiana}:\bigskip\medskip\newline\noindent
+$J=
+\renewcommand{\arraystretch}{1.25}
+\begin{bmatrix}
+  \frac{\partial F}{\partial P} & \frac{\partial F}{\partial Q}\medskip  \\
+  \frac{\partial G}{\partial P} & \frac{\partial G}{\partial Q}
+\end{bmatrix}
+=
+\renewcommand{\arraystretch}{1.25}
+\begin{bmatrix}
+  a-2bP-kQ & -kP\medskip  \\
+  \ell Q & c-2dQ- \ell P
+ \end{bmatrix}
+$
+\bigskip\medskip\newline\noindent Calculamos as respetivas matrizes Jacobianas em cada um dos pontos de equilíbrio, para assim, podermos estudar a estabilidade nesses pontos. \bigskip\medskip\newline\noindent
+J$(P_{1}^{*},Q_{1}^{*})=\left(0,0\right)$ =$
+\renewcommand{\arraystretch}{1.25}
+\begin{bmatrix}
+  a & 0\medskip  \\
+  0 & c
+\end{bmatrix}
+$
+\medskip\bigskip \newline
+J$(P_{2}^{*},Q_{2}^{*})=\left(0,\frac{c}{d}\right)$ =$
+\renewcommand{\arraystretch}{1.25}
+\begin{bmatrix}
+  a-\frac{ck}{d} & 0\medskip  \\
+  -\frac{cl}{d} & -c
+\end{bmatrix}
+$
+\medskip\bigskip \newline
+J$(P_{3}^{*},Q_{3}^{*})=\left(\frac{a}{b},0\right)$ =$
+\renewcommand{\arraystretch}{1.25}
+\begin{bmatrix}
+  -a & -\frac{ak}{b} \medskip  \\
+  0 & c- \frac{a \ell}{b}
+\end{bmatrix}
+$
+\medskip\bigskip \newline
+J$(P_{4}^{*},Q_{4}^{*})=\left(\frac {-ad+ck}{kl-bd},\frac{a \ell-bc}{k \ell-bd}\right)$ =$
+\renewcommand{\arraystretch}{1.25}
+\begin{bmatrix}
+  \frac{abd-bck}{k \ell-bd} & \frac{adk-ck^2}{k \ell-bd}\medskip  \\
+  \frac{bc \ell- a \ell^2}{k \ell-bd} & \frac{bcd-ad \ell}{k \ell-bd}
+\end{bmatrix}
+$
+
+
+
+
+
+\bigskip\medskip\noindent Calculamos os \textbf{valores próprios} das matrizes:\bigskip\newline\noindent
+Pela definição do vetor característico $v$ correspondente ao valor característico $\lambda$ temos:\newline
+$Av=\lambda v$\newline
+Neste caso:\newline
+$Av-\lambda v=(A- \lambda I) \cdot v=0$\newline
+A equação têm uma solução não nula se, e só se,\newline det$(A- \lambda I)=0$
+\newpage
+\noindent Cálculo do valor próprio da \textbf{primeira} matriz:\bigskip\medskip\newline\noindent
+det$(A- \lambda I)=\renewcommand{\arraystretch}{1.25}
+\begin{vmatrix}
+  a-\lambda & -c\medskip  \\
+  0 & c- \lambda
+\end{vmatrix}=\lambda^2-(a+c)\cdot \lambda +ac=(\lambda-c) \cdot (\lambda -a)=0)$\medskip\newline
+$\lambda_1=c$ e $\lambda_2=a$
+%c
+%a
+\bigskip\newline\noindent Cálculo do valor próprio da \textbf{segunda} matriz: \bigskip\medskip\newline\noindent
+det$(A- \lambda I)=\renewcommand{\arraystretch}{1.25}
+\begin{vmatrix}
+  \frac{ad-ck}{d}-\lambda & 0\medskip  \\
+  \frac{-cl}{d} & {-c-\lambda}
+\end{vmatrix}=\lambda^2-\frac{ad-cd-ck}{d}\cdot \lambda  -\frac{acd-c^2k}{d}=$\bigskip\newline
+$\frac{1}{d} \cdot (d\lambda^2 -(ad-cd-ck) \cdot \lambda - (acd-c^2k))=d \cdot \frac{1}{d} \cdot (\lambda +c ) \cdot \left(\lambda- \frac{ad-ck}{d}\right)=0$\medskip\newline
+$\lambda_1=-c$ e $\lambda_2=\frac{ad-ck}{d}$
+%c
+%a
+\bigskip\newline\noindent Cálculo do valor próprio da \textbf{terceira} matriz: \bigskip\medskip\newline\noindent
+det$(A- \lambda I)=\renewcommand{\arraystretch}{1.25}
+\begin{vmatrix}
+  -a-\lambda- & \frac{-ak}{b}\medskip  \\
+   0 & \frac{bc-a\ell}{b}-\lambda
+\end{vmatrix}=\lambda^2-\frac{ab-bc+a\ell}{b}\cdot \lambda  -\frac{abc-a^2\ell}{b}=$\bigskip\newline
+$\frac{1}{b} \cdot (b\lambda^2 +(ab-bc+al) \cdot \lambda - (abc-a^2\ell))=b \cdot \frac{1}{b} \cdot (\lambda +a ) \cdot \left(\lambda- \frac{bc-al}{b}\right)=0$\medskip\newline
+$\lambda_1=-a$ e $\lambda_2=\frac{bc-al}{b}$
+%c
+%a
+\bigskip\medskip\newline\noindent Cálculo do valor próprio da \textbf{quarta} matriz: \bigskip\medskip\newline\noindent
+det$(A- \lambda I)=\renewcommand{\arraystretch}{1.25}
+\begin{vmatrix}
+  \frac{-abd+bck}{bd-k\ell}-\lambda & \frac{ck^2-adk}{bd-k\ell}\medskip  \\
+  \frac{a\ell^2-bcl}{bd-kl} & \frac{-bcd+ad\ell}{bd-k\ell} -\lambda
+\end{vmatrix}$\medskip\newline
+Não há soluções racionais.\bigskip\newline
+Depois de termos calculado os valores próprios destas matrizes, obtemos:\medskip\newline
+Para J$(P_{1}^{*},Q_{1}^{*})=\left(0,0\right)$, são $\lambda_(1)_(1)=c$ e $\lambda_(1)_(2)=a$.\medskip\newline
+Para J$(P_{2}^{*},Q_{2}^{*})=\left(0,\frac{c}{d}\right)$, são $\lambda_(2)_(1)=-c$ e $\lambda_(2)_(2)=\frac{ad-ck}{d}$.\medskip\newline
+Para J$(P_{3}^{*},Q_{3}^{*})=\left(\frac{a}{b},0\right)$, são $\lambda_(3)_(1)=-a$ e $\lambda_(3)_(2)=\frac{bc-al}{b}$.\medskip\newline
+Para J$(P_{4}^{*},Q_{4}^{*})=\left(\frac {-ad+ck}{kl-bd},\frac{a \ell-bc}{k \ell-bd}\right)$, não há soluções racionais.\medskip\newline
+
+
+\noindent Nada se pode concluir sobre a estabilidade dos pontos de equilíbrio, pois para isso, seria necessário uma análise detalhada usando os vetores próprios.
