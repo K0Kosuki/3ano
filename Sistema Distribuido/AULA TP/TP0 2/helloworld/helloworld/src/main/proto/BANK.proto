@@ -1,0 +1,38 @@
+
+syntax = "proto3";
+option java_multiple_files = true;
+
+package helloworld;
+
+service Hello {
+  rpc hello(HelloRequest) returns (HelloReply) {}
+
+  rpc Bank(OpenAccountRequest) returns (OpenAccountReply) {}
+}
+
+
+message OpenAccountRequest {
+  int32 balance = 1;
+}
+
+message OpenAccountReply{
+  int32 id = 1;
+}
+
+message balanceRequest{
+  int32 id = 1;
+}
+
+message balanceReply{}
+  int32 id = 1;
+}
+
+
+
+message HelloRequest {
+  string who = 1;
+}
+
+message HelloReply {
+  string greeting = 1;
+}

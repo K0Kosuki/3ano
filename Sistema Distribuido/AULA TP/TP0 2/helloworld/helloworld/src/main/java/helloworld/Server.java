@@ -7,18 +7,17 @@ import io.grpc.stub.StreamObserver;
 import java.util.concurrent.Executors;
 
 // executar com: mvn exec:java -Dexec.mainClass="helloworld.Server"
-public class Server extends HelloGrpc.HelloImplBase {
+public class Server extends BankGrpc.BankImplBase {
     @Override
-    public void hello(HelloRequest request, StreamObserver<HelloReply> responseObserver) {
+    public void hello(Balance request, StreamObserver<AccountId> responseObserver) {
         responseObserver.onNext(
-                HelloReply.newBuilder().setGreeting(
-                        "Hello "+request.getWho()+"!"
+                AccountId.newBuilder().bank.createAccount(request.getBalance()
                 ).build());
         responseObserver.onCompleted();
     }
 
     public static void main(String[] args) throws Exception {
-        Grpc.newServerBuilderForPort(12345, InsecureServerCredentials.create())
+        Grpc.newServerBuilderForPort(10345, InsecureServerCredentials.create())
                 .addService(new Server())
                 .executor(Executors.newSingleThreadExecutor())
                 .build().start().awaitTermination();

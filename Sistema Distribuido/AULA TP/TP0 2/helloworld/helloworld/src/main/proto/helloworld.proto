@@ -2,16 +2,53 @@
 syntax = "proto3";
 option java_multiple_files = true;
 
-package helloworld;
+package bank;
 
-service Hello {
-  rpc hello(HelloRequest) returns (HelloReply) {}
+service Bank {
+  rpc createAccount(Balance) returns (AccountId) {}
+  rpc closeAccount(AccountId) returns (Balance){}
+  rpc Balance(AccountId) returns (Balance){}
+  rpc deposit(DpRequest) returns (Balance){}
+  rpc accountInfo(AccountId) returns (AccountInfo)
+
 }
 
-message HelloRequest {
-  string who = 1;
+
+message AccountInfo{
+  string name = 1;
+  string address = 2;
+  repeated string  contact = 3;
 }
 
-message HelloReply {
-  string greeting = 1;
+message Transaction{
+  string date = 1;
+  string description = 2;
+  int32 value = 3;
+}
+
+message TransctionList{}
+
+
+message AccountId{
+int32 id = 1;
+}
+
+
+message Balance{
+  int32 Balance = 1;
+}
+
+
+message DpRequest {
+  int32 value = 2;
+}
+
+message DpReply {
+  bool status =1;
+}
+
+message TransferRequest {
+  AccountId from = 1;
+  AccountId to = 2;
+  int32 value = 3;
 }
