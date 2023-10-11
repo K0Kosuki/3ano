@@ -1,3 +1,5 @@
+import java.util.concurrent.locks.ReentrantLock;
+
 public class Bank {
 
     private static class Account {
@@ -18,6 +20,7 @@ public class Bank {
 
     // Bank slots and vector of accounts
     private int slots;
+    private ReentrantLock l;
     private Account[] av;
 
     public Bank(int n) {
@@ -28,22 +31,54 @@ public class Bank {
 
     // Account balance
     public int balance(int id) {
-        if (id < 0 || id >= slots)
-            return 0;
-        return av[id].balance();
+        l.lock();
+        try {
+            if (id < 0 || id >= slots)
+                return 0;
+            return av[id].balance();
+        }
+        finally {
+            l.unlock();
+        }
     }
 
     // Deposit
     public boolean deposit(int id, int value) {
         if (id < 0 || id >= slots)
             return false;
-        return av[id].deposit(value);
+        l.lock();
+        try{
+
+            return av[id].deposit(value);
+        }
+        finally {
+            l.unlock();
+        }
     }
 
     // Withdraw; fails if no such account or insufficient balance
     public boolean withdraw(int id, int value) {
+       l.lock();
         if (id < 0 || id >= slots)
             return false;
-        return av[id].withdraw(value);
+       try {
+           return av[id].withdraw(value);
+       }finally {
+           l.unlock();
+       }
+    }
+
+    public boolean transfer (int from, int to, int value)
+    {
+        return withdraw(from,value) && deposit(to,value);
+    }
+
+    public int totalBalance
+    {
+        int res=0;
+        for (Account a : av)
+        {
+            res +=
+        }
     }
 }

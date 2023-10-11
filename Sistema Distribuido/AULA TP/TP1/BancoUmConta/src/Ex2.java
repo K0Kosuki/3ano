@@ -39,6 +39,7 @@ class Bank {
 
     // Account balance
     public int balance() {
+
         this.l.lock();
         try{
             return savings.balance();
