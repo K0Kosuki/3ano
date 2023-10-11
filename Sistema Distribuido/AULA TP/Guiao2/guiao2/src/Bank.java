@@ -4,7 +4,10 @@ public class Bank {
 
     private static class Account {
         private int balance;
-        Account(int balance) { this.balance = balance; }
+        Account(int balance) {
+            this.balance = balance;
+
+        }
         int balance() { return balance; }
         boolean deposit(int value) {
             balance += value;
@@ -24,6 +27,7 @@ public class Bank {
     private Account[] av;
 
     public Bank(int n) {
+        this.l = new ReentrantLock();
         slots=n;
         av=new Account[slots];
         for (int i=0; i<slots; i++) av[i]=new Account(0);
@@ -70,15 +74,22 @@ public class Bank {
 
     public boolean transfer (int from, int to, int value)
     {
-        return withdraw(from,value) && deposit(to,value);
+        l.lock();
+        try {
+            return withdraw(from,value) && deposit(to,value);
+        }finally {
+            l.unlock();
+        }
+
     }
 
-    public int totalBalance
+    public int totalBalance()
     {
         int res=0;
         for (Account a : av)
         {
-            res +=
+            res += a.balance;
         }
+        return res;
     }
 }
