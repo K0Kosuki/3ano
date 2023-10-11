@@ -1,19 +1,21 @@
-int led1 = 13;
-int led2 = 12; 
 
 void setup() {
-pinMode(led1,OUTPUT);
-pinMode(led2,OUTPUT);
+pinMode(13,OUTPUT);
+Serial.begin(9600);
 }
 int
 void loop() {
   // put your main code here, to run repeatedly:
-digitalWrite(led1,HIGH);
-delay(100);
-digitalWrite(led2,HIGH);
-delay(100);
-digitalWrite(led1,LOW);
-delay(100);
-digitalWrite(led2,LOW);
-delay(100);
-}
+
+  if(Serial.available()){
+    char data_rcvd = Serial_read();
+    if(data_rcvd = 'a'){
+      digitalWrite(13,HIGH);
+      
+    }
+  if(data_rcvd = 'b'){
+    digitalWrite(13,LOW);
+  }
+
+  }
+} 

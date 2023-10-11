@@ -1,0 +1,10 @@
+Q1 i<1000
+sol: podemos observar todos os valores de x inferior a 4000
+Q2 como qjus
+nao é implemente com eles porque esyas algo naop sao eficinte 
+Q3  
+sim  desde que leiam apen var final
+sim no contexto ,tanbem chamada 
+Q4
+da duração relativa das seccao criticas em relação ao resto 
+DA Probabilidad de difernete threads

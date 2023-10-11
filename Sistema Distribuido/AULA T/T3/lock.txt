@@ -1,0 +1,3 @@
+Q1
+AO ADQUIR SO 1 EM TODOS metodos obtemos codigo livre de coorida
+ao adqiuiri 1 em a() 12 em b(),l1 seguide l2 em c() obtemos codigogo livre de corridas
