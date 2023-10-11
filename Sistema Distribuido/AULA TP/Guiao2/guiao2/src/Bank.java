@@ -88,10 +88,16 @@ public class Bank {
     public int totalBalance()
     {
         int res=0;
-        for (Account a : av)
-        {
-            res += a.balance;
+        l.lock();
+        try {
+            for (Account a : av)
+            {
+                res += a.balance;
+            }
+            return res;
         }
-        return res;
+        finally {
+            l.unlock();
+        }
     }
 }
