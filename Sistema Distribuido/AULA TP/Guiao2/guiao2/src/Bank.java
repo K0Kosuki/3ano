@@ -77,7 +77,9 @@ public class Bank {
         l.lock();
         try {
             return withdraw(from,value) && deposit(to,value);
-        }finally {
+        }
+        finally
+        {
             l.unlock();
         }
 
