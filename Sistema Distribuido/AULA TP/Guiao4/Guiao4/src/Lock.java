@@ -1,2 +1,4 @@
 public interface Lock {
+    newCondition();
+
 }
