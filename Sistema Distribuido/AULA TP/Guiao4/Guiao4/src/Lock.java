@@ -1,4 +1,4 @@
 public interface Lock {
-    newCondition();
+    void newCondition();
 
 }

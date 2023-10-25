@@ -1,9 +1,9 @@
-
-
-
-
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+       final int NT=5;
+       final int N=5;
+       Barrier b = new Barrier(N);
+
+
     }
 }

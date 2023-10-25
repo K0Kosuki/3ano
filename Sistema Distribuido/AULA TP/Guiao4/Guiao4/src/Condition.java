@@ -1,6 +1,6 @@
 public interface Condition {
-    await();
-    signal();
-    signalAll();
+    void await();
+    void signal();
+    void signalAll();
 }
 
