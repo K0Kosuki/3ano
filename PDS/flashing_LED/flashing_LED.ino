@@ -1,21 +1,23 @@
-
-void setup() {
-pinMode(13,OUTPUT);
-Serial.begin(9600);
+// Programa : Pisque um LED
+// Autor : MakerHero
+  
+void setup()
+{
+  //Define a porta do led como saida
+  pinMode(13, OUTPUT);
 }
-int
-void loop() {
-  // put your main code here, to run repeatedly:
-
-  if(Serial.available()){
-    char data_rcvd = Serial_read();
-    if(data_rcvd = 'a'){
-      digitalWrite(13,HIGH);
-      
-    }
-  if(data_rcvd = 'b'){
-    digitalWrite(13,LOW);
-  }
-
-  }
-} 
+  
+void loop()
+{
+  //Acende o led
+  digitalWrite(13, HIGH);
+    
+  //Aguarda intervalo de tempo em milissegundos
+  delay(500);
+    
+  //Apaga o led
+  digitalWrite(13, LOW);
+    
+  //Aguarda intervalo de tempo em milissegundos
+  delay(500);
+}

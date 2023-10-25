@@ -1,0 +1,29 @@
+
+tx = txsite("Name","Gualtar", ...
+ "Latitude",41.560475, ...
+ "Longitude",-8.399728, ...
+ "Antenna",design(dipole,3e9), ...
+ "AntennaHeight",25, ... % Units: meters
+ "TransmitterFrequency",3000e6, ... % Units: Hz
+ "TransmitterPower",100);...pelo valor calculado em WaƩs.
+
+rx = rxsite("Name","Azurem", ...
+ "Latitude",41.452997, ...
+ "Longitude",-8.289737, ...
+ "Antenna",design(dipole,tx.TransmitterFrequency), ...
+ "AntennaHeight",25, ...
+ "ReceiverSensitivity",-100); % Units: dBm 
+
+ viewer = siteviewer;
+ show(tx)
+ show(rx) 
+
+
+ ...coverage(tx,"freespace", "SignalStrengths",-100)
+
+coverage(tx,rx) 
+
+...- Frequência da portadora [300 – 3000] MHz
+...Potência de transmissão [1 – 100] W
+....Antena de formato dipolo.
+...Altura da antena até 25 metros.
