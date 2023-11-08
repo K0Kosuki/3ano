@@ -1,4 +1,4 @@
-viewer = siteviewer("SceneModel","office.stl","ShowOrigin",false);
+wviewer = siteviewer("SceneModel","office.stl","ShowOrigin",false);
 tx = txsite("cartesian","AntennaPosition",[2; 1.3; 2.5]);
 tx.TransmitterPower = 1;
 rx_desk = rxsite("cartesian","AntennaPosition",[3.6; 7.5; 1]);

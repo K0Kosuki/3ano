@@ -1,0 +1,10 @@
+g=11    p=13
+X=9   chave private a
+Y=7   chave private b 
+A= g^x mod p   
+B= g^y mod p
+chave public pow(11,9) %13 = 8    do A
+chave public pow(11,7) %13 = 2    do B
+
+k = b^x mod p   pow(2,9)%13   =  5   b
+k2= a^y mod p pow(8,7)%13 = 5          a

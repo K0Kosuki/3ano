@@ -1,0 +1,16 @@
+No terceiro caso, observamos que espécie P e Q começam com o mesmo número de animais com uma tendência negativa, no entanto antes do
+tempo 1.5 a espécie Q que começa a aumentar até atingir o seu máximo do tempo 10 no mesmo
+momento a P diminui se extinguir.
+
+Encontramo-nos no caso em que só uma das espécies sobrevive, enquanto a outra extingue-se.
+conclusao
+Numa fase inicial, duas espécies competem entre si pelos mesmos recursos, o que leva a uma diminuição na população de ambas. Com o passar do tempo, uma das espécies pode desenvolver novas estratégias ou adaptar-se a condições ambientais diferentes
+
+
+No quarto caso, observamos que espécie P e Q começam com o mesmo número de animais.
+Verificamos também que ambos começam com uma tendência positiva, embora a espécie P tenha
+ aumento Sempre ate atingir maximo e fica estavel . Entretanto, a espécie Q inicialmente tem uma tendencia mais forte, atinge o seu pico de população, sendo que de seguida têm uma queda ate extingue se
+espécie. 
+Encontramo-nos no caso em que só uma das espécies sobrevive, enquanto a outra extingue-se.
+quando Q cresce muito, passa a dominar outra especie que leva P à extinção.
+

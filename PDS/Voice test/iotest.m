@@ -1,4 +1,8 @@
 
+devices = audiodevinfo;
+disp(devices.input);
+
+
 recObj = audiorecorder;  % 创建音频录制对象
 disp('开始录音...');
 recordblocking(recObj, 2);  % 录制 2 秒钟的声音，可以根据需要调整持续时间
@@ -10,13 +14,13 @@ audioData = getaudiodata(recObj);
 % 停止录制对象
 stop(recObj);
 
-filename = 'recorded_audio.wav';  % 指定保存的文件名
+filename = 'Yes2.wav';  % 指定保存的文件名
 audiowrite(filename, audioData, recObj.SampleRate);  % 将录制的音频数据保存为 WAV 文件
 disp(['音频已保存为 ' filename]);
 
 
 
-[audioData,fs] = audioread("recorded_audio.wav");
+[audioData,fs] = audioread("Yes2.wav");
 soundsc(audioData,fs)
 
 [y,fs] = audioread(filename);
