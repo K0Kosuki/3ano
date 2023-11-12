@@ -1,11 +1,9 @@
 # Código baseado em https://docs.python.org/3.6/library/asyncio-stream.html#tcp-echo-client-using-streams
 import asyncio
-from cryptography.fernet import Fernet
 
 conn_cnt = 0
 conn_port = 7777
 max_msg_size = 9999
-
 
 class ServerWorker(object):
     """ Classe que implementa a funcionalidade do SERVIDOR. """
@@ -19,13 +17,13 @@ class ServerWorker(object):
             Retorna a mensagem a transmitir como resposta (`None` para
             finalizar ligação) """
         self.msg_cnt += 1
-
+        #
+        # ALTERAR AQUI COMPORTAMENTO DO SERVIDOR
+        #        
         txt = msg.decode()
-        print('Ciphertext %d : %r' % (self.id,txt))
+        print('%d : %r' % (self.id,txt))
         new_msg = txt.upper().encode()
-        
-        #print(f'Plaintext: {result.decode("utf-8")}')
-        
+        #
         return new_msg if len(new_msg)>0 else None
 
 

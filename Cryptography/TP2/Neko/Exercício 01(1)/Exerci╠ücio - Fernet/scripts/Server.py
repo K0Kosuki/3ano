@@ -6,6 +6,8 @@ conn_cnt = 0
 conn_port = 7777
 max_msg_size = 9999
 
+key = b'S30-9KpfUiyaXOnSqcpxmdxsIEOlVZU_0HAUo1ObDjE='
+f = Fernet(key)
 
 class ServerWorker(object):
     """ Classe que implementa a funcionalidade do SERVIDOR. """
@@ -23,8 +25,8 @@ class ServerWorker(object):
         txt = msg.decode()
         print('Ciphertext %d : %r' % (self.id,txt))
         new_msg = txt.upper().encode()
-        
-        #print(f'Plaintext: {result.decode("utf-8")}')
+        result = f.decrypt(msg)
+        print(f'Plaintext: {result.decode("utf-8")}')
         
         return new_msg if len(new_msg)>0 else None
 

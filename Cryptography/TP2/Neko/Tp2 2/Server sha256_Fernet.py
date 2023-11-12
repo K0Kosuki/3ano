@@ -1,11 +1,15 @@
 # Código baseado em https://docs.python.org/3.6/library/asyncio-stream.html#tcp-echo-client-using-streams
 import asyncio
 from cryptography.fernet import Fernet
-
+import hashlib
+import json
+import base64
 conn_cnt = 0
 conn_port = 7777
 max_msg_size = 9999
 
+key = b'S30-9KpfUiyaXOnSqcpxmdxsIEOlVZU_0HAUo1ObDjE='
+f = Fernet(key)
 
 class ServerWorker(object):
     """ Classe que implementa a funcionalidade do SERVIDOR. """
@@ -15,18 +19,33 @@ class ServerWorker(object):
         self.addr = addr
         self.msg_cnt = 0
     def process(self, msg):
-        """ Processa uma mensagem (`bytestring`) enviada pelo CLIENTE.
-            Retorna a mensagem a transmitir como resposta (`None` para
-            finalizar ligação) """
+        """"""
         self.msg_cnt += 1
+        data:dict[bytes,str]=json.loads(msg)
+        msg_part = data['msg']
+        
+        print(data['h'])
+        
+        decrypt_msg = f.decrypt(base64.b64decode(msg_part)).decode()
+        h = hashlib.sha256(decrypt_msg.encode()).hexdigest()
+        
+        if h == data['h']:
+            
+            print(f'Messagen encrypt: {decrypt_msg}')
+            print(f'Messagen original: {msg_part}')
+        else:
+            print(f"[{self.id}] erro validação")
+        
+        return b'3123321'
 
-        txt = msg.decode()
-        print('Ciphertext %d : %r' % (self.id,txt))
-        new_msg = txt.upper().encode()
-        
-        #print(f'Plaintext: {result.decode("utf-8")}')
-        
-        return new_msg if len(new_msg)>0 else None
+
+#        txt = msg.decode()
+ #       print('Ciphertext %d : %r' % (self.id,txt))
+  #      new_msg = txt.upper().encode()
+   #     result = f.decrypt(msg)
+    #    print(f'Plaintext: {result.decode("utf-8")}')
+     #   
+      #  return new_msg if len(new_msg)>0 else None
 
 
 #

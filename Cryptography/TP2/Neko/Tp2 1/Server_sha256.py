@@ -1,10 +1,12 @@
 # Código baseado em https://docs.python.org/3.6/library/asyncio-stream.html#tcp-echo-client-using-streams
 import asyncio
 from cryptography.fernet import Fernet
-
+import hashlib
+import json
 conn_cnt = 0
 conn_port = 7777
 max_msg_size = 9999
+
 
 
 class ServerWorker(object):
@@ -15,18 +17,17 @@ class ServerWorker(object):
         self.addr = addr
         self.msg_cnt = 0
     def process(self, msg):
-        """ Processa uma mensagem (`bytestring`) enviada pelo CLIENTE.
-            Retorna a mensagem a transmitir como resposta (`None` para
-            finalizar ligação) """
-        self.msg_cnt += 1
 
-        txt = msg.decode()
-        print('Ciphertext %d : %r' % (self.id,txt))
-        new_msg = txt.upper().encode()
+        data:dict[str,str]=json.loads(msg)
+        h = hashlib.sha256(data['msg'].encode()).hexdigest()
+
+       
+        if h == data['h']:
+            print(f"[{self.id}] {data['msg']}")
+        else:
+            print(f"[{self.id}] erro validação")
         
-        #print(f'Plaintext: {result.decode("utf-8")}')
-        
-        return new_msg if len(new_msg)>0 else None
+        return b'3123321'
 
 
 #
