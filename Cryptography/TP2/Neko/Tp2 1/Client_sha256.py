@@ -5,7 +5,11 @@ import hashlib
 import json
 
 
-conn_port = 7777
+conn_port = 7777      # Define a porta para se conectar ao servidor e tamanho da messagem que pode receber
+max_msg_size = 9999  
+
+
+
 max_msg_size = 9999
 
 class Client:
@@ -29,12 +33,14 @@ class Client:
 #
 
 async def tcp_echo_client():
+    # Estabelece uma conexão TCP com o servidor usando asyncio
     reader, writer = await asyncio.open_connection('127.0.0.1', conn_port)
+    # Obtém informações da conexão, como o endereço do cliente
     addr = writer.get_extra_info('peername')
-    client = Client(addr)
+    client = Client(addr) #cire um objeto do class Cliente com endereço do cliente.
     msg = client.process()
     while msg:
-        writer.write(msg)
+        writer.write(msg)       #Envia a mensage e espear servidor acaba de ler
         msg = await reader.read(max_msg_size)
         if msg :
             msg = client.process(msg)
@@ -45,7 +51,7 @@ async def tcp_echo_client():
     writer.close()
 
 def run_client():
-    loop = asyncio.get_event_loop()
+    loop = asyncio.get_event_loop()#Função para executar o cliente TCP no loop de eventos do asyncio
     loop.run_until_complete(tcp_echo_client())
 
 

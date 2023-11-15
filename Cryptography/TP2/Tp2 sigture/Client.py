@@ -12,6 +12,7 @@ from Crypto.Util.Padding import pad, unpad
 import os
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives.asymmetric import dh
+from cryptography.hazmat.primitives.asymmetric import padding
 from cryptography.hazmat.primitives.kdf.hkdf import HKDF
 from Crypto.Util import Counter
 conn_port = 7777
@@ -35,20 +36,31 @@ class Client:
                 
                 return bytes([self.msg_cnt])
             case 2:
-                pem,parameters= msg.split(b"---SPLIT---")
+                pem_rsas,signature,pem_dhs,parameters= msg.split(b"---SPLIT---")
                 
-                server_public_key = load_pem_public_key(pem)
-                para = load_pem_parameters(parameters, backend=default_backend())
-                self.private_key = para.generate_private_key()
-                self.public_key = self.private_key.public_key()
-                self.shared_key = self.private_key.exchange(server_public_key)
-               # ShowkeyC = self.shared_key
-               # print (ShowkeyC)
-                pem_c = self.public_key.public_bytes(
+                server_rsa_public_key = load_pem_public_key(pem_rsas)
+                try:
+                    server_rsa_public_key.verify(
+                        signature,
+                        pem_dhs,
+                        padding.PSS(
+                            mgf=padding.MGF1(hashes.SHA256()),
+                            salt_length=padding.PSS.MAX_LENGTH
+                        ),
+                        hashes.SHA256()
+                    )
+                except:
+                    raise ValueError("Signature verification failed!!!!")
+                server_dh_public_key = load_pem_public_key(pem_dhs)
+                para = load_pem_parameters(parameters)
+                self.dh_private_key = para.generate_private_key()
+                self.dh_public_key = self.dh_private_key.public_key()
+                self.shared_key = self.dh_private_key.exchange(server_dh_public_key)
+                pem_c = self.dh_public_key.public_bytes(
                     encoding=serialization.Encoding.PEM,
                     format=serialization.PublicFormat.SubjectPublicKeyInfo
                 )
-                
+                print(self.shared_key)
                 return bytes([self.msg_cnt])+pem_c
             case _:
                     data = json.loads(msg)
@@ -68,8 +80,13 @@ class Client:
                     'h': hashlib.sha256(input_msg.encode()).hexdigest(),
                     }, separators=(',',':')).encode()
     
+
+                
+
+
     def encrypt(self, msg: str|bytes) -> str:
         if isinstance(msg, str): msg = msg.encode()
+        
         key = HKDF(
                 algorithm=hashes.SHA256(),
                 length=16,  

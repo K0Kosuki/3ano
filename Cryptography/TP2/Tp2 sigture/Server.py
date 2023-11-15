@@ -3,7 +3,7 @@ import json
 import hashlib
 from cryptography.fernet import Fernet
 from cryptography.hazmat.primitives import hashes, serialization
-
+from cryptography.hazmat.primitives.asymmetric import padding,rsa
 from cryptography.hazmat.primitives.serialization import load_pem_public_key, load_pem_parameters,ParameterFormat,Encoding
 
 import base64
@@ -19,6 +19,11 @@ from Crypto.Util import Counter
 conn_cnt = 0
 conn_port = 7777
 max_msg_size = 9999
+
+
+
+
+
 
 class ServerWorker(object):
     """ Classe que implementa a funcionalidade do SERVIDOR. """
@@ -37,24 +42,41 @@ class ServerWorker(object):
         msg = msg[1:] 
         match msg_type:
             case 1:
+                self.rsa_private_key = rsa.generate_private_key(
+                public_exponent=65537,
+                key_size=2048,
+                )
+                self.rsa_public_key = self.rsa_private_key.public_key()
                 self.parameters = dh.generate_parameters(generator=2, key_size=2048)
-                self.private_key = self.parameters.generate_private_key()
-                self.public_key = self.private_key.public_key()
-                pem = self.public_key.public_bytes(
+                self.dh_private_key = self.parameters.generate_private_key()
+                self.dh_public_key = self.dh_private_key.public_key()
+
+                pem_rsa = self.rsa_public_key.public_bytes(
                     encoding=serialization.Encoding.PEM,
                     format=serialization.PublicFormat.SubjectPublicKeyInfo
+                )
+                pem_dh = self.dh_public_key.public_bytes(
+                encoding=serialization.Encoding.PEM,
+                format=serialization.PublicFormat.SubjectPublicKeyInfo
                 )
                 p_pem =self.parameters.parameter_bytes(
                 encoding=Encoding.PEM,
                 format=ParameterFormat.PKCS3
                 )
-                return pem + b"---SPLIT---" + p_pem
+                signature = self.rsa_private_key.sign(
+                    pem_dh,
+                    padding.PSS(
+                    mgf=padding.MGF1(hashes.SHA256()),
+                    salt_length=padding.PSS.MAX_LENGTH
+                             ),
+                    hashes.SHA256()
+                    )
+                return pem_rsa + b"---SPLIT---" +signature+b"---SPLIT---"+pem_dh+b"---SPLIT---"+p_pem
             case 2:
                 pem_c= msg
                 client_public_key = load_pem_public_key(pem_c)
-                self.shared_key = self.private_key.exchange(client_public_key)
-                #ShowkeyS = self.shared_key
-              #  print (ShowkeyS)
+                self.shared_key = self.dh_private_key.exchange(client_public_key)
+                
                 return json.dumps({   
                     'msg': self.encrypt("Connect Sucess"),
                     'h': hashlib.sha256(b"Connect Sucess").hexdigest()
@@ -66,13 +88,18 @@ class ServerWorker(object):
                     raise ValueError('Error Message')
                 
                   dec_msg = self.decrypt(data["msg"])
-                  
                   h = hashlib.sha256(dec_msg.encode()).hexdigest()
                   if h != data['h']: raise ValueError('Error Message')
                   print(f'Ciphertext {self.id} : {data["msg"]}')
                   result = self.decrypt(data["msg"])
                   print(f'Plaintext: {result}')
                   return msg 
+          
+
+
+
+           
+
 
     def encrypt(self, msg: str|bytes) -> str:
         if isinstance(msg, str): msg = msg.encode()
