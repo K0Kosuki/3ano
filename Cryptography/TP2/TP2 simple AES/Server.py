@@ -4,12 +4,6 @@ import json
 import hashlib
 import base64
 from Crypto.Cipher import AES
-import os
-from cryptography.hazmat.backends import default_backend
-
-
-
-
 
 
 conn_cnt = 0

@@ -1,6 +1,5 @@
 # Código baseado em https://docs.python.org/3.6/library/asyncio-stream.html#tcp-echo-client-using-streams
 import asyncio
-
 import asyncio
 import json
 import hashlib

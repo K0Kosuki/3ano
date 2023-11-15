@@ -112,8 +112,8 @@ class ServerWorker(object):
                 backend=default_backend()
                 ).derive(self.shared_key)
         nonce = os.urandom(8)
-        ctr = Counter.new(64, prefix=nonce)
-        cipher = AES.new(key, AES.MODE_CTR,counter=ctr)
+       
+        cipher = AES.new(key, AES.MODE_CTR,nonce=nonce)
         encrypt_data = cipher.encrypt(msg)
         return base64.b64encode(nonce + encrypt_data).decode()
 
@@ -128,9 +128,10 @@ class ServerWorker(object):
                 backend=default_backend()
                 ).derive(self.shared_key)
         nonce = msg[:8]
-        ctr = Counter.new(64, prefix=nonce)
+        
         encrypt_data = msg[8:]
-        cipher = AES.new(key, AES.MODE_CTR,counter=ctr)
+       
+        cipher = AES.new(key, AES.MODE_CTR,nonce=nonce)
         decrypt_data = cipher.decrypt(encrypt_data)
         return decrypt_data.decode('utf-8')
 
