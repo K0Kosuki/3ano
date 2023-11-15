@@ -1,12 +1,22 @@
 # Código baseado em https://docs.python.org/3.6/library/asyncio-stream.html#tcp-echo-client-using-streams
 import asyncio
+from cryptography.fernet import Fernet
+import asyncio
 import json
 import hashlib
+from cryptography.fernet import Fernet
+from cryptography.hazmat.primitives import hashes, serialization
+from cryptography.hazmat.primitives.asymmetric import padding
+from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
+from cryptography.hazmat.primitives.serialization import load_pem_public_key, load_pem_parameters
 import base64
 from Crypto.Cipher import AES
+from Crypto.Util.Padding import pad, unpad
 import os
 from cryptography.hazmat.backends import default_backend
-
+from cryptography.hazmat.primitives.asymmetric import dh
+from cryptography.hazmat.primitives.kdf.hkdf import HKDF
+from Crypto.Util import Counter
 
 
 
@@ -17,7 +27,7 @@ conn_port = 7777
 max_msg_size = 9999
 
 key = b'HelloSever114514'
-nonce = b'non123dsah'
+
 class ServerWorker(object):
     """ Classe que implementa a funcionalidade do SERVIDOR. """
     def __init__(self, cnt, addr=None):
@@ -28,23 +38,22 @@ class ServerWorker(object):
 
     def process(self, msg=b""):
         data = json.loads(msg)
-       
         if not 'msg' in data or not 'h' in data:
          raise ValueError('Error Message')
-        encrypted_msg_b64 = data['msg']
-        encrypted_msg = base64.b64decode(encrypted_msg_b64) 
-
-        cipher = AES.new(key, AES.MODE_CTR, nonce=nonce)
-        dec_msg = cipher.decrypt(encrypted_msg) 
-        h =hashlib.sha256(dec_msg).hexdigest()
+       
+        cipher = AES.new(key, AES.MODE_CTR,nonce=os.urandom(8))
+        
+        dec_msg = cipher.decrypt(data["msg"])
+        dec_msg_b64 = base64.b64encode(dec_msg).decode()
+        h =hashlib.sha256(dec_msg_b64.encode()).hexdigest()
         if h != data['h']: raise ValueError('Error Message')
-        print(dec_msg)
+       
         self.msg_cnt += 1
 
         print('Ciphertext %d : %r' % (self.id,data["msg"]))
-        print(f'Plaintext:',dec_msg)
+        print(f'Plaintext:',dec_msg_b64)
     
-        return msg
+        return msg("decrypted sus")
 
 
 #

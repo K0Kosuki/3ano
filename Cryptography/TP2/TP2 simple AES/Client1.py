@@ -31,9 +31,9 @@ class Client:
 
         h = hashlib.sha256(return_msg.encode()).hexdigest()
         encrypted_msg = cipher.encrypt(return_msg.encode())
-        encrypted_msg_b64 = base64.b64encode(encrypted_msg).decode()
+        #encrypted_msg_b64 = base64.b64encode(encrypted_msg).decode()
         
-        return_data = json.dumps({'msg': encrypted_msg_b64, 'h': h})
+        return_data = json.dumps({'msg': encrypted_msg.decode(), 'h': h})
         return return_data.encode()
 
 #
