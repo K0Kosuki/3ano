@@ -11,7 +11,7 @@ from Train import search_file,get_matrix,model_pred
 test_sample = search_file('./Dataset/testing')
 print(test_sample)
 test_x,test_y = get_matrix(test_sample)
-models = joblib.load(filename='wave5.ckpt')
+models = joblib.load(filename='wave1.ckpt')
 pred_test_y = model_pred(test_x,test_y,models)
 
 print(pred_test_y)

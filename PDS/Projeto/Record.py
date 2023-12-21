@@ -2,6 +2,7 @@ import pyaudio
 import wave
 import matplotlib.pyplot as plt
 import numpy as np
+import scipy.signal as signal
 
 FRAMES_PER_BUFFER = 3200
 FORMAT = pyaudio.paInt16
@@ -37,7 +38,7 @@ stream.stop_stream()
 stream.close()
 pa.terminate()
 
-obj = wave.open('No16.wav', 'wb')
+obj = wave.open('noise3.wav', 'wb')
 obj.setnchannels(CHANNELS)  
 obj.setsampwidth(pa.get_sample_size(FORMAT))  # 设置采样宽度
 obj.setframerate(RATE)

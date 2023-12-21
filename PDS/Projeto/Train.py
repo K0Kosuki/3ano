@@ -24,6 +24,8 @@ def search_file(directory: object) -> object:
 def get_matrix(train_sample):
     train_x, train_y = [], []
 
+
+  
     for label,filenames in train_sample.items():
         mfccs = np.array([])
         for filename in filenames:
@@ -62,18 +64,20 @@ def model_pred(test_x, test_y, models):
 
 def train():
     train_samples = search_file('./Dataset/training')
-    print(train_samples)
-    print(train_samples['Yes'])
+   # print(train_samples)
+    #print(train_samples['Yes'])
     train_x, train_y = get_matrix(train_samples)
     models = model_train(train_x, train_y)
-    joblib.dump(value = models, filename="wave8.ckpt")
+    joblib.dump(value = models, filename="wave3.ckpt")
 
 def test():
-    test_samples = search_file('/Dataset/testing')
-    test_x, test_y = get_matrix(test_samples)
-
-    models = joblib.load("wave8.ckpt")
+    test_sample = search_file('./Dataset/testing')
+    print(test_sample)
+    test_x,test_y = get_matrix(test_sample)
+    models = joblib.load(filename='wave3.ckpt')
     pred_test_y = model_pred(test_x,test_y,models)
+
+    print(pred_test_y)
     print(test_y)
 
 train()

@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as mp
 import wave as we
 
-filename = './Dataset/training/Yes/Yes6.wav'
+filename = './Dataset/training/Steam/Steam6.wav'
 Wave = we.open(filename)
 print(filename)
 a = Wave.getparams().nframes

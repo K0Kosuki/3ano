@@ -35,13 +35,28 @@ class Client:
                 
                 return bytes([self.msg_cnt])
             case 2:
-                pem,parameters= msg.split(b"---SPLIT---")
+                pem_rsa,signature,pem_dh,parameters= msg.split(b"---SPLIT---")
                 
-                server_public_key = load_pem_public_key(pem)
+                #rsa_server_public_key = serialization.load_pem_public_key(pem_rsa)
+                rsa_server_public_key = load_pem_public_key(pem_rsa)
+                try:
+                    rsa_server_public_key.verify(
+                        signature,
+                        pem_dh,
+                        padding.PSS(
+                            mgf=padding.MGF1(hashes.SHA256()),
+                            salt_length=padding.PSS.MAX_LENGTH
+                        ),
+                        hashes.SHA256()
+                    )
+                except:
+                    raise ValueError("Signature verification failed!")
+                
                 para = load_pem_parameters(parameters, backend=default_backend())
+                dh_server_public_key = load_pem_public_key(pem_dh)
                 self.private_key = para.generate_private_key()
                 self.public_key = self.private_key.public_key()
-                self.shared_key = self.private_key.exchange(server_public_key)
+                self.shared_key = self.private_key.exchange(dh_server_public_key)
                # ShowkeyC = self.shared_key
                # print (ShowkeyC)
                 pem_c = self.public_key.public_bytes(
@@ -78,8 +93,9 @@ class Client:
                 backend=default_backend()
                 ).derive(self.shared_key)
         nonce = os.urandom(8)
-        ctr = Counter.new(64, prefix=nonce)
-        cipher = AES.new(key, AES.MODE_CTR,counter=ctr)
+        #ctr = Counter.new(64, prefix=nonce)
+        #cipher = AES.new(key, AES.MODE_CTR,counter=ctr)
+        cipher = AES.new(key, AES.MODE_CTR,nonce = nonce)
         encrypt_data = cipher.encrypt(msg)
         return base64.b64encode(nonce + encrypt_data).decode()
 
