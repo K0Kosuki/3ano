@@ -1,0 +1,1 @@
+Devido ao tamanho e à necessidade de manter a organização dos ficheiros, o Dataset e o script de treino foram disponibilizados no GitHub. O link para acesso está no relatório.

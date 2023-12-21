@@ -12,7 +12,7 @@ FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 16000
 RECORD_SECONDS = 1.7
-WAVE_OUTPUT_FILENAME = "D:\\3Ano\\3ano\\PDS\\Ptosent\\Voice\\test\\test.wav"
+WAVE_OUTPUT_FILENAME = "D:\\3Ano\\3ano\\PDS\\PDS_G9_ A101263_A101270\\Voice\\test\\test.wav"
 
 
 
@@ -118,7 +118,7 @@ if best_label == 'Excel':
     pa.terminate()
 
     
-    RESPONSE_WAVE_OUTPUT_FILENAME = "D:\\3Ano\\3ano\\PDS\\Ptosent\\Voice\\response\\response.wav"
+    RESPONSE_WAVE_OUTPUT_FILENAME = "D:\\3Ano\\3ano\\PDS\\PDS_G9_ A101263_A101270\\Voice\\response\\response.wav"
     wave_file = wave.open(RESPONSE_WAVE_OUTPUT_FILENAME, 'wb')
     wave_file.setnchannels(CHANNELS)
     wave_file.setsampwidth(pa.get_sample_size(FORMAT))
